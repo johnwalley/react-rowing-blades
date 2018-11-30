@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Blade = ({ size, club }) => {
+const Blade = React.forwardRef(({ className, size, club }, ref) => {
   let decal;
   let fill;
 
@@ -160,13 +160,16 @@ const Blade = ({ size, club }) => {
       break;
   }
 
+  console.log(size);
+
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
-      width={(size * 500) / 230}
-      height={size}
+      {...size !== undefined && { width: size, height: (size * 230) / 500 }}
       viewBox="0 0 500 230"
+      ref={ref}
+      className={className}
     >
       <defs>
         <path
@@ -189,7 +192,7 @@ const Blade = ({ size, club }) => {
       </g>
     </svg>
   );
-};
+});
 
 const emmanuel = (
   <g transform="rotate(-4) translate(400,20)">
@@ -586,11 +589,6 @@ Blade.propTypes = {
    * */
   size: PropTypes.number,
   club: PropTypes.oneOf(['city', 'emmanuel', 'catz', 'neots']),
-};
-
-Blade.defaultProps = {
-  size: 100,
-  club: 'city',
 };
 
 export default Blade;

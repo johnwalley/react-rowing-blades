@@ -1,9 +1,11 @@
 Examples
 
 ```js
-<Blade club="city" />
+<Blade club="city" size={200} />
 ```
 
+Responsive
+
 ```js
-<Blade club="city" size="400"/>
+<Blade club="city" />
 ```
