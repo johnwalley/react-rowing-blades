@@ -17,7 +17,7 @@ module.exports = {
       description: 'Cambridge College Clubs',
     },
     {
-      name: 'Clubs',
+      name: 'Components',
       components: './src/**/[A-Z]*.jsx',
       exampleMode: 'expand',
       usageMode: 'expand',
