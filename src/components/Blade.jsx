@@ -72,7 +72,7 @@ const Blade = React.forwardRef(({ className, size, club }, ref) => {
       break;
     case 'corpus':
       decal = corpus;
-      fill = '#000040';
+      fill = '#8d0603';
       break;
     case 'downing':
       decal = null;
@@ -159,8 +159,6 @@ const Blade = React.forwardRef(({ className, size, club }, ref) => {
       fill = 'white';
       break;
   }
-
-  console.log(size);
 
   return (
     <svg
@@ -395,14 +393,10 @@ const clarehall = (
 );
 
 const corpus = (
-  <g transform="rotate(-4) translate(400, 20)">
+  <g transform="rotate(-4) translate(400,20)">
     <path
-      d="M 5,00 l 0,300 "
-      style={{ stroke: '#800020', strokeWidth: 20, fill: 'none' }}
-    />
-    <path
-      d="M -30,00 l 0,300 "
-      style={{ stroke: '#800020', strokeWidth: 20, fill: 'none' }}
+      d="M 0,0 l 0,300 "
+      style={{ stroke: '#FFFFFF', strokeWidth: 30, fill: 'none' }}
     />
   </g>
 );
