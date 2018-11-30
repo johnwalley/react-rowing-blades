@@ -78,9 +78,17 @@ const Blade = ({ size, club }) => {
       decal = null;
       fill = '#AB0F62';
       break;
+    case 'edmunds':
+      decal = edmunds;
+      fill = '#0063cb';
+      break;
     case 'fat':
       decal = null;
       fill = '#000044';
+      break;
+    case 'fitz':
+      decal = null;
+      fill = 'lightgray';
       break;
     case 'girton':
       decal = girton;
@@ -101,6 +109,50 @@ const Blade = ({ size, club }) => {
     case 'kings':
       decal = null;
       fill = 'purple';
+      break;
+    case 'magdalene':
+      decal = magdalene;
+      fill = '#8c00cd';
+      break;
+    case 'murray':
+      decal = null;
+      fill = '#F5F5F5';
+      break;
+    case 'newnham':
+      decal = newnham;
+      fill = '#000066';
+      break;
+    case 'pembroke':
+      decal = pembroke;
+      fill = '#AAF0FF';
+      break;
+    case 'peterhouse':
+      decal = peterhouse;
+      fill = '#0000CC';
+      break;
+    case 'queens':
+      decal = queens;
+      fill = 'darkgreen';
+      break;
+    case 'robinson':
+      decal = robinson;
+      fill = '#0099FF';
+      break;
+    case 'selwyn':
+      decal = selwyn;
+      fill = '#F5F5F5';
+      break;
+    case 'sidney':
+      decal = sidney;
+      fill = '#000066';
+      break;
+    case 'tithall':
+      decal = null;
+      fill = '#202020';
+      break;
+    case 'wolfson':
+      decal = wolfson;
+      fill = '#0000FF';
       break;
     default:
       decal = null;
@@ -352,6 +404,19 @@ const corpus = (
   </g>
 );
 
+const edmunds = (
+  <g transform="rotate(-4) translate(400, 20)">
+    <path
+      d="M 19,00 l 0,300 "
+      style={{ stroke: 'white', strokeWidth: 18, fill: 'none' }}
+    />
+    <path
+      d="M -17,00 l 0,300 "
+      style={{ stroke: '#0097ff', strokeWidth: 18, fill: 'none' }}
+    />
+  </g>
+);
+
 const girton = (
   <g>
     <path
@@ -419,6 +484,100 @@ const jesus = (
       style={{ stroke: 'darkred', strokeWidth: 20, fill: 'none' }}
     />
   </g>
+);
+
+const magdalene = (
+  <g transform="rotate(-4) translate(431, 20)">
+    <path
+      d="M 6,0 l 0,300 "
+      style={{ stroke: '#000fb0', strokeWidth: 20, fill: 'none' }}
+    />
+  </g>
+);
+
+const newnham = (
+  <g transform="rotate(-4) translate(400,20)">
+    <path
+      d="M -60,00 l 80,300 "
+      style={{ stroke: 'gold', strokeWidth: 60, fill: 'none' }}
+    />
+    <path
+      d="M -60,00 l 80,300 "
+      style={{ stroke: 'silver', strokeWidth: 20, fill: 'none' }}
+    />
+  </g>
+);
+
+const pembroke = (
+  <g transform="rotate(-4) translate(410,85)">
+    <path d="M -60,-33 l 00,00 l 60,00 l 00,40 z" fill="#000066" />
+    <path d="M -60,14 l 00,40 l 60,43 l 00,-40 z" fill="#000066" />
+    <path d="M -60,100 l 00,40 l 60,6 l 0,00 z" fill="#000066" />
+  </g>
+);
+
+const peterhouse = (
+  <g transform="rotate(-4) translate(400, 20)">
+    <path
+      d="M 19,00 l 0,300 "
+      style={{ stroke: 'white', strokeWidth: 18, fill: 'none' }}
+    />
+    <path
+      d="M -17,00 l 0,300 "
+      style={{ stroke: 'white', strokeWidth: 18, fill: 'none' }}
+    />
+  </g>
+);
+
+const queens = (
+  <g transform="rotate(-4) translate(400,20)">
+    <path
+      d="M 0,0 l 0,300 "
+      style={{ stroke: 'white', strokeWidth: 30, fill: 'none' }}
+    />
+  </g>
+);
+
+const robinson = (
+  <g transform="rotate(-4) translate(400,20)">
+    <path
+      d="M 5,00 l 0,300 "
+      style={{ stroke: 'gold', strokeWidth: 20, fill: 'none' }}
+    />
+    <path
+      d="M -30,00 l 0,300 "
+      style={{ stroke: 'gold', strokeWidth: 20, fill: 'none' }}
+    />
+  </g>
+);
+
+const selwyn = (
+  <g transform="rotate(-4) translate(400,20)">
+    <path
+      d="M 5,00 l 0,300 "
+      style={{ stroke: 'gold', strokeWidth: 20, fill: 'none' }}
+    />
+    <path
+      d="M -30,00 l 0,300 "
+      style={{ stroke: 'maroon', strokeWidth: 20, fill: 'none' }}
+    />
+  </g>
+);
+
+const sidney = (
+  <g transform="rotate(-4) translate(410,80)">
+    <path d="M 0,0 l 0,15 l 15,-15 l 0,-15 z" fill="red" />
+    <path d="M 0,40 l 0,15 l 15,-15 l 0,-15 z" fill="red" />
+    <path d="M 0,80 l 0,15 l 15,-15 l 0,-15 z" fill="red" />
+    <path d="M 0,120 l 0,15 l 15,-15 l 0,-15 z" fill="red" />
+  </g>
+);
+
+const wolfson = (
+  <path
+    d="m 398.56359,25.01348 21.01371,-1.395417 12.93093,176.316257 -20.93824,-0.17775 z"
+    style={{ fill: '#ffff00', stroke: '#ffff00', strokeWidth: 0.97328287 }}
+  />
 );
 
 Blade.propTypes = {

@@ -121,55 +121,55 @@ Lucy Cavendish College
 Magdalene
 
 ```js
-<Blade club="" />
+<Blade club="magdalene" />
 ```
 
 Murray Edwards College
 
 ```js
-<Blade club="" />
+<Blade club="murray" />
 ```
 
 Newnham College
 
 ```js
-<Blade club="" />
+<Blade club="newnham" />
 ```
 
 Pembroke College
 
 ```js
-<Blade club="" />
+<Blade club="pembroke" />
 ```
 
 Peterhouse
 
 ```js
-<Blade club="" />
+<Blade club="peterhouse" />
 ```
 
 Queens' College
 
 ```js
-<Blade club="" />
+<Blade club="queens" />
 ```
 
 Robinson College
 
 ```js
-<Blade club="" />
+<Blade club="robinson" />
 ```
 
 Selwyn College
 
 ```js
-<Blade club="" />
+<Blade club="selwyn" />
 ```
 
 Sidney Sussex
 
 ```js
-<Blade club="" />
+<Blade club="sidney" />
 ```
 
 St. Catharine's College
@@ -181,7 +181,7 @@ St. Catharine's College
 St. Edmund's College
 
 ```js
-<Blade club="" />
+<Blade club="edmunds" />
 ```
 
 Theological Colleges
@@ -193,7 +193,7 @@ Theological Colleges
 Trinity Hall
 
 ```js
-<Blade club="" />
+<Blade club="tithall" />
 ```
 
 Vet School
@@ -205,5 +205,5 @@ Vet School
 Wolfson College
 
 ```js
-<Blade club="" />
+<Blade club="wolfson" />
 ```
