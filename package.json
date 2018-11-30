@@ -4,6 +4,8 @@
   "description": "React Rowing Blades is a library of SVG rowing blade illustrations.",
   "main": "index.js",
   "scripts": {
+    "styleguide": "styleguidist server",
+    "styleguide:build": "styleguidist build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "John Walley",
