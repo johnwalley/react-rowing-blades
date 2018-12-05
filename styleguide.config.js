@@ -18,6 +18,11 @@ module.exports = {
       description: 'Cambridge College Clubs',
     },
     {
+      name: 'Oxford College Clubs',
+      content: 'docs/OxfordCollegeClubs.md',
+      description: 'Oxford College Clubs',
+    },
+    {
       name: 'Components',
       components: './src/**/[A-Z]*.jsx',
       exampleMode: 'expand',

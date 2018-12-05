@@ -50,9 +50,17 @@ const Blade = React.forwardRef(({ className, size, club }, ref) => {
       decal = null;
       fill = '#fc6621';
       break;
+    case 'balliol':
+      decal = balliol;
+      fill = '#000000';
+      break;
     case 'caius':
       decal = caius;
       fill = '#202020';
+      break;
+    case 'christchurch':
+      decal = null;
+      fill = '#000065';
       break;
     case 'christs':
       decal = christs;
@@ -74,6 +82,10 @@ const Blade = React.forwardRef(({ className, size, club }, ref) => {
       decal = corpus;
       fill = '#8d0603';
       break;
+    case 'corpuschristioxford':
+      decal = corpusoxford;
+      fill = '#000040';
+      break;
     case 'downing':
       decal = null;
       fill = '#AB0F62';
@@ -93,6 +105,10 @@ const Blade = React.forwardRef(({ className, size, club }, ref) => {
     case 'girton':
       decal = girton;
       fill = '#004600';
+      break;
+    case 'greentempleton':
+      decal = greentempleton;
+      fill = '#000032';
       break;
     case 'homerton':
       decal = homerton;
@@ -371,6 +387,13 @@ const nines = (
   </g>
 );
 
+const balliol = (
+  <path
+    style={{ fill: '#d40000', stroke: 'none', strokeWidth: 1 }}
+    d="M 109.76752,42.435275 76.110919,192.11109 428.81461,203.01844 z"
+  />
+);
+
 const christs = (
   <g transform="rotate(-4) translate(410, 85)">
     <path d="M 0,0 l 0,30 l 25,-30 l 0,-30 z" fill="white" />
@@ -397,6 +420,19 @@ const corpus = (
     <path
       d="M 0,0 l 0,300 "
       style={{ stroke: '#FFFFFF', strokeWidth: 30, fill: 'none' }}
+    />
+  </g>
+);
+
+const corpusoxford = (
+  <g transform="rotate(-4) translate(400, 20)">
+    <path
+      d="M 5,00 l 0,300 "
+      style={{ stroke: '#800020', strokeWidth: 20, fill: 'none' }}
+    />
+    <path
+      d="M -30,00 l 0,300 "
+      style={{ stroke: '#800020', strokeWidth: 20, fill: 'none' }}
     />
   </g>
 );
@@ -441,6 +477,19 @@ const girton = (
         stroke: '#ffffff',
         strokeWidth: 0.8975876,
       }}
+    />
+  </g>
+);
+
+const greentempleton = (
+  <g>
+    <path
+      d="M 470,10 145,199 500,230 z"
+      style={{ fill: '#00792c', stroke: 'none' }}
+    />
+    <path
+      d="m 432.14757,21.780669 12.2463,-0.840751 c 1.41425,0.238775 2.84975,0.817522 3.75407,1.651223 0.84763,1.131188 1.50412,2.26233 1.82057,3.542251 l 0.6532,9.027091 -261.11613,149.440487 -7.7643,-2.0481 -4.67062,-1.37297 -1.23447,-5.12152 -2.0185,-6.74448 -2.97685,-8.42085 z"
+      style={{ fill: '#ffff00', stroke: 'none' }}
     />
   </g>
 );
