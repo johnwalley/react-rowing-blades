@@ -79,19 +79,19 @@ Magdalen
 Mansfield
 
 ```js
-<Blade club="" />
+<Blade club="mansfield" />
 ```
 
 Merton
 
 ```js
-<Blade club="" />
+<Blade club="merton" />
 ```
 
 New
 
 ```js
-<Blade club="" />
+<Blade club="new" />
 ```
 
 Oriel
@@ -115,19 +115,19 @@ Pembroke
 Queen's
 
 ```js
-<Blade club="" />
+<Blade club="queensOxford" />
 ```
 
 Regent's Park
 
 ```js
-<Blade club="" />
+<Blade club="regentspark" />
 ```
 
 Somerville
 
 ```js
-<Blade club="" />
+<Blade club="somerville" />
 ```
 
 St Anne's
@@ -151,7 +151,7 @@ St Benet's
 St Catherine's
 
 ```js
-<Blade club="" />
+<Blade club="catzoxford" />
 ```
 
 St Edmund Hall

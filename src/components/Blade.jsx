@@ -18,6 +18,10 @@ const Blade = React.forwardRef(({ className, size, club }, ref) => {
       decal = catz;
       fill = '#780025';
       break;
+    case 'catzoxford':
+      decal = catzoxford;
+      fill = '#8cf';
+      break;
     case 'neots':
       decal = neots;
       fill = '#00AEEF';
@@ -150,9 +154,21 @@ const Blade = React.forwardRef(({ className, size, club }, ref) => {
       decal = magdalene;
       fill = '#8c00cd';
       break;
+    case 'mansfield':
+      decal = mansfield;
+      fill = '#d40000';
+      break;
+    case 'merton':
+      decal = merton;
+      fill = '#ebebeb';
+      break;
     case 'murray':
       decal = null;
       fill = '#F5F5F5';
+      break;
+    case 'new':
+      decal = newCollege;
+      fill = '#800080';
       break;
     case 'newnham':
       decal = newnham;
@@ -174,6 +190,14 @@ const Blade = React.forwardRef(({ className, size, club }, ref) => {
       decal = queens;
       fill = 'darkgreen';
       break;
+    case 'queensOxford':
+      decal = queensOxford;
+      fill = '#000066';
+      break;
+    case 'regentspark':
+      decal = regentspark;
+      fill = '#EE0000';
+      break;
     case 'robinson':
       decal = robinson;
       fill = '#0099FF';
@@ -185,6 +209,10 @@ const Blade = React.forwardRef(({ className, size, club }, ref) => {
     case 'sidney':
       decal = sidney;
       fill = '#000066';
+      break;
+    case 'somerville':
+      decal = somerville;
+      fill = '#EE0000';
       break;
     case 'tithall':
       decal = null;
@@ -317,6 +345,124 @@ const catz = (
         stroke: '#ffffff',
         strokeWidth: 3.86204243,
       }}
+    />
+  </g>
+);
+
+const catzoxford = (
+  <g>
+    <circle
+      cx="375"
+      cy="115"
+      r="50"
+      stroke="#900"
+      stroke-width="17"
+      fill="#8cf"
+    />
+    <circle cx="375" cy="115" r="6" stroke-width="0" fill="#900" />
+    <g transform="translate(367.625,55.59467)" id="WheelSpike">
+      <path
+        fill="#900"
+        stroke-width="0"
+        d="M 0.125,-0.125 C 2.8241831,-14.718465 0.37994487,-16.164559 0.125,-20.125 C 10.772964,-14.747921 12.635905,-11.317461 15.125,-0.125 C 11.115395,-0.70054519 4.4572137,-1.0540513 0.125,-0.125 z"
+      />
+    </g>
+    <use
+      x="0"
+      y="0"
+      xlinkHref="#WheelSpike"
+      transform="matrix(0.5,0.8660254,-0.8660254,0.5,287.25289,-266.9912)"
+      width="200"
+      height="230"
+    />
+    <use
+      x="0"
+      y="0"
+      xlinkHref="#WheelSpike"
+      transform="matrix(-0.5,0.8660254,-0.8660254,-0.5,661.75289,-152.02153)"
+      width="200"
+      height="230"
+    />
+    <use
+      x="0"
+      y="0"
+      xlinkHref="#WheelSpike"
+      transform="matrix(0.5,-0.8660254,0.8660254,0.5,88.037439,382.42762)"
+      width="200"
+      height="230"
+    />
+    <use
+      x="0"
+      y="0"
+      xlinkHref="#WheelSpike"
+      transform="matrix(-0.5,-0.8660254,0.8660254,-0.5,463.2949,497.73017)"
+      width="200"
+      height="230"
+    />
+    <use
+      x="0"
+      y="0"
+      xlinkHref="#WheelSpike"
+      transform="matrix(-1,0,0,-1,749.3511,229.95588)"
+      width="200"
+      height="230"
+    />
+    <g id="WheelHub" transform="matrix(1,0,0,0.9808198,0,1.7377014)">
+      <g id="HalfHub" transform="matrix(1,0,0,0.9891943,356.81499,75.281599)">
+        <path
+          style={{ fill: '#990000', strokeWidth: 0 }}
+          d="M 18.26601,-0.98669238 C 21.039196,-0.98669238 23.811427,-0.61381072 26.452556,0.13195261 L 24.665586,4.2676717 C 21.291046,3.4501274 22.541945,3.8738881 22.22675,4.109357 C 23.011456,3.4890423 20.597372,4.3396074 21.543884,8.0913483 C 22.213371,10.745028 24.429719,17.210682 24.487937,21.197108 C 24.506445,22.464427 23.840115,26.616021 20.682395,29.594385 C 20.882093,29.729244 21.237732,29.686993 22.22675,30.45966 L 21.302881,34.118596 C 20.159131,33.536018 19.533178,33.443887 18.26601,33.368426 C 18.241806,31.99473 18.258325,-0.16313877 18.26601,-0.98669238 z"
+        />
+      </g>
+      <use
+        height="230"
+        width="500"
+        transform="matrix(-1,0,0,1,750.17692,0)"
+        xlinkHref="#HalfHub"
+        y="0"
+        x="0"
+      />
+    </g>
+    <use
+      x="0"
+      y="0"
+      xlinkHref="#WheelHub"
+      transform="matrix(-0.5,0.8660254,-0.8660254,-0.5,661.84266,-152.5083)"
+      width="200"
+      height="230"
+    />
+    <use
+      x="0"
+      y="0"
+      xlinkHref="#WheelHub"
+      transform="matrix(0.5,0.8660254,-0.8660254,0.5,286.7542,-267.59977)"
+      width="200"
+      height="230"
+    />
+    <use
+      x="0"
+      y="0"
+      xlinkHref="#WheelHub"
+      transform="matrix(-1,0,0,-1,750.17692,229.74097)"
+      width="200"
+      height="230"
+    />
+    <use
+      x="0"
+      y="0"
+      xlinkHref="#WheelHub"
+      transform="matrix(-0.5,-0.8660254,0.8660254,-0.5,463.06917,497.34074)"
+      width="200"
+      height="230"
+    />
+    <use
+      x="0"
+      y="0"
+      xlinkHref="#WheelHub"
+      id="use4966"
+      transform="matrix(0.5,-0.8660254,0.8660254,0.5,87.98071,382.42606)"
+      width="200"
+      height="230"
     />
   </g>
 );
@@ -587,6 +733,51 @@ const magdalene = (
   </g>
 );
 
+const mansfield = (
+  <g
+    style={{ fill: '#ffff00' }}
+    transform="matrix(0.26159327,-0.01731013,0.01858136,0.28080429,341.4759,-142.53978)"
+  >
+    <path
+      style={{ fill: '#ffff00', stroke: '#000000', strokeWidth: 3 }}
+      d="m 92.4091,758.86218 0,32.45455 41.443,0 0,94.81817 -94.8976,0 0,-41.44318 -32.4545,0 0,115.26137 32.4545,0 0,-41.44319 94.8976,0 0,94.8977 -41.443,0 0,32.4546 115.2612,0 0,-32.4546 -41.443,0 0,-94.8977 94.8181,0 0,41.44319 32.4546,0 0,-115.26137 -32.4546,0 0,41.44318 -94.8181,0 0,-94.81817 41.443,0 0,-32.45455 -115.2612,0 z"
+    />
+  </g>
+);
+
+const merton = (
+  <g
+    transform="matrix(0.28883635,-0.01855137,0.01855137,0.28883635,344.39461,109.9603)"
+    style={{ fill: '#440055' }}
+  >
+    <g transform="translate(-630.86889,642.81708)" style={{ fill: '#440055' }}>
+      <path
+        d="m 701.93802,-785.42365 0,107.625 -107.625,0 0,71.75 107.625,0 0,107.625 71.75,0 0,-107.625 107.625,0 0,-71.75 -107.625,0 0,-107.625 -71.75,0 z"
+        style={{
+          fill: '#440055',
+          fillOpacity: 1,
+          fillRule: 'evenodd',
+          stroke: '#000000',
+          strokeWidth: 3,
+        }}
+      />
+    </g>
+  </g>
+);
+
+const newCollege = (
+  <g>
+    <path
+      d="m 396.15605,25.301409 23.99452,-1.642361 14.7652,176.234292 -23.90835,-0.2131 z"
+      style={{ fill: '#fdd017', stroke: '#fdd017', strokeWidth: 1 }}
+    />
+    <path
+      d="m 357.75677,27.187088 23.99452,-1.642361 14.7652,174.434323 -23.90835,-0.55595 z"
+      style={{ fill: '#fdd017', stroke: 'none' }}
+    />
+  </g>
+);
+
 const newnham = (
   <g transform="rotate(-4) translate(400,20)">
     <path
@@ -636,6 +827,23 @@ const queens = (
   </g>
 );
 
+const queensOxford = (
+  <g transform="rotate(-3) scale(0.71 0.81) translate(140,50)">
+    <rect fill="#FFFFFF" width="100%" height="33.33%" y="33.33%" />
+    <rect fill="#000066" width="100%" height="33.33%" y="66.66%" />
+  </g>
+);
+
+const regentspark = (
+  <path
+    transform="rotate(-3) translate(100,30)"
+    d="M 280,0 L 280,200 M 0,100 L 400,100"
+    fill="none"
+    stroke="white"
+    strokeWidth="25"
+  />
+);
+
 const robinson = (
   <g transform="rotate(-4) translate(400,20)">
     <path
@@ -668,6 +876,19 @@ const sidney = (
     <path d="M 0,40 l 0,15 l 15,-15 l 0,-15 z" fill="red" />
     <path d="M 0,80 l 0,15 l 15,-15 l 0,-15 z" fill="red" />
     <path d="M 0,120 l 0,15 l 15,-15 l 0,-15 z" fill="red" />
+  </g>
+);
+
+const somerville = (
+  <g transform="rotate(-4) translate(400,20)">
+    <path
+      d="M 5,00 l 0,300 "
+      style={{ stroke: '#000000', strokeWidth: 20, fill: 'none' }}
+    />
+    <path
+      d="M -30,00 l 0,300 "
+      style={{ stroke: '#000000', strokeWidth: 20, fill: 'none' }}
+    />
   </g>
 );
 
