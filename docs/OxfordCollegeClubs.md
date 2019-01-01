@@ -7,7 +7,7 @@ Balliol
 Brasenose
 
 ```js
-<Blade club="" />
+<Blade club="brasenose" />
 ```
 
 Christ Church
@@ -25,7 +25,7 @@ Corpus Christi
 Exeter
 
 ```js
-<Blade club="" />
+<Blade club="exeter" />
 ```
 
 Green Templeton
@@ -37,19 +37,19 @@ Green Templeton
 Hertford
 
 ```js
-<Blade club="" />
+<Blade club="hertford" />
 ```
 
 Jesus
 
 ```js
-<Blade club="" />
+<Blade club="jesusOxford" />
 ```
 
 Keble
 
 ```js
-<Blade club="" />
+<Blade club="keble" />
 ```
 
 Lady Margaret Hall
@@ -109,7 +109,7 @@ Osler House
 Pembroke
 
 ```js
-<Blade club="" />
+<Blade club="pembrokeOxford" />
 ```
 
 Queen's

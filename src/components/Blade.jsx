@@ -54,6 +54,10 @@ const Blade = React.forwardRef(({ className, size, club }, ref) => {
       decal = balliol;
       fill = '#000000';
       break;
+    case 'brasenose':
+      decal = null;
+      fill = '#202020';
+      break;
     case 'caius':
       decal = caius;
       fill = '#202020';
@@ -94,6 +98,10 @@ const Blade = React.forwardRef(({ className, size, club }, ref) => {
       decal = edmunds;
       fill = '#0063cb';
       break;
+    case 'exeter':
+      decal = null;
+      fill = '#DF0000';
+      break;
     case 'fat':
       decal = null;
       fill = '#000044';
@@ -110,6 +118,10 @@ const Blade = React.forwardRef(({ className, size, club }, ref) => {
       decal = greentempleton;
       fill = '#000032';
       break;
+    case 'hertford':
+      decal = hertford;
+      fill = '#8E0000';
+      break;
     case 'homerton':
       decal = homerton;
       fill = '#f9f9f9';
@@ -121,6 +133,14 @@ const Blade = React.forwardRef(({ className, size, club }, ref) => {
     case 'jesus':
       decal = jesus;
       fill = '#202020';
+      break;
+    case 'jesusOxford':
+      decal = null;
+      fill = '#009C3A';
+      break;
+    case 'keble':
+      decal = keble;
+      fill = '#F9F9F9';
       break;
     case 'kings':
       decal = null;
@@ -141,6 +161,10 @@ const Blade = React.forwardRef(({ className, size, club }, ref) => {
     case 'pembroke':
       decal = pembroke;
       fill = '#AAF0FF';
+      break;
+    case 'pembrokeOxford':
+      decal = pembrokeOxford;
+      fill = '#F0F0F0';
       break;
     case 'peterhouse':
       decal = peterhouse;
@@ -494,6 +518,19 @@ const greentempleton = (
   </g>
 );
 
+const hertford = (
+  <g transform="rotate(-4) translate(400,20)">
+    <path
+      d="M 5,00 l 0,300 "
+      style={{ stroke: '#FFFFFF', strokeWidth: 20, fill: 'none' }}
+    />
+    <path
+      d="M -30,00 l 0,300 "
+      style={{ stroke: '#FFFFFF', strokeWidth: 20, fill: 'none' }}
+    />
+  </g>
+);
+
 const homerton = (
   <path
     d="m 396.15605,25.14572 23.99452,-1.642361 14.7652,176.467821 -23.90835,-0.0963 z"
@@ -532,10 +569,19 @@ const jesus = (
   </g>
 );
 
+const keble = (
+  <g transform="rotate(-4)  translate(355,143) ">
+    <path
+      d="M 60,-100 L -15,0 L 60,100"
+      style={{ stroke: '#FF191C', strokeWidth: 25, fill: 'none' }}
+    />
+  </g>
+);
+
 const magdalene = (
   <g transform="rotate(-4) translate(431, 20)">
     <path
-      d="M 6,0 l 0,300 "
+      d="M 6,0 l 0,300"
       style={{ stroke: '#000fb0', strokeWidth: 20, fill: 'none' }}
     />
   </g>
@@ -559,6 +605,12 @@ const pembroke = (
     <path d="M -60,-33 l 00,00 l 60,00 l 00,40 z" fill="#000066" />
     <path d="M -60,14 l 00,40 l 60,43 l 00,-40 z" fill="#000066" />
     <path d="M -60,100 l 00,40 l 60,6 l 0,00 z" fill="#000066" />
+  </g>
+);
+
+const pembrokeOxford = (
+  <g>
+    <path d="M 432,0 l 16,250" style={{ strokeWidth: 35, stroke: '#ff7777' }} />
   </g>
 );
 
