@@ -1,40 +1,40 @@
 Cambridge '99
 
 ```js
-<Blade club="nines" />
+<Blade size={100} club="nines" />
 ```
 
 Cantabrigian
 
 ```js
-<Blade club="cantabs" />
+<Blade size={100} club="cantabs" />
 ```
 
 Champion of the Thames
 
 ```js
-<Blade club="champs" />
+<Blade size={100} club="champs" />
 ```
 
 Chesterton
 
 ```js
-<Blade club="chesterton" />
+<Blade size={100} club="chesterton" />
 ```
 
 City of Cambridge
 
 ```js
-<Blade club="city" />
+<Blade size={100} club="city" />
 ```
 Rob Roy
 
 ```js
-<Blade club="robroy" />
+<Blade size={100} club="robroy" />
 ```
 
 X-Press
 
 ```js
-<Blade club="xpress" />
+<Blade size={100} club="xpress" />
 ```

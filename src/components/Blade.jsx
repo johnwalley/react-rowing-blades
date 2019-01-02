@@ -150,6 +150,10 @@ const Blade = React.forwardRef(({ className, size, club }, ref) => {
       decal = null;
       fill = 'purple';
       break;
+    case 'magdalen':
+      decal = magdalen;
+      fill = '#151515';
+      break;
     case 'magdalene':
       decal = magdalene;
       fill = '#8c00cd';
@@ -160,7 +164,7 @@ const Blade = React.forwardRef(({ className, size, club }, ref) => {
       break;
     case 'merton':
       decal = merton;
-      fill = '#ebebeb';
+      fill = '#ffffff';
       break;
     case 'murray':
       decal = null;
@@ -173,6 +177,10 @@ const Blade = React.forwardRef(({ className, size, club }, ref) => {
     case 'newnham':
       decal = newnham;
       fill = '#000066';
+      break;
+    case 'oriel':
+      decal = oriel;
+      fill = '#002163';
       break;
     case 'pembroke':
       decal = pembroke;
@@ -214,13 +222,53 @@ const Blade = React.forwardRef(({ className, size, club }, ref) => {
       decal = somerville;
       fill = '#EE0000';
       break;
+    case 'stannes':
+      decal = stannes;
+      fill = '#B20000';
+      break;
+    case 'stbenets':
+      decal = stbenets;
+      fill = '#f9f9f9';
+      break;
+    case 'stedmundhall':
+      decal = stedmundhall;
+      fill = '#ffcc00';
+      break;
+    case 'sthildas':
+      decal = sthildas;
+      fill = '#f9f9f9';
+      break;
+    case 'sthughes':
+      decal = sthughes;
+      fill = '#010066';
+      break;
+    case 'stpeters':
+      decal = stpeters;
+      fill = '#FFFFFF';
+      break;
     case 'tithall':
       decal = null;
       fill = '#202020';
       break;
+    case 'trinity':
+      decal = trinity;
+      fill = '#010178';
+      break;
+    case 'university':
+      decal = university;
+      fill = '#000032';
+      break;
+    case 'wadham':
+      decal = wadham;
+      fill = '#add8e6';
+      break;
     case 'wolfson':
       decal = wolfson;
       fill = '#0000FF';
+      break;
+    case 'wolfsonoxford':
+      decal = wolfsonoxford;
+      fill = '#FFD050';
       break;
     default:
       decal = null;
@@ -724,6 +772,163 @@ const keble = (
   </g>
 );
 
+const magdalen = (
+  <g transform="rotate(-2)  translate(275,17)  scale(2.7)">
+    <g transform="matrix(0.4701374,0.8825933,-0.8825933,0.4701374,57.211567,-103.7955)">
+      <path
+        transform="matrix(0.9645439,-0.7042761,0.651746,1.0422852,-34.86803,73.954067)"
+        d="M 112.00066,59.382229 A 2.0834396,1.5152289 0 1 1 107.83378,59.382229 A 2.0834396,1.5152289 0 1 1 112.00066,59.382229 z"
+        style={{ fill: '#fede20', fillOpacity: 1 }}
+      />
+      <path
+        d="M 110.09967,58.943823 L 114.65928,64.818775"
+        style={{
+          opacity: 1,
+          fill: 'none',
+          fillRule: 'evenod',
+          stroke: '#fede20',
+          strokeWidth: 2,
+          strokeLinecap: 'butt',
+          strokeLinejoin: 'miter',
+          strokeOpacity: 1,
+        }}
+      />
+    </g>
+    <g transform="translate(-86.707773,-38.73351)">
+      <path
+        transform="matrix(0.9645439,-0.7042761,0.651746,1.0422852,-34.86803,73.954067)"
+        d="M 112.00066,59.382229 A 2.0834396,1.5152289 0 1 1 107.83378,59.382229 A 2.0834396,1.5152289 0 1 1 112.00066,59.382229 z"
+        style={{ fill: '#fede20', fillOpacity: 1 }}
+      />
+      <path
+        d="M 110.09967,58.943823 L 114.65928,64.818775"
+        style={{
+          opacity: 1,
+          fill: 'none',
+          fillRule: 'evenodd',
+          stroke: '#fede20',
+          strokeWidth: 2,
+          strokeLinecap: 'butt',
+          strokeLinejoin: 'miter',
+          strokeOpacity: 1,
+        }}
+      />
+    </g>
+    <g transform="matrix(0.8948254,0.4464163,-0.4464163,0.8948254,-38.257953,-84.447648)">
+      <path
+        transform="matrix(0.9645439,-0.7042761,0.651746,1.0422852,-34.86803,73.954067)"
+        d="M 112.00066,59.382229 A 2.0834396,1.5152289 0 1 1 107.83378,59.382229 A 2.0834396,1.5152289 0 1 1 112.00066,59.382229 z"
+        style={{ fill: '#fede20', fillOpacity: 1 }}
+      />
+      <path
+        d="M 110.09967,58.943823 L 114.65928,64.818775"
+        style={{
+          opacity: 1,
+          fill: 'none',
+          fillRule: 'evenodd',
+          stroke: '#fede20',
+          strokeWidth: 2,
+          strokeLinecap: 'butt',
+          strokeLinejoin: 'miter',
+          strokeOpacity: 1,
+        }}
+      />
+    </g>
+    <path
+      style={{
+        fill: '#ffffff',
+        fillRule: 'evenodd',
+        stroke: '#000000',
+        strokeWidth: 1,
+        strokeLinecap: 'butt',
+        strokeLinejoin: 'miter',
+        strokeOpacity: 1,
+      }}
+      d="M 28.133947,27.625083 C 26.252087,27.610473 26.974757,23.176173 28.449617,19.133493 C 30.843507,19.143933 34.932237,21.383663 35.362847,25.320673 L 35.520687,26.962173 L 33.752917,35.674743 L 29.964847,31.507863 L 28.133947,27.625083 z"
+    />
+    <g transform="matrix(0.6509648,0.759108,-0.759108,0.6509648,20.495457,-104.93273)">
+      <path
+        transform="matrix(0.9645439,-0.7042761,0.651746,1.0422852,-34.86803,73.954067)"
+        d="M 112.00066,59.382229 A 2.0834396,1.5152289 0 1 1 107.83378,59.382229 A 2.0834396,1.5152289 0 1 1 112.00066,59.382229 z"
+        style={{ fill: '#fede20', fillOpacity: 1 }}
+      />
+      <path
+        d="M 110.09967,58.943823 L 114.65928,64.818775"
+        style={{
+          opacity: 1,
+          fill: 'none',
+          fillRule: 'evenodd',
+          stroke: '#fede20',
+          strokeWidth: 2,
+          strokeLinecap: 'butt',
+          strokeLinejoin: 'miter',
+          strokeOpacity: 1,
+        }}
+      />
+    </g>
+    <path
+      style={{
+        fill: '#ffffff',
+        fillRule: 'evenodd',
+        stroke: '#000000',
+        strokeWidth: 1,
+        strokeLinecap: 'butt',
+        strokeLinejoin: 'miter',
+        strokeOpacity: 1,
+      }}
+      d="M 52.188207,20.648723 C 48.984937,21.353103 45.746617,21.969873 43.854447,25.952023 L 45.369677,40.094153 L 53.198357,31.760393 C 53.842367,27.566143 54.198417,23.515863 52.188207,20.648723 z"
+    />
+    <path
+      style={{
+        fill: '#ffffff',
+        fillRule: 'evenodd',
+        stroke: '#000000',
+        strokeWidth: 1,
+        strokeLinecap: 'butt',
+        strokeLinejoin: 'miter',
+        strokeOpacity: 1,
+      }}
+      d="M 19.358247,36.306083 C 33.719007,34.386583 25.890907,59.188293 40.121577,59.188293 C 54.604787,59.188293 47.083157,33.292843 61.279577,36.306083 C 61.204607,15.923273 44.378697,28.839913 43.349367,49.690603 C 44.190717,39.213433 53.282727,28.592703 40.571447,16.608113 C 28.554297,27.879993 36.141967,42.054093 36.783377,49.943143 C 30.961667,11.078523 15.395387,27.543193 19.358247,36.306083 z"
+    />
+    <path
+      style={{
+        fill: '#ffffff',
+        fillRule: 'evenodd',
+        stroke: '#000000',
+        strokeWidth: 1,
+        strokeLinecap: 'butt',
+        strokeLinejoin: 'miter',
+        strokeOpacity: 1,
+      }}
+      d="M 28.955517,19.376023 L 31.623077,27.335683"
+    />
+    <path
+      style={{
+        fill: 'none',
+        fillRule: 'evenodd',
+        stroke: '#000000',
+        strokeWidth: 1,
+        strokeLinecap: 'butt',
+        strokeLinejoin: 'miter',
+        strokeOpacity: 1,
+      }}
+      d="M 51.935667,21.027523 L 48.905207,27.846053"
+    />
+    <path
+      style={{
+        fill: '#008000',
+        fillRule: 'evenodd',
+        stroke: '#000000',
+        strokeWidth: 1,
+        strokeLinecap: 'butt',
+        strokeLinejoin: 'miter',
+        strokeOpacity: 1,
+      }}
+      d="M 29.537967,67.274035 C 27.729217,67.240585 28.877857,63.677445 31.336957,63.677445 C 34.252227,63.677445 37.743407,64.144715 37.825767,62.602075 L 37.952037,58.687735 C 39.130547,57.340865 40.477417,57.340865 41.992647,58.687735 C 42.012967,67.259665 41.847697,67.274035 29.537967,67.274035 z"
+    />
+  </g>
+);
+
 const magdalene = (
   <g transform="rotate(-4) translate(431, 20)">
     <path
@@ -788,6 +993,13 @@ const newnham = (
       d="M -60,00 l 80,300 "
       style={{ stroke: 'silver', strokeWidth: 20, fill: 'none' }}
     />
+  </g>
+);
+
+const oriel = (
+  <g transform="rotate(-4) translate(400,20)">
+    <path d="M 5,00 l 0,300" style={{ stroke: '#FFFFFF', strokeWidth: 20 }} />
+    <path d="M -35,00 l 0,300" style={{ stroke: '#FFFFFF', strokeWidth: 20 }} />
   </g>
 );
 
@@ -892,11 +1104,112 @@ const somerville = (
   </g>
 );
 
+const stannes = (
+  <path d="M 432,0 l 16,250" style={{ strokeWidth: 35, stroke: '#CBCBCB' }} />
+);
+
+const stbenets = (
+  <path
+    d="m 396.15605,25.14572 23.99452,-1.642361 14.7652,176.467821 -23.90835,-0.0963 z"
+    style={{ fill: '#000050', stroke: '#000050', strokeWidth: 1 }}
+  />
+);
+
+const stedmundhall = (
+  <g
+    style={{ fill: '#d40000', stroke: 'none' }}
+    transform="matrix(0.26159327,-0.01731013,0.01858136,0.28080429,341.4759,-142.53978)"
+  >
+    <path
+      style={{
+        fill: '#d40000',
+        fillOpacity: 1,
+        stroke: 'none',
+        strokeWidth: 3,
+      }}
+      d="m 92.4091,758.86218 0,32.45455 41.443,0 0,94.81817 -94.8976,0 0,-41.44318 -32.4545,0 0,115.26137 32.4545,0 0,-41.44319 94.8976,0 0,94.8977 -41.443,0 0,32.4546 115.2612,0 0,-32.4546 -41.443,0 0,-94.8977 94.8181,0 0,41.44319 32.4546,0 0,-115.26137 -32.4546,0 0,41.44318 -94.8181,0 0,-94.81817 41.443,0 0,-32.45455 -115.2612,0 z"
+    />
+  </g>
+);
+
+const sthildas = (
+  <path
+    d="m 282.83473,22.488545 -181.38882,16.46439 7.51845,156.678165 362.67705,15.01403 z"
+    style={{ fill: '#000032' }}
+  />
+);
+
+const sthughes = (
+  <g transform="rotate(-3)  translate(0,130) ">
+    <rect fill="#010066" x="0" y="0" width="100%" height="50%" />
+    <path d="M 465,-100 L 350,0 L 455,100 Z" fill="#FFFFFF" />
+    <path d="M 453,-100 L 410,0 L 450,100 Z" fill="#FFFF00" />
+  </g>
+);
+
+const stpeters = (
+  <g transform="rotate(-4) translate(400,20)">
+    <path
+      d="M -170,10 l 320,300 "
+      style={{ stroke: '#006600', strokeWidth: 60, fill: 'none' }}
+    />
+    <path
+      d="M -170,10 l 320,300 "
+      style={{ stroke: '#FFCC00', strokeWidth: 20, fill: 'none' }}
+    />
+  </g>
+);
+
+const trinity = (
+  <g transform="rotate(-4) translate(400,20)">
+    <path
+      d="M 0,0 l 0,300 "
+      style={{ stroke: '#FFFFFF', strokeWidth: 30, fill: 'none' }}
+    />
+  </g>
+);
+
+const university = (
+  <path
+    d="m 424.42026,89.075166 c -4.09987,10.072123 -9.43267,12.970924 -12.56042,13.259354 -3.12776,0.28843 -9.59816,0.8851 -9.61019,0.96737 -0.012,0.0823 -0.58156,-6.457871 -0.86999,-9.585619 -0.28842,-3.127751 1.61684,-8.926434 10.73873,-14.773437 -4.08387,-3.166333 -7.74153,-2.783318 -10.48148,-1.387772 -2.59335,-4.880959 -4.97276,-7.084454 -9.61588,-8.685959 -4.27528,2.387515 -6.21159,4.988979 -7.8686,10.261889 -2.94896,-0.870939 -6.61498,-0.578587 -10.05093,3.281195 10.03734,4.080218 12.97092,9.432671 13.25934,12.560431 0.28844,3.127751 0.87896,9.531472 0.95884,9.528382 0.0798,-0.004 -6.58227,0.61058 -9.71003,0.89902 -3.12775,0.28842 -8.92642,-1.61684 -14.76059,-10.723428 -3.17917,4.068567 -2.79616,7.726228 -1.40061,10.466178 -0.78165,0.41766 -5.96508,2.37725 -8.64986,9.61255 2.42363,4.27195 5.02509,6.20827 10.298,7.86526 -0.87094,2.94897 -0.5786,6.61498 3.28119,10.05095 4.08022,-10.03735 9.43267,-12.97094 12.56042,-13.25937 3.12776,-0.28843 9.7315,-0.8974 9.65584,-0.97022 -0.0756,-0.0729 0.53028,6.4976 0.81871,9.62536 0.28843,3.12775 -1.61684,8.92642 -10.73873,14.77342 0.1424,0.10996 4.02461,4.08003 10.48148,1.38778 0.41766,0.78165 2.37725,5.96508 9.61257,8.64985 4.27193,-2.42361 6.20825,-5.02508 7.86524,-10.29799 2.94896,0.87094 6.61498,0.57859 10.05093,-3.28119 -10.03733,-4.08022 -12.97091,-9.43267 -13.25934,-12.56044 -0.28843,-3.12775 -0.89125,-9.66482 -0.96573,-9.57677 -0.0745,0.088 6.52924,-0.52095 9.65699,-0.80938 3.12776,-0.28843 8.92643,1.61685 14.77343,10.73874 0.11405,-0.14772 4.0543,-3.99452 1.38778,-10.48148 0.78115,-0.4174 5.99207,-2.39945 8.68596,-9.6159 -2.38752,-4.27526 -4.98898,-6.21158 -10.2619,-7.868581 0.87095,-2.948962 0.59824,-6.64976 -3.28119,-10.050929 z"
+    style={{
+      fill: '#fdd400',
+      fillOpacity: 1,
+      fillRule: 'evenodd',
+      stroke: '#000000',
+      strokeWidth: 0,
+      strokeLinecap: 'butt',
+      strokeLinejoin: 'miter',
+    }}
+  />
+);
+
+const wadham = (
+  <g
+    transform="matrix(0.28266997,-0.02406952,0.02406952,0.28266997,323.94612,-142.59428)"
+    style={{ fill: '#ffffff', stroke: 'none' }}
+  >
+    <path
+      d="m 75.70255,758.86218 c 30.0825,37.7971 39.7439,76.0451 37.9979,106.9883 -30.9796,1.8011 -69.319,-7.8481 -107.2006,-37.9978 2.9542,24.4032 16.7929,44.5271 16.7929,74.2974 0,29.7703 -13.8387,50.1066 -16.7929,74.5097 37.8816,-30.1496 76.221,-40.0111 107.2006,-38.2101 l 0,0.212 c 1.801,30.9796 -7.8481,69.31902 -37.9979,107.20052 24.4032,-2.9542 44.5272,-16.7929 74.2975,-16.7929 29.7703,0 50.1065,13.8387 74.5097,16.7929 -30.1497,-37.8815 -40.0112,-76.22092 -38.2101,-107.20052 l 0,-0.212 c 30.9796,-1.801 69.319,8.0605 107.2005,38.2101 -2.9542,-24.4031 -16.7929,-44.7394 -16.7929,-74.5097 0,-29.7703 13.8387,-49.8942 16.7929,-74.2974 -37.8815,30.1497 -76.2209,39.7989 -107.2005,37.9978 -1.7451,-30.9432 8.1276,-69.1912 38.2101,-106.9883 -24.4032,2.9543 -44.7394,16.7929 -74.5097,16.7929 -29.7703,0 -49.8943,-13.8386 -74.2975,-16.7929 z"
+      style={{ fill: '#ffffff', stroke: 'none' }}
+    />
+  </g>
+);
+
 const wolfson = (
   <path
     d="m 398.56359,25.01348 21.01371,-1.395417 12.93093,176.316257 -20.93824,-0.17775 z"
     style={{ fill: '#ffff00', stroke: '#ffff00', strokeWidth: 0.97328287 }}
   />
+);
+
+const wolfsonoxford = (
+  <g transform="rotate(-4) translate(400,20)">
+    <path
+      d="M 0,0 l 0,300 "
+      style={{ stroke: '#8B0000', strokeWidth: 30, fill: 'none' }}
+    />
+  </g>
 );
 
 Blade.propTypes = {

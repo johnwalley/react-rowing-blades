@@ -1,209 +1,209 @@
 Addenbrooke's Student
 
 ```js
-<Blade club="" />
+<Blade size={100} club="" />
 ```
 
 Anglia Ruskin
 
 ```js
-<Blade club="" />
+<Blade size={100} club="" />
 ```
 
 Caius
 
 ```js
-<Blade club="caius" />
+<Blade size={100} club="caius" />
 ```
 
 Christ's College
 
 ```js
-<Blade club="christs" />
+<Blade size={100} club="christs" />
 ```
 
 Churchill College
 
 ```js
-<Blade club="churchill" />
+<Blade size={100} club="churchill" />
 ```
 
 Clare
 
 ```js
-<Blade club="clare" />
+<Blade size={100} club="clare" />
 ```
 
 Clare Hall
 
 ```js
-<Blade club="clarehall" />
+<Blade size={100} club="clarehall" />
 ```
 
 Corpus Christi College
 
 ```js
-<Blade club="corpus" />
+<Blade size={100} club="corpus" />
 ```
 
 Darwin College
 
 ```js
-<Blade club="darwin" />
+<Blade size={100} club="darwin" />
 ```
 
 Downing College
 
 ```js
-<Blade club="downing" />
+<Blade size={100} club="downing" />
 ```
 
 Emmanuel
 
 ```js
-<Blade club="emmanuel" />
+<Blade size={100} club="emmanuel" />
 ```
 
 First and Third Trinity
 
 ```js
-<Blade club="fat" />
+<Blade size={100} club="fat" />
 ```
 
 Fitzwilliam College
 
 ```js
-<Blade club="fitz" />
+<Blade size={100} club="fitz" />
 ```
 
 Girton College
 
 ```js
-<Blade club="girton" />
+<Blade size={100} club="girton" />
 ```
 
 Homerton College
 
 ```js
-<Blade club="homerton" />
+<Blade size={100} club="homerton" />
 ```
 
 Hughes Hall
 
 ```js
-<Blade club="hh" />
+<Blade size={100} club="hh" />
 ```
 
 Jesus College
 
 ```js
-<Blade club="jesus" />
+<Blade size={100} club="jesus" />
 ```
 
 King's College
 
 ```js
-<Blade club="kings" />
+<Blade size={100} club="kings" />
 ```
 
 Lady Margaret
 
 ```js
-<Blade club="lmbc" />
+<Blade size={100} club="lmbc" />
 ```
 
 Lucy Cavendish College
 
 ```js
-<Blade club="" />
+<Blade size={100} club="" />
 ```
 
 Magdalene
 
 ```js
-<Blade club="magdalene" />
+<Blade size={100} club="magdalene" />
 ```
 
 Murray Edwards College
 
 ```js
-<Blade club="murray" />
+<Blade size={100} club="murray" />
 ```
 
 Newnham College
 
 ```js
-<Blade club="newnham" />
+<Blade size={100} club="newnham" />
 ```
 
 Pembroke College
 
 ```js
-<Blade club="pembroke" />
+<Blade size={100} club="pembroke" />
 ```
 
 Peterhouse
 
 ```js
-<Blade club="peterhouse" />
+<Blade size={100} club="peterhouse" />
 ```
 
 Queens' College
 
 ```js
-<Blade club="queens" />
+<Blade size={100} club="queens" />
 ```
 
 Robinson College
 
 ```js
-<Blade club="robinson" />
+<Blade size={100} club="robinson" />
 ```
 
 Selwyn College
 
 ```js
-<Blade club="selwyn" />
+<Blade size={100} club="selwyn" />
 ```
 
 Sidney Sussex
 
 ```js
-<Blade club="sidney" />
+<Blade size={100} club="sidney" />
 ```
 
 St. Catharine's College
 
 ```js
-<Blade club="catz" />
+<Blade size={100} club="catz" />
 ```
 
 St. Edmund's College
 
 ```js
-<Blade club="edmunds" />
+<Blade size={100} club="edmunds" />
 ```
 
 Theological Colleges
 
 ```js
-<Blade club="" />
+<Blade size={100} club="" />
 ```
 
 Trinity Hall
 
 ```js
-<Blade club="tithall" />
+<Blade size={100} club="tithall" />
 ```
 
 Vet School
 
 ```js
-<Blade club="" />
+<Blade size={100} club="" />
 ```
 
 Wolfson College
 
 ```js
-<Blade club="wolfson" />
+<Blade size={100} club="wolfson" />
 ```

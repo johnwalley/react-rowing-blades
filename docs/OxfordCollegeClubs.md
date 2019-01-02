@@ -1,215 +1,215 @@
 Balliol
 
 ```js
-<Blade club="balliol" />
+<Blade size={100} club="balliol" />
 ```
 
 Brasenose
 
 ```js
-<Blade club="brasenose" />
+<Blade size={100} club="brasenose" />
 ```
 
 Christ Church
 
 ```js
-<Blade club="christchurch" />
+<Blade size={100} club="christchurch" />
 ```
 
 Corpus Christi
 
 ```js
-<Blade club="corpuschristioxford" />
+<Blade size={100} club="corpuschristioxford" />
 ```
 
 Exeter
 
 ```js
-<Blade club="exeter" />
+<Blade size={100} club="exeter" />
 ```
 
 Green Templeton
 
 ```js
-<Blade club="greentempleton" />
+<Blade size={100} club="greentempleton" />
 ```
 
 Hertford
 
 ```js
-<Blade club="hertford" />
+<Blade size={100} club="hertford" />
 ```
 
 Jesus
 
 ```js
-<Blade club="jesusOxford" />
+<Blade size={100} club="jesusOxford" />
 ```
 
 Keble
 
 ```js
-<Blade club="keble" />
+<Blade size={100} club="keble" />
 ```
 
 Lady Margaret Hall
 
 ```js
-<Blade club="" />
+<Blade size={100} club="" />
 ```
 
 Linacre
 
 ```js
-<Blade club="" />
+<Blade size={100} club="" />
 ```
 
 Lincoln
 
 ```js
-<Blade club="" />
+<Blade size={100} club="" />
 ```
 
 Magdalen
 
 ```js
-<Blade club="" />
+<Blade size={100} club="magdalen" />
 ```
 
 Mansfield
 
 ```js
-<Blade club="mansfield" />
+<Blade size={100} club="mansfield" />
 ```
 
 Merton
 
 ```js
-<Blade club="merton" />
+<Blade size={100} club="merton" />
 ```
 
 New
 
 ```js
-<Blade club="new" />
+<Blade size={100} club="new" />
 ```
 
 Oriel
 
 ```js
-<Blade club="" />
+<Blade size={100} club="oriel" />
 ```
 
 Osler House
 
 ```js
-<Blade club="" />
+<Blade size={100} club="" />
 ```
 
 Pembroke
 
 ```js
-<Blade club="pembrokeOxford" />
+<Blade size={100} club="pembrokeOxford" />
 ```
 
 Queen's
 
 ```js
-<Blade club="queensOxford" />
+<Blade size={100} club="queensOxford" />
 ```
 
 Regent's Park
 
 ```js
-<Blade club="regentspark" />
+<Blade size={100} club="regentspark" />
 ```
 
 Somerville
 
 ```js
-<Blade club="somerville" />
+<Blade size={100} club="somerville" />
 ```
 
 St Anne's
 
 ```js
-<Blade club="" />
+<Blade size={100} club="stannes" />
 ```
 
 St Antony's
 
 ```js
-<Blade club="" />
+<Blade size={100} club="" />
 ```
 
 St Benet's
 
 ```js
-<Blade club="" />
+<Blade size={100} club="stbenets" />
 ```
 
 St Catherine's
 
 ```js
-<Blade club="catzoxford" />
+<Blade size={100} club="catzoxford" />
 ```
 
 St Edmund Hall
 
 ```js
-<Blade club="" />
+<Blade size={100} club="stedmundhall" />
 ```
 
 St Hilda's
 
 ```js
-<Blade club="" />
+<Blade size={100} club="sthildas" />
 ```
 
 St Hugh's
 
 ```js
-<Blade club="" />
+<Blade size={100} club="sthughes" />
 ```
 
 St John's
 
 ```js
-<Blade club="" />
+<Blade size={100} club="" />
 ```
 
 St Peter's
 
 ```js
-<Blade club="" />
+<Blade size={100} club="stpeters" />
 ```
 
 Trinity
 
 ```js
-<Blade club="" />
+<Blade size={100} club="trinity" />
 ```
 
 University
 
 ```js
-<Blade club="" />
+<Blade size={100} club="university" />
 ```
 
 Wadham
 
 ```js
-<Blade club="" />
+<Blade size={100} club="wadham" />
 ```
 
 Wolfson
 
 ```js
-<Blade club="" />
+<Blade size={100} club="wolfsonoxford" />
 ```
 
 Worcester
 
 ```js
-<Blade club="" />
+<Blade size={100} club="" />
 ```
