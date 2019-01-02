@@ -6,268 +6,268 @@ const Blade = React.forwardRef(({ className, size, club }, ref) => {
   let fill;
 
   switch (club) {
-    case 'emmanuel':
-      decal = emmanuel;
+    case 'emm':
+      decal = emm;
       fill = '#000077';
       break;
-    case 'city':
-      decal = city;
+    case 'cam':
+      decal = cam;
       fill = '#13294b';
       break;
-    case 'catz':
-      decal = catz;
+    case 'scc':
+      decal = scc;
       fill = '#780025';
       break;
-    case 'catzoxford':
-      decal = catzoxford;
+    case 'sco':
+      decal = sco;
       fill = '#8cf';
       break;
-    case 'neots':
-      decal = neots;
+    case 'sne':
+      decal = sne;
       fill = '#00AEEF';
       break;
-    case 'darwin':
-      decal = darwin;
+    case 'daw':
+      decal = daw;
       fill = '#000080';
       break;
-    case 'lmbc':
+    case 'lmb':
       decal = null;
       fill = '#DC0000';
       break;
-    case 'putney':
-      decal = putney;
+    case 'ptr':
+      decal = ptr;
       fill = '#000033';
       break;
-    case 'cantabs':
-      decal = cantabs;
+    case 'cab':
+      decal = cab;
       fill = '#000033';
       break;
-    case 'barnes':
-      decal = barnes;
+    case 'bbl':
+      decal = bbl;
       fill = '#1667F6';
       break;
-    case 'nines':
-      decal = nines;
+    case 'cnn':
+      decal = cnn;
       fill = '#599bfc';
       break;
-    case 'champs':
+    case 'cha':
       decal = null;
       fill = '#fc6621';
       break;
-    case 'balliol':
-      decal = balliol;
+    case 'bal':
+      decal = bal;
       fill = '#000000';
       break;
-    case 'brasenose':
+    case 'brc':
       decal = null;
       fill = '#202020';
       break;
-    case 'caius':
-      decal = caius;
+    case 'cai':
+      decal = cai;
       fill = '#202020';
       break;
-    case 'christchurch':
+    case 'chb':
       decal = null;
       fill = '#000065';
       break;
-    case 'christs':
-      decal = christs;
+    case 'cco':
+      decal = cco;
       fill = '#00214E';
       break;
-    case 'churchill':
+    case 'chu':
       decal = null;
       fill = '#FF70A0';
       break;
-    case 'clare':
+    case 'cla':
       decal = null;
       fill = '#FFCC00';
       break;
-    case 'clarehall':
-      decal = clarehall;
+    case 'clh':
+      decal = clh;
       fill = '#FFCC00';
       break;
-    case 'corpus':
-      decal = corpus;
+    case 'cor':
+      decal = cor;
       fill = '#8d0603';
       break;
-    case 'corpuschristioxford':
+    case 'coo':
       decal = corpusoxford;
       fill = '#000040';
       break;
-    case 'downing':
+    case 'dow':
       decal = null;
       fill = '#AB0F62';
       break;
-    case 'edmunds':
-      decal = edmunds;
+    case 'ed':
+      decal = ed;
       fill = '#0063cb';
       break;
-    case 'exeter':
+    case 'exc':
       decal = null;
       fill = '#DF0000';
       break;
-    case 'fat':
+    case 'ftt':
       decal = null;
       fill = '#000044';
       break;
-    case 'fitz':
+    case 'fit':
       decal = null;
       fill = 'lightgray';
       break;
-    case 'girton':
-      decal = girton;
+    case 'gir':
+      decal = gir;
       fill = '#004600';
       break;
-    case 'greentempleton':
-      decal = greentempleton;
+    case 'gtm':
+      decal = gtm;
       fill = '#000032';
       break;
-    case 'hertford':
-      decal = hertford;
+    case 'hec':
+      decal = hec;
       fill = '#8E0000';
       break;
-    case 'homerton':
-      decal = homerton;
+    case 'hom':
+      decal = hom;
       fill = '#f9f9f9';
       break;
-    case 'hh':
-      decal = hh;
+    case 'huh':
+      decal = huh;
       fill = '#ffffff';
       break;
-    case 'jesus':
-      decal = jesus;
+    case 'jec':
+      decal = jec;
       fill = '#202020';
       break;
-    case 'jesusOxford':
+    case 'jeo':
       decal = null;
       fill = '#009C3A';
       break;
-    case 'keble':
-      decal = keble;
+    case 'keb':
+      decal = keb;
       fill = '#F9F9F9';
       break;
-    case 'kings':
+    case 'kcb':
       decal = null;
       fill = 'purple';
       break;
-    case 'magdalen':
-      decal = magdalen;
+    case 'mag':
+      decal = mag;
       fill = '#151515';
       break;
-    case 'magdalene':
-      decal = magdalene;
+    case 'mgd':
+      decal = mgd;
       fill = '#8c00cd';
       break;
-    case 'mansfield':
-      decal = mansfield;
+    case 'man':
+      decal = man;
       fill = '#d40000';
       break;
-    case 'merton':
-      decal = merton;
+    case 'mer':
+      decal = mer;
       fill = '#ffffff';
       break;
-    case 'murray':
+    case 'mec':
       decal = null;
       fill = '#F5F5F5';
       break;
-    case 'new':
-      decal = newCollege;
+    case 'nec':
+      decal = nec;
       fill = '#800080';
       break;
-    case 'newnham':
-      decal = newnham;
+    case 'nnm':
+      decal = nnm;
       fill = '#000066';
       break;
-    case 'oriel':
-      decal = oriel;
+    case 'oro':
+      decal = oro;
       fill = '#002163';
       break;
-    case 'pembroke':
-      decal = pembroke;
+    case 'pem':
+      decal = pem;
       fill = '#AAF0FF';
       break;
-    case 'pembrokeOxford':
-      decal = pembrokeOxford;
+    case 'pmb':
+      decal = pmb;
       fill = '#F0F0F0';
       break;
-    case 'peterhouse':
-      decal = peterhouse;
+    case 'pbc':
+      decal = pbc;
       fill = '#0000CC';
       break;
-    case 'queens':
-      decal = queens;
+    case 'qcc':
+      decal = qcc;
       fill = 'darkgreen';
       break;
-    case 'queensOxford':
-      decal = queensOxford;
+    case 'qco':
+      decal = qco;
       fill = '#000066';
       break;
-    case 'regentspark':
-      decal = regentspark;
+    case 'rpc':
+      decal = rpc;
       fill = '#EE0000';
       break;
-    case 'robinson':
-      decal = robinson;
+    case 'roc':
+      decal = roc;
       fill = '#0099FF';
       break;
-    case 'selwyn':
-      decal = selwyn;
+    case 'sel':
+      decal = sel;
       fill = '#F5F5F5';
       break;
-    case 'sidney':
-      decal = sidney;
+    case 'sid':
+      decal = sid;
       fill = '#000066';
       break;
-    case 'somerville':
-      decal = somerville;
+    case 'som':
+      decal = som;
       fill = '#EE0000';
       break;
-    case 'stannes':
-      decal = stannes;
+    case 'sac':
+      decal = sac;
       fill = '#B20000';
       break;
-    case 'stbenets':
-      decal = stbenets;
+    case 'sbh':
+      decal = sbh;
       fill = '#f9f9f9';
       break;
-    case 'stedmundhall':
-      decal = stedmundhall;
+    case 'seh':
+      decal = seh;
       fill = '#ffcc00';
       break;
-    case 'sthildas':
-      decal = sthildas;
+    case 'shi':
+      decal = shi;
       fill = '#f9f9f9';
       break;
-    case 'sthughes':
-      decal = sthughes;
+    case 'shg':
+      decal = shg;
       fill = '#010066';
       break;
-    case 'stpeters':
-      decal = stpeters;
+    case 'spc':
+      decal = spc;
       fill = '#FFFFFF';
       break;
-    case 'tithall':
+    case 'trh':
       decal = null;
       fill = '#202020';
       break;
-    case 'trinity':
-      decal = trinity;
+    case 'tro':
+      decal = tro;
       fill = '#010178';
       break;
-    case 'university':
-      decal = university;
+    case 'uxo':
+      decal = uxo;
       fill = '#000032';
       break;
-    case 'wadham':
-      decal = wadham;
+    case 'wad':
+      decal = wad;
       fill = '#add8e6';
       break;
-    case 'wolfson':
-      decal = wolfson;
+    case 'woc':
+      decal = woc;
       fill = '#0000FF';
       break;
-    case 'wolfsonoxford':
-      decal = wolfsonoxford;
+    case 'woo':
+      decal = woo;
       fill = '#FFD050';
       break;
     default:
@@ -308,7 +308,7 @@ const Blade = React.forwardRef(({ className, size, club }, ref) => {
   );
 });
 
-const emmanuel = (
+const emm = (
   <g transform="rotate(-4) translate(400,20)">
     <path
       d="M -50,00 l 80,300 "
@@ -321,7 +321,7 @@ const emmanuel = (
   </g>
 );
 
-const city = (
+const cam = (
   <g transform="rotate(-4) translate(400, 20)">
     <path
       d="M 10,00 l 0,300 "
@@ -338,7 +338,7 @@ const city = (
   </g>
 );
 
-const catz = (
+const scc = (
   <g
     transform="matrix(0.65386408,0,0,0.65386408,32.566722,-135.8729)"
     style={{ fill: '#ffffff', stroke: '#ffffff' }}
@@ -397,7 +397,7 @@ const catz = (
   </g>
 );
 
-const catzoxford = (
+const sco = (
   <g>
     <circle
       cx="375"
@@ -515,7 +515,7 @@ const catzoxford = (
   </g>
 );
 
-const neots = (
+const sne = (
   <g transform="matrix(0.99756405,-0.06975647,0.06975647,0.99756405,397.77684,-2.7542188)">
     >
     <path
@@ -525,7 +525,7 @@ const neots = (
   </g>
 );
 
-const darwin = (
+const daw = (
   <g>
     <path
       id="rect5394"
@@ -560,7 +560,7 @@ const darwin = (
   </g>
 );
 
-const putney = (
+const ptr = (
   <g transform="rotate(-4) translate(400,20)">
     <path
       d="M 0,0 l 0,300 "
@@ -569,7 +569,7 @@ const putney = (
   </g>
 );
 
-const cantabs = (
+const cab = (
   <g transform="rotate(-4) translate(400,20)">
     <path
       d="M 0,0 l 0,300 "
@@ -578,7 +578,7 @@ const cantabs = (
   </g>
 );
 
-const caius = (
+const cai = (
   <g transform="rotate(-4) translate(400,20)">
     <path
       d="M 0,0 l 0,300 "
@@ -587,7 +587,7 @@ const caius = (
   </g>
 );
 
-const barnes = (
+const bbl = (
   <g transform="rotate(-4) translate(431, 20)">
     <path
       d="M 0,0 l 0,300 "
@@ -596,7 +596,7 @@ const barnes = (
   </g>
 );
 
-const nines = (
+const cnn = (
   <g transform="rotate(-4) translate(431, 20)">
     <path
       d="M 0,0 l 0,300 "
@@ -605,14 +605,14 @@ const nines = (
   </g>
 );
 
-const balliol = (
+const bal = (
   <path
     style={{ fill: '#d40000', stroke: 'none', strokeWidth: 1 }}
     d="M 109.76752,42.435275 76.110919,192.11109 428.81461,203.01844 z"
   />
 );
 
-const christs = (
+const cco = (
   <g transform="rotate(-4) translate(410, 85)">
     <path d="M 0,0 l 0,30 l 25,-30 l 0,-30 z" fill="white" />
     <path d="M 0,55 l 0,30 l 25,-30 l 0,-30 z" fill="white" />
@@ -620,7 +620,7 @@ const christs = (
   </g>
 );
 
-const clarehall = (
+const clh = (
   <g transform="rotate(-4) translate(400, 20)">
     <path
       d="M 5,00 l 0,300 "
@@ -633,7 +633,7 @@ const clarehall = (
   </g>
 );
 
-const corpus = (
+const cor = (
   <g transform="rotate(-4) translate(400,20)">
     <path
       d="M 0,0 l 0,300 "
@@ -655,7 +655,7 @@ const corpusoxford = (
   </g>
 );
 
-const edmunds = (
+const ed = (
   <g transform="rotate(-4) translate(400, 20)">
     <path
       d="M 19,00 l 0,300 "
@@ -668,7 +668,7 @@ const edmunds = (
   </g>
 );
 
-const girton = (
+const gir = (
   <g>
     <path
       d="m 398.76443,48.783955 17.90459,0 -0.0797,176.659105 -17.77288,-1.07283 z"
@@ -699,7 +699,7 @@ const girton = (
   </g>
 );
 
-const greentempleton = (
+const gtm = (
   <g>
     <path
       d="M 470,10 145,199 500,230 z"
@@ -712,7 +712,7 @@ const greentempleton = (
   </g>
 );
 
-const hertford = (
+const hec = (
   <g transform="rotate(-4) translate(400,20)">
     <path
       d="M 5,00 l 0,300 "
@@ -725,7 +725,7 @@ const hertford = (
   </g>
 );
 
-const homerton = (
+const hom = (
   <path
     d="m 396.15605,25.14572 23.99452,-1.642361 14.7652,176.467821 -23.90835,-0.0963 z"
     style={{
@@ -737,7 +737,7 @@ const homerton = (
   />
 );
 
-const hh = (
+const huh = (
   <g>
     <path
       d="m 405.83742,24.395387 12.00785,-0.827315 7.38908,176.444758 -12.00785,-0.12253 z"
@@ -750,7 +750,7 @@ const hh = (
   </g>
 );
 
-const jesus = (
+const jec = (
   <g transform="rotate(-4) translate(400,20)">
     <path
       d="M 5,00 l 0,300 "
@@ -763,7 +763,7 @@ const jesus = (
   </g>
 );
 
-const keble = (
+const keb = (
   <g transform="rotate(-4)  translate(355,143) ">
     <path
       d="M 60,-100 L -15,0 L 60,100"
@@ -772,7 +772,7 @@ const keble = (
   </g>
 );
 
-const magdalen = (
+const mag = (
   <g transform="rotate(-2)  translate(275,17)  scale(2.7)">
     <g transform="matrix(0.4701374,0.8825933,-0.8825933,0.4701374,57.211567,-103.7955)">
       <path
@@ -929,7 +929,7 @@ const magdalen = (
   </g>
 );
 
-const magdalene = (
+const mgd = (
   <g transform="rotate(-4) translate(431, 20)">
     <path
       d="M 6,0 l 0,300"
@@ -938,7 +938,7 @@ const magdalene = (
   </g>
 );
 
-const mansfield = (
+const man = (
   <g
     style={{ fill: '#ffff00' }}
     transform="matrix(0.26159327,-0.01731013,0.01858136,0.28080429,341.4759,-142.53978)"
@@ -950,7 +950,7 @@ const mansfield = (
   </g>
 );
 
-const merton = (
+const mer = (
   <g
     transform="matrix(0.28883635,-0.01855137,0.01855137,0.28883635,344.39461,109.9603)"
     style={{ fill: '#440055' }}
@@ -970,7 +970,7 @@ const merton = (
   </g>
 );
 
-const newCollege = (
+const nec = (
   <g>
     <path
       d="m 396.15605,25.301409 23.99452,-1.642361 14.7652,176.234292 -23.90835,-0.2131 z"
@@ -983,7 +983,7 @@ const newCollege = (
   </g>
 );
 
-const newnham = (
+const nnm = (
   <g transform="rotate(-4) translate(400,20)">
     <path
       d="M -60,00 l 80,300 "
@@ -996,14 +996,14 @@ const newnham = (
   </g>
 );
 
-const oriel = (
+const oro = (
   <g transform="rotate(-4) translate(400,20)">
     <path d="M 5,00 l 0,300" style={{ stroke: '#FFFFFF', strokeWidth: 20 }} />
     <path d="M -35,00 l 0,300" style={{ stroke: '#FFFFFF', strokeWidth: 20 }} />
   </g>
 );
 
-const pembroke = (
+const pem = (
   <g transform="rotate(-4) translate(410,85)">
     <path d="M -60,-33 l 00,00 l 60,00 l 00,40 z" fill="#000066" />
     <path d="M -60,14 l 00,40 l 60,43 l 00,-40 z" fill="#000066" />
@@ -1011,13 +1011,13 @@ const pembroke = (
   </g>
 );
 
-const pembrokeOxford = (
+const pmb = (
   <g>
     <path d="M 432,0 l 16,250" style={{ strokeWidth: 35, stroke: '#ff7777' }} />
   </g>
 );
 
-const peterhouse = (
+const pbc = (
   <g transform="rotate(-4) translate(400, 20)">
     <path
       d="M 19,00 l 0,300 "
@@ -1030,7 +1030,7 @@ const peterhouse = (
   </g>
 );
 
-const queens = (
+const qcc = (
   <g transform="rotate(-4) translate(400,20)">
     <path
       d="M 0,0 l 0,300 "
@@ -1039,14 +1039,14 @@ const queens = (
   </g>
 );
 
-const queensOxford = (
+const qco = (
   <g transform="rotate(-3) scale(0.71 0.81) translate(140,50)">
     <rect fill="#FFFFFF" width="100%" height="33.33%" y="33.33%" />
     <rect fill="#000066" width="100%" height="33.33%" y="66.66%" />
   </g>
 );
 
-const regentspark = (
+const rpc = (
   <path
     transform="rotate(-3) translate(100,30)"
     d="M 280,0 L 280,200 M 0,100 L 400,100"
@@ -1056,7 +1056,7 @@ const regentspark = (
   />
 );
 
-const robinson = (
+const roc = (
   <g transform="rotate(-4) translate(400,20)">
     <path
       d="M 5,00 l 0,300 "
@@ -1069,7 +1069,7 @@ const robinson = (
   </g>
 );
 
-const selwyn = (
+const sel = (
   <g transform="rotate(-4) translate(400,20)">
     <path
       d="M 5,00 l 0,300 "
@@ -1082,7 +1082,7 @@ const selwyn = (
   </g>
 );
 
-const sidney = (
+const sid = (
   <g transform="rotate(-4) translate(410,80)">
     <path d="M 0,0 l 0,15 l 15,-15 l 0,-15 z" fill="red" />
     <path d="M 0,40 l 0,15 l 15,-15 l 0,-15 z" fill="red" />
@@ -1091,7 +1091,7 @@ const sidney = (
   </g>
 );
 
-const somerville = (
+const som = (
   <g transform="rotate(-4) translate(400,20)">
     <path
       d="M 5,00 l 0,300 "
@@ -1104,18 +1104,18 @@ const somerville = (
   </g>
 );
 
-const stannes = (
+const sac = (
   <path d="M 432,0 l 16,250" style={{ strokeWidth: 35, stroke: '#CBCBCB' }} />
 );
 
-const stbenets = (
+const sbh = (
   <path
     d="m 396.15605,25.14572 23.99452,-1.642361 14.7652,176.467821 -23.90835,-0.0963 z"
     style={{ fill: '#000050', stroke: '#000050', strokeWidth: 1 }}
   />
 );
 
-const stedmundhall = (
+const seh = (
   <g
     style={{ fill: '#d40000', stroke: 'none' }}
     transform="matrix(0.26159327,-0.01731013,0.01858136,0.28080429,341.4759,-142.53978)"
@@ -1132,14 +1132,14 @@ const stedmundhall = (
   </g>
 );
 
-const sthildas = (
+const shi = (
   <path
     d="m 282.83473,22.488545 -181.38882,16.46439 7.51845,156.678165 362.67705,15.01403 z"
     style={{ fill: '#000032' }}
   />
 );
 
-const sthughes = (
+const shg = (
   <g transform="rotate(-3)  translate(0,130) ">
     <rect fill="#010066" x="0" y="0" width="100%" height="50%" />
     <path d="M 465,-100 L 350,0 L 455,100 Z" fill="#FFFFFF" />
@@ -1147,7 +1147,7 @@ const sthughes = (
   </g>
 );
 
-const stpeters = (
+const spc = (
   <g transform="rotate(-4) translate(400,20)">
     <path
       d="M -170,10 l 320,300 "
@@ -1160,7 +1160,7 @@ const stpeters = (
   </g>
 );
 
-const trinity = (
+const tro = (
   <g transform="rotate(-4) translate(400,20)">
     <path
       d="M 0,0 l 0,300 "
@@ -1169,7 +1169,7 @@ const trinity = (
   </g>
 );
 
-const university = (
+const uxo = (
   <path
     d="m 424.42026,89.075166 c -4.09987,10.072123 -9.43267,12.970924 -12.56042,13.259354 -3.12776,0.28843 -9.59816,0.8851 -9.61019,0.96737 -0.012,0.0823 -0.58156,-6.457871 -0.86999,-9.585619 -0.28842,-3.127751 1.61684,-8.926434 10.73873,-14.773437 -4.08387,-3.166333 -7.74153,-2.783318 -10.48148,-1.387772 -2.59335,-4.880959 -4.97276,-7.084454 -9.61588,-8.685959 -4.27528,2.387515 -6.21159,4.988979 -7.8686,10.261889 -2.94896,-0.870939 -6.61498,-0.578587 -10.05093,3.281195 10.03734,4.080218 12.97092,9.432671 13.25934,12.560431 0.28844,3.127751 0.87896,9.531472 0.95884,9.528382 0.0798,-0.004 -6.58227,0.61058 -9.71003,0.89902 -3.12775,0.28842 -8.92642,-1.61684 -14.76059,-10.723428 -3.17917,4.068567 -2.79616,7.726228 -1.40061,10.466178 -0.78165,0.41766 -5.96508,2.37725 -8.64986,9.61255 2.42363,4.27195 5.02509,6.20827 10.298,7.86526 -0.87094,2.94897 -0.5786,6.61498 3.28119,10.05095 4.08022,-10.03735 9.43267,-12.97094 12.56042,-13.25937 3.12776,-0.28843 9.7315,-0.8974 9.65584,-0.97022 -0.0756,-0.0729 0.53028,6.4976 0.81871,9.62536 0.28843,3.12775 -1.61684,8.92642 -10.73873,14.77342 0.1424,0.10996 4.02461,4.08003 10.48148,1.38778 0.41766,0.78165 2.37725,5.96508 9.61257,8.64985 4.27193,-2.42361 6.20825,-5.02508 7.86524,-10.29799 2.94896,0.87094 6.61498,0.57859 10.05093,-3.28119 -10.03733,-4.08022 -12.97091,-9.43267 -13.25934,-12.56044 -0.28843,-3.12775 -0.89125,-9.66482 -0.96573,-9.57677 -0.0745,0.088 6.52924,-0.52095 9.65699,-0.80938 3.12776,-0.28843 8.92643,1.61685 14.77343,10.73874 0.11405,-0.14772 4.0543,-3.99452 1.38778,-10.48148 0.78115,-0.4174 5.99207,-2.39945 8.68596,-9.6159 -2.38752,-4.27526 -4.98898,-6.21158 -10.2619,-7.868581 0.87095,-2.948962 0.59824,-6.64976 -3.28119,-10.050929 z"
     style={{
@@ -1184,7 +1184,7 @@ const university = (
   />
 );
 
-const wadham = (
+const wad = (
   <g
     transform="matrix(0.28266997,-0.02406952,0.02406952,0.28266997,323.94612,-142.59428)"
     style={{ fill: '#ffffff', stroke: 'none' }}
@@ -1196,14 +1196,14 @@ const wadham = (
   </g>
 );
 
-const wolfson = (
+const woc = (
   <path
     d="m 398.56359,25.01348 21.01371,-1.395417 12.93093,176.316257 -20.93824,-0.17775 z"
     style={{ fill: '#ffff00', stroke: '#ffff00', strokeWidth: 0.97328287 }}
   />
 );
 
-const wolfsonoxford = (
+const woo = (
   <g transform="rotate(-4) translate(400,20)">
     <path
       d="M 0,0 l 0,300 "
@@ -1217,7 +1217,7 @@ Blade.propTypes = {
    * Size of the SVG illustration
    * */
   size: PropTypes.number,
-  club: PropTypes.oneOf(['city', 'emmanuel', 'catz', 'neots']),
+  club: PropTypes.oneOf(['cam', 'emm', 'catz', 'sne']),
 };
 
 export default Blade;
