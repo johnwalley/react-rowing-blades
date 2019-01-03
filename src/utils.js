@@ -2,6 +2,19 @@ const clubs = {};
 const shortNames = {};
 const names = {};
 
+/*
+  cox: 'City of Oxford Rowing Club',
+  crc: 'Chesterton Rowing Club',
+  ley: 'Leys School Boat Club',
+  oxb: 'Oxford Brookes University Boat Club',
+  pet: 'Peterborough City Rowing Club',
+  rob: 'Rob Roy Boat Club',
+  srg: 'St Radegund Boat Club',
+  trc: 'Thames Rowing Club',
+  xpr: 'X-Press Boat Club',
+  yrk: 'York City Rowing Club',
+*/
+
 clubs.uk = ['cab', 'cam', 'cha', 'cnn', 'sne'];
 
 shortNames.uk = {
@@ -9,11 +22,17 @@ shortNames.uk = {
   cam: 'City of Cambridge',
   cha: 'Champion Of The Thames',
   cnn: 'Cambridge 99',
+  cox: 'City of Oxford',
   crc: 'Chesterton',
+  ley: 'Leys School',
+  oxb: 'Oxford Brookes University',
+  pet: 'Peterborough City',
   rob: 'Rob Roy',
   sne: 'St Neots',
   srg: 'St Radegund',
+  trc: 'Thames',
   xpr: 'X-Press',
+  yrk: 'York City',
 };
 
 names.uk = {
@@ -21,12 +40,22 @@ names.uk = {
   cam: 'City of Cambridge Rowing Club',
   cha: 'Champion Of The Thames Rowing Club',
   cnn: 'Cambridge 99 Rowing Club',
+  cox: 'City of Oxford Rowing Club',
   crc: 'Chesterton Rowing Club',
+  ley: 'Leys School Boat Club',
+  oxb: 'Oxford Brookes University Boat Club',
+  pet: 'Peterborough City Rowing Club',
   rob: 'Rob Roy Boat Club',
   sne: 'St Neots Rowing Club',
   srg: 'St Radegund Boat Club',
+  trc: 'Thames Rowing Club',
   xpr: 'X-Press Boat Club',
+  yrk: 'York City Rowing Club',
 };
+
+/*
+  fit: 'Fitzwilliam College Boat Club',
+*/
 
 clubs.cambridge = [
   'cai',
@@ -95,7 +124,7 @@ shortNames.cambridge = {
 
 names.cambridge = {
   cai: 'Caius Boat Club',
-  cco: "Christ's College",
+  cco: "Christ's College Boat Club",
   chu: 'Churchill College Boat Club',
   cla: 'Clare Boat Club',
   clh: 'Clare Hall Boat Club',
@@ -109,22 +138,32 @@ names.cambridge = {
   hom: 'Homerton College Boat Club',
   huh: 'Hughes Hall Boat Club',
   jec: 'Jesus College Boat Club',
-  kcb: "King's College",
+  kcb: "King's College Boat Club",
   lmb: 'Lady Margaret Boat Club',
   mgd: 'Magdalene Boat Club',
   mec: 'Murray Edwards College Boat Club',
   nnm: 'Newnham College Boat Club',
   pem: 'Pembroke College Boat Club',
   pbc: 'Peterhouse Boat Club',
-  qcc: "Queens' College",
+  qcc: "Queens' College Boat Club",
   roc: 'Robinson College Boat Club',
   sel: 'Selwyn College Boat Club',
   sid: 'Sidney Sussex Boat Club',
-  scc: "St. Catharine's College",
-  sec: "St. Edmund's College",
+  scc: "St. Catharine's College Boat Club",
+  sec: "St. Edmund's College Boat Club",
   trh: 'Trinity Hall Boat Club',
   woc: 'Wolfson College Boat Club',
 };
+
+/*
+  lmh: 'Lady Margaret Hall Boat Club',
+  lin: 'Linacre Boat Club',
+  lic: 'Lincoln College Boat Club',
+  osg: 'Osler House Boat Club',
+  say: 'St Antony's College Boat Club',
+  sjo: 'St John's College Boat Club',
+  wro: 'Worcester College Boat Club',
+*/
 
 clubs.oxford = [
   'bal',
@@ -221,14 +260,5 @@ names.oxford = {
   wad: 'Wadham College Boat Club',
   woo: 'Wolfson College Boat Club',
 };
-
-/*
-Lady Margaret Hall
-Linacre
-Lincoln
-osg: Osler House
-St Antony's
-St John's
-Worcester */
 
 export { clubs, names, shortNames };

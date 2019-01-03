@@ -6,10 +6,6 @@ const Blade = React.forwardRef(({ className, size, club }, ref) => {
   let fill;
 
   switch (club) {
-    case 'emm':
-      decal = emm;
-      fill = '#000077';
-      break;
     case 'cam':
       decal = cam;
       fill = '#13294b';
@@ -91,16 +87,16 @@ const Blade = React.forwardRef(({ className, size, club }, ref) => {
       fill = '#8d0603';
       break;
     case 'coo':
-      decal = corpusoxford;
+      decal = coo;
       fill = '#000040';
       break;
     case 'dow':
       decal = null;
       fill = '#AB0F62';
       break;
-    case 'ed':
-      decal = ed;
-      fill = '#0063cb';
+    case 'emm':
+      decal = emm;
+      fill = '#000077';
       break;
     case 'exc':
       decal = null;
@@ -209,6 +205,10 @@ const Blade = React.forwardRef(({ className, size, club }, ref) => {
     case 'roc':
       decal = roc;
       fill = '#0099FF';
+      break;
+    case 'sec':
+      decal = ed;
+      fill = '#0063cb';
       break;
     case 'sel':
       decal = sel;
@@ -642,7 +642,7 @@ const cor = (
   </g>
 );
 
-const corpusoxford = (
+const coo = (
   <g transform="rotate(-4) translate(400, 20)">
     <path
       d="M 5,00 l 0,300 "
