@@ -404,14 +404,14 @@ const sco = (
       cy="115"
       r="50"
       stroke="#900"
-      stroke-width="17"
+      strokeWidth="17"
       fill="#8cf"
     />
-    <circle cx="375" cy="115" r="6" stroke-width="0" fill="#900" />
+    <circle cx="375" cy="115" r="6" strokeWidth="0" fill="#900" />
     <g transform="translate(367.625,55.59467)" id="WheelSpike">
       <path
         fill="#900"
-        stroke-width="0"
+        strokeWidth="0"
         d="M 0.125,-0.125 C 2.8241831,-14.718465 0.37994487,-16.164559 0.125,-20.125 C 10.772964,-14.747921 12.635905,-11.317461 15.125,-0.125 C 11.115395,-0.70054519 4.4572137,-1.0540513 0.125,-0.125 z"
       />
     </g>
