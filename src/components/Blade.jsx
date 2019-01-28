@@ -146,6 +146,10 @@ const Blade = React.forwardRef(({ className, size, club }, ref) => {
       decal = null;
       fill = 'purple';
       break;
+    case 'lcc':
+      decal = lcc;
+      fill = '#136bfb';
+      break;
     case 'mag':
       decal = mag;
       fill = '#151515';
@@ -769,6 +773,12 @@ const keb = (
       d="M 60,-100 L -15,0 L 60,100"
       style={{ stroke: '#FF191C', strokeWidth: 25, fill: 'none' }}
     />
+  </g>
+);
+
+const lcc = (
+  <g transform="rotate(-3)  translate(0,130)">
+    <path d="M 465,-100 350,0 455,100 z" style={{ fill: '#000000' }} />
   </g>
 );
 

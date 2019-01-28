@@ -115,7 +115,7 @@ Lady Margaret
 Lucy Cavendish College
 
 ```js
-<Blade size={100} club="" />
+<Blade size={100} club="lcc" />
 ```
 
 Magdalene
