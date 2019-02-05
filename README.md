@@ -11,7 +11,7 @@ React Rowing Blades is a library of SVG illustrations (react components) of rowi
 ### How to use
 
 ```javascript
-import { Blade } from 'react-rowing-blades';
+import Blade from 'react-rowing-blades';
 
 const Example = () => <Blade size={200} club="cam" />;
 ```

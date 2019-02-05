@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 const Blade = React.forwardRef(({ className, size, club }, ref) => {
   let decal;
@@ -89,6 +88,10 @@ const Blade = React.forwardRef(({ className, size, club }, ref) => {
     case 'coo':
       decal = coo;
       fill = '#000040';
+      break;
+    case 'crc':
+      decal = crc;
+      fill = '#ffffff';
       break;
     case 'dow':
       decal = null;
@@ -659,6 +662,23 @@ const coo = (
   </g>
 );
 
+const crc = (
+  <g transform="rotate(-4) translate(400,20)">
+    <path
+      d="M -218,300 l 300,-320 "
+      style={{ stroke: 'rgb(76, 165, 224)', strokeWidth: 20, fill: 'none' }}
+    />
+    <path
+      d="M -245.4146402,300 l 300,-320 "
+      style={{ stroke: 'rgb(46, 49, 146)', strokeWidth: 20, fill: 'none' }}
+    />
+    <path
+      d="M -272.8292805,300 l 300,-320 "
+      style={{ stroke: 'rgb(249, 222, 6)', strokeWidth: 20, fill: 'none' }}
+    />
+  </g>
+);
+
 const ed = (
   <g transform="rotate(-4) translate(400, 20)">
     <path
@@ -1221,13 +1241,5 @@ const woo = (
     />
   </g>
 );
-
-Blade.propTypes = {
-  /**
-   * Size of the SVG illustration
-   * */
-  size: PropTypes.number,
-  club: PropTypes.oneOf(['cam', 'emm', 'catz', 'sne']),
-};
 
 export default Blade;

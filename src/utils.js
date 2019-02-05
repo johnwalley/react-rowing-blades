@@ -1,10 +1,11 @@
 const clubs = {};
 const shortNames = {};
+const shortShortNames = {};
 const names = {};
+const abbreviations = {};
 
 /*
   cox: 'City of Oxford Rowing Club',
-  crc: 'Chesterton Rowing Club',
   ley: 'Leys School Boat Club',
   oxb: 'Oxford Brookes University Boat Club',
   pet: 'Peterborough City Rowing Club',
@@ -15,7 +16,7 @@ const names = {};
   yrk: 'York City Rowing Club',
 */
 
-clubs.uk = ['cab', 'cam', 'cha', 'cnn', 'sne'];
+clubs.uk = ['cab', 'cam', 'cha', 'cnn', 'crc', 'sne'];
 
 shortNames.uk = {
   cab: 'Cantabrigian',
@@ -90,6 +91,82 @@ clubs.cambridge = [
   'woc',
 ];
 
+abbreviations.cambridge = {
+  A: "Addenbrooke's",
+  AR: 'Anglia Ruskin',
+  Ca: 'Caius',
+  CC: 'Corpus Christi',
+  CH: 'Clare Hall',
+  Cl: 'Clare',
+  Cr: "Christ's",
+  CT: 'CCAT',
+  Cu: 'Churchill',
+  D: 'Downing',
+  Dw: 'Darwin',
+  E: 'Emmanuel',
+  F: 'Fitzwilliam',
+  G: 'Girton',
+  H: 'Homerton',
+  HH: 'Hughes Hall',
+  HHL: 'Hughes/Lucy',
+  J: 'Jesus',
+  K: "King's",
+  L: 'Lady Margaret',
+  LC: 'Lucy Cavendish',
+  M: 'Magdalene',
+  ME: 'Murray Edwards',
+  N: 'Newnham',
+  NH: 'New Hall',
+  Pb: 'Pembroke',
+  Ph: 'Peterhouse',
+  Q: "Queens'",
+  QM: 'QMABC',
+  R: 'Robinson',
+  S: 'Selwyn',
+  SC: "St. Catharine's",
+  SE: "St. Edmund's",
+  SS: 'Sidney Sussex',
+  T: 'First and Third',
+  TC: 'Theological Colleges',
+  TH: 'Trinity Hall',
+  VS: 'Vet School',
+  W: 'Wolfson',
+};
+
+shortShortNames.cambridge = {
+  cai: 'Caius',
+  cco: "Christ's",
+  chu: 'Churchill',
+  cla: 'Clare',
+  clh: 'Clare Hall',
+  cor: 'Corpus Christi',
+  daw: 'Darwin',
+  dow: 'Downing',
+  emm: 'Emmanuel',
+  ftt: 'First and Third',
+  fit: 'Fitzwilliam',
+  gir: 'Girton',
+  hom: 'Homerton',
+  huh: 'Hughes Hall',
+  jec: 'Jesus',
+  kcb: "King's",
+  lcc: "Lucy Cavendish",
+  lmb: 'Lady Margaret',
+  mgd: 'Magdalene',
+  mec: 'Murray Edwards',
+  nnm: 'Newnham',
+  pem: 'Pembroke',
+  pbc: 'Peterhouse',
+  qcc: "Queens'",
+  roc: 'Robinson',
+  sel: 'Selwyn',
+  sid: 'Sidney Sussex',
+  scc: "St. Catharine's",
+  sec: "St. Edmund's",
+  trh: 'Trinity Hall',
+  woc: 'Wolfson',
+};
+
 shortNames.cambridge = {
   cai: 'Caius',
   cco: "Christ's College",
@@ -100,7 +177,7 @@ shortNames.cambridge = {
   daw: 'Darwin College',
   dow: 'Downing College',
   emm: 'Emmanuel',
-  ftt: 'First and Third Trinity',
+  ftt: 'First and Third',
   fit: 'Fitzwilliam College',
   gir: 'Girton College',
   hom: 'Homerton College',
@@ -134,7 +211,7 @@ names.cambridge = {
   daw: 'Darwin College Boat Club',
   dow: 'Downing College Boat Club',
   emm: 'Emmanuel Boat Club',
-  ftt: 'First and Third Trinity Boat Club',
+  ftt: 'First and Third Boat Club',
   fit: 'Fitzwilliam College Boat Club',
   gir: 'Girton College Boat Club',
   hom: 'Homerton College Boat Club',
@@ -264,4 +341,4 @@ names.oxford = {
   woo: 'Wolfson College Boat Club',
 };
 
-export { clubs, names, shortNames };
+export { clubs, names, shortNames, shortShortNames, abbreviations };
