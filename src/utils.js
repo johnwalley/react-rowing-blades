@@ -277,6 +277,38 @@ clubs.oxford = [
   'woo',
 ];
 
+shortShortNames.oxford = {
+  bal: 'Balliol',
+  brc: 'Brasenose',
+  chb: 'Christ Church',
+  coo: 'Corpus Christi',
+  exc: 'Exeter',
+  gtm: 'Green Templeton',
+  hec: 'Hertford',
+  jeo: 'Jesus',
+  keb: 'Keble',
+  mag: 'Magdalen',
+  man: 'Mansfield',
+  mer: 'Merton',
+  nec: 'New',
+  oro: 'Oriel',
+  pmb: 'Pembroke',
+  qco: "The Queen's",
+  rpc: "Regent's Park",
+  som: 'Somerville',
+  sac: "St Anne's",
+  sbh: "St Benet's Hall",
+  sco: "St Catherine's",
+  seh: 'St Edmund Hall',
+  shi: "St Hilda's",
+  shg: "St Hugh's",
+  spc: "St Peter's",
+  tro: 'Trinity',
+  uxo: 'University',
+  wad: 'Wadham',
+  woo: 'Wolfson',
+};
+
 shortNames.oxford = {
   bal: 'Balliol College',
   brc: 'Brasenose College',
