@@ -3,10 +3,6 @@ module.exports = {
   pagePerSection: true,
   sections: [
     {
-      name: 'React Rowing Blades',
-      content: 'docs/ReactRowingBlades.md',
-    },
-    {
       name: 'Getting Started',
       content: 'docs/GetStarted.md',
     },
