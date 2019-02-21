@@ -1,6 +1,6 @@
 {
   "name": "react-rowing-blades",
-  "version": "1.3.1",
+  "version": "1.3.2",
   "description": "React Rowing Blades is a library of SVG rowing blade illustrations.",
   "main": "lib/index.js",
   "scripts": {
@@ -8,7 +8,8 @@
     "styleguide:build": "styleguidist build",
     "npm-build": "webpack -p --progress",
     "prepublish": "npm run npm-build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate-svg-files": "node ./scripts/generate-svg-files"
   },
   "repository": {
     "type": "git",
