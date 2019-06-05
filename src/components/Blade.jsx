@@ -145,6 +145,18 @@ const Blade = React.forwardRef(({ className, size, club }, ref) => {
       decal = keb;
       fill = '#F9F9F9';
       break;
+    case 'lic':
+      decal = lic;
+      fill = '#000032';
+      break;
+    case 'lin':
+      decal = lin;
+      fill = '#ffcc00';
+      break;
+    case 'lmh':
+      decal = lmh;
+      fill = '#000032';
+      break;
     case 'kcb':
       decal = null;
       fill = 'purple';
@@ -212,6 +224,10 @@ const Blade = React.forwardRef(({ className, size, club }, ref) => {
     case 'roc':
       decal = roc;
       fill = '#0099FF';
+      break;
+    case 'say':
+      decal = say;
+      fill = '#d40000';
       break;
     case 'sec':
       decal = ed;
@@ -802,6 +818,30 @@ const lcc = (
   </g>
 );
 
+const lic = (
+  <g>
+    <path
+      d="m 112.15417,44.883847 201.94289,45.675172 0.0377,-0.0011 -208.35394,-15.89754 z"
+      style={{ fill: '#7ca5cd' }}
+    />
+    <path d="M 432,0 l 16,250" style={{ strokeWidth: 35, stroke: '#7ca5cd' }} />
+  </g>
+);
+
+const lin = (
+  <g>
+    <path d="M 180,200 424,13" style={{ stroke: '#000000', strokeWidth: 20 }} />
+    <path d="M 180,30 440,215" style={{ stroke: '#000000', strokeWidth: 20 }} />
+  </g>
+);
+
+const lmh = (
+  <path
+    d="m 112.15417,44.883847 201.94289,45.675172 0.0377,-0.0011 -208.35394,-15.89754 z"
+    style={{ fill: '#ffe600' }}
+  />
+);
+
 const mag = (
   <g transform="rotate(-2)  translate(275,17)  scale(2.7)">
     <g transform="matrix(0.4701374,0.8825933,-0.8825933,0.4701374,57.211567,-103.7955)">
@@ -1095,6 +1135,20 @@ const roc = (
     <path
       d="M -30,00 l 0,300 "
       style={{ stroke: 'gold', strokeWidth: 20, fill: 'none' }}
+    />
+  </g>
+);
+
+// TODO: Confirm design is accurate
+const say = (
+  <g transform="rotate(-4) translate(400,20)">
+    <path
+      d="M -10,0 l 0,300 "
+      style={{ stroke: '#ffcc00', strokeWidth: 120, fill: 'none' }}
+    />
+    <path
+      d="M -80,0 l 0,300 "
+      style={{ stroke: '#000000', strokeWidth: 40, fill: 'none' }}
     />
   </g>
 );

@@ -55,19 +55,19 @@ Keble
 Lady Margaret Hall
 
 ```js
-<Blade size={100} club="" />
+<Blade size={100} club="lmh" />
 ```
 
 Linacre
 
 ```js
-<Blade size={100} club="" />
+<Blade size={100} club="lin" />
 ```
 
 Lincoln
 
 ```js
-<Blade size={100} club="" />
+<Blade size={100} club="lic" />
 ```
 
 Magdalen
@@ -88,7 +88,7 @@ Merton
 <Blade size={100} club="mer" />
 ```
 
-New
+New College
 
 ```js
 <Blade size={100} club="nec" />
@@ -139,7 +139,7 @@ St Anne's
 St Antony's
 
 ```js
-<Blade size={100} club="" />
+<Blade size={100} club="say" />
 ```
 
 St Benet's
