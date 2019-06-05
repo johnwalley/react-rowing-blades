@@ -10,7 +10,8 @@ module.exports = {
     filename: "index.js",
     library: ["react-rowing-blades"],
     libraryTarget: "umd",
-    publicPath: "/lib/"
+    publicPath: "/lib/",
+    globalObject: "this"
   },
   module: {
     rules: [
