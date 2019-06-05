@@ -1,4 +1,7 @@
+const path = require('path');
+
 module.exports = {
+  require: [path.resolve(__dirname, 'styleguide.setup.js')],
   title: 'React Rowing Blades',
   pagePerSection: true,
   sections: [
