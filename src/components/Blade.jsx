@@ -133,6 +133,10 @@ const Blade = React.forwardRef(({ className, size, club }, ref) => {
       decal = huh;
       fill = '#ffffff';
       break;
+    case 'iel':
+      decal = iel;
+      fill = '#ffffff';
+      break;
     case 'jec':
       decal = jec;
       fill = '#202020';
@@ -201,6 +205,10 @@ const Blade = React.forwardRef(({ className, size, club }, ref) => {
       decal = pem;
       fill = '#AAF0FF';
       break;
+    case 'pet':
+      decal = pet;
+      fill = '#071cd0';
+      break;
     case 'pmb':
       decal = pmb;
       fill = '#F0F0F0';
@@ -216,6 +224,10 @@ const Blade = React.forwardRef(({ className, size, club }, ref) => {
     case 'qco':
       decal = qco;
       fill = '#000066';
+      break;
+    case 'rob':
+      decal = rob;
+      fill = '#7e0308';
       break;
     case 'rpc':
       decal = rpc;
@@ -269,6 +281,10 @@ const Blade = React.forwardRef(({ className, size, club }, ref) => {
       decal = spc;
       fill = '#FFFFFF';
       break;
+    case 'srg':
+      decal = srg;
+      fill = '#FF0000';
+      break;
     case 'trh':
       decal = null;
       fill = '#202020';
@@ -281,6 +297,10 @@ const Blade = React.forwardRef(({ className, size, club }, ref) => {
       decal = uxo;
       fill = '#000032';
       break;
+    case 'vet':
+      decal = null;
+      fill = '#A3C1AD';
+      break;
     case 'wad':
       decal = wad;
       fill = '#add8e6';
@@ -292,6 +312,10 @@ const Blade = React.forwardRef(({ className, size, club }, ref) => {
     case 'woo':
       decal = woo;
       fill = '#FFD050';
+      break;
+    case 'xpr':
+      decal = null;
+      fill = '#000000';
       break;
     default:
       decal = null;
@@ -790,6 +814,13 @@ const huh = (
   </g>
 );
 
+const iel = (
+  <g>
+    <path d="M 397,0 l 16,250" style={{ strokeWidth: 35, stroke: '#a1d3b9' }} />
+    <path d="M 432,0 l 16,250" style={{ strokeWidth: 35, stroke: '#020c7e' }} />
+  </g>
+);
+
 const jec = (
   <g transform="rotate(-4) translate(400,20)">
     <path
@@ -1109,10 +1140,25 @@ const qcc = (
   </g>
 );
 
+const pet = (
+  <g transform="rotate(-3)  translate(0,130)">
+    <path d="M 465,-100 350,0 455,100 z" style={{ fill: '#ffff00' }} />
+  </g>
+);
+
 const qco = (
   <g transform="rotate(-3) scale(0.71 0.81) translate(140,50)">
     <rect fill="#FFFFFF" width="100%" height="33.33%" y="33.33%" />
     <rect fill="#000066" width="100%" height="33.33%" y="66.66%" />
+  </g>
+);
+
+const rob = (
+  <g>
+    <path
+      d="M 455,10 350,199 500,230 z"
+      style={{ fill: '#ffffff', stroke: 'none' }}
+    />
   </g>
 );
 
@@ -1241,6 +1287,24 @@ const spc = (
       d="M -170,10 l 320,300 "
       style={{ stroke: '#FFCC00', strokeWidth: 20, fill: 'none' }}
     />
+  </g>
+);
+
+const srg = (
+  <g>
+    <linearGradient id="gradient_to_transparent" x1="0%" x2="100%">
+      <stop offset="0" stop-color="#ffcc00" stop-opacity="0" />
+      <stop offset="0.5" stop-color="#ffcc00" stop-opacity="1" />
+      <stop offset="1" stop-color="#ffcc00" stop-opacity="1" />
+    </linearGradient>
+    <g transform="rotate(-3) scale(0.71 0.81) translate(140,50)">
+      <rect
+        fill="url(#gradient_to_transparent)"
+        width="50%"
+        height="100%"
+        x="50%"
+      />
+    </g>
   </g>
 );
 

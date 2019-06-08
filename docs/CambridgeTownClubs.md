@@ -4,6 +4,12 @@ Cambridge '99
 <Blade size={100} club="cnn" />
 ```
 
+Cambridge Veterans
+
+```js
+<Blade size={100} club="vet" />
+```
+
 Cantabrigian
 
 ```js
@@ -26,6 +32,24 @@ City of Cambridge
 
 ```js
 <Blade size={100} club="cam" />
+```
+
+Isle of Ely
+
+```js
+<Blade size={100} club="iel" />
+```
+
+Peterborough
+
+```js
+<Blade size={100} club="pet" />
+```
+
+St Radegund
+
+```js
+<Blade size={100} club="srg" />
 ```
 
 Rob Roy

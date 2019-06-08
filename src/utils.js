@@ -8,15 +8,11 @@ const abbreviations = {};
   cox: 'City of Oxford Rowing Club',
   ley: 'Leys School Boat Club',
   oxb: 'Oxford Brookes University Boat Club',
-  pet: 'Peterborough City Rowing Club',
-  rob: 'Rob Roy Boat Club',
-  srg: 'St Radegund Boat Club',
   trc: 'Thames Rowing Club',
-  xpr: 'X-Press Boat Club',
   yrk: 'York City Rowing Club',
 */
 
-clubs.uk = ['cab', 'cam', 'cha', 'cnn', 'crc', 'sne'];
+clubs.uk = ['cab', 'cam', 'cha', 'cnn', 'crc', 'iel', 'pet', 'rob', 'sne', 'srg', 'vet', 'xpr'];
 
 abbreviations.uk = {
   A: "Addenbrooke's",
@@ -24,6 +20,7 @@ abbreviations.uk = {
   CV: 'Camb Veterans',
   Ct: 'Cantabs',
   Cy: 'City',
+  Ch: 'Chesterton',
   Ca: 'Caius',
   CT: 'CCAT',
   Cr: "Christ's",
@@ -55,6 +52,7 @@ abbreviations.uk = {
   NH: 'New Hall',
   N: 'Newnham',
   NN: '99',
+  P: 'Peterborough',
   Pb: 'Pembroke',
   Ph: 'Peterhouse',
   QM: 'QMABC',
@@ -86,13 +84,15 @@ shortShortNames.uk = {
   cnn: '99',
   cox: 'City of Oxford',
   crc: 'Chesterton',
+  iel: 'Isle of Ely',
   ley: 'Leys School',
   oxb: 'Oxford Brookes University',
-  pet: 'Peterborough City',
+  pet: 'Peterborough',
   rob: 'Rob Roy',
   sne: 'St Neots',
   srg: 'St Radegund',
   trc: 'Thames',
+  vet: 'Camb Veterans',
   xpr: 'X-Press',
   yrk: 'York City',
 };
@@ -104,6 +104,7 @@ shortNames.uk = {
   cnn: 'Cambridge 99',
   cox: 'City of Oxford',
   crc: 'Chesterton',
+  iel: 'Isle of Ely',
   ley: 'Leys School',
   oxb: 'Oxford Brookes University',
   pet: 'Peterborough City',
@@ -111,6 +112,7 @@ shortNames.uk = {
   sne: 'St Neots',
   srg: 'St Radegund',
   trc: 'Thames',
+  vet: 'Cambridge Veterans',
   xpr: 'X-Press',
   yrk: 'York City',
 };
@@ -122,6 +124,7 @@ names.uk = {
   cnn: 'Cambridge 99 Rowing Club',
   cox: 'City of Oxford Rowing Club',
   crc: 'Chesterton Rowing Club',
+  iel: 'Isle of Ely Rowing Club',
   ley: 'Leys School Boat Club',
   oxb: 'Oxford Brookes University Boat Club',
   pet: 'Peterborough City Rowing Club',
@@ -129,6 +132,7 @@ names.uk = {
   sne: 'St Neots Rowing Club',
   srg: 'St Radegund Boat Club',
   trc: 'Thames Rowing Club',
+  vet: 'Camb Veterans Rowing Club',
   xpr: 'X-Press Boat Club',
   yrk: 'York City Rowing Club',
 };
@@ -359,6 +363,7 @@ abbreviations.oxford = {
   Ch: 'Christ Church',
   Co: 'Corpus Christi',
   E: 'Exeter',
+  GT: 'Green Templeton',
   H: 'Hertford',
   J: 'Jesus',
   K: 'Keble',
@@ -410,7 +415,7 @@ shortShortNames.oxford = {
   nec: 'New College',
   oro: 'Oriel',
   pmb: 'Pembroke',
-  qco: "The Queen's",
+  qco: "Queen's",
   rpc: "Regent's Park",
   som: 'Somerville',
   sac: "St Anne's",
@@ -420,11 +425,13 @@ shortShortNames.oxford = {
   seh: 'S.E.H.',
   shi: "St Hilda's",
   shg: "St Hugh's",
+  sjo: "St John's",
   spc: "St Peter's",
   tro: 'Trinity',
   uxo: 'University',
   wad: 'Wadham',
   woo: 'Wolfson',
+  wro: 'Worcester',
 };
 
 shortNames.oxford = {
@@ -446,7 +453,7 @@ shortNames.oxford = {
   nec: 'New College',
   oro: 'Oriel College',
   pmb: 'Pembroke College',
-  qco: "The Queen's College",
+  qco: "Queen's College",
   rpc: "Regent's Park College",
   som: 'Somerville College',
   sac: "St Anne's College",
@@ -456,11 +463,13 @@ shortNames.oxford = {
   seh: 'St Edmund Hall',
   shi: "St Hilda's College",
   shg: "St Hugh's College",
+  sjo: "St John's College",
   spc: "St Peter's College",
   tro: 'Trinity College',
   uxo: 'University College',
   wad: 'Wadham College',
   woo: 'Wolfson College',
+  wro: 'Worcester College',
 };
 
 names.oxford = {
@@ -492,11 +501,13 @@ names.oxford = {
   seh: 'St Edmund Hall Boat Club',
   shi: "St Hilda's College Boat Club",
   shg: "St Hugh's College Boat Club",
+  sjo: "St John's College Boat Club",
   spc: "St Peter's College Boat Club",
   tro: 'Trinity College Boat Club',
   uxo: 'University College Boat Club',
   wad: 'Wadham College Boat Club',
   woo: 'Wolfson College Boat Club',
+  wro: 'Worcester College Boat Club',
 };
 
 export { clubs, names, shortNames, shortShortNames, abbreviations };
