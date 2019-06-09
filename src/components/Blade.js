@@ -1293,9 +1293,9 @@ const spc = (
 const srg = (
   <g>
     <linearGradient id="gradient_to_transparent" x1="0%" x2="100%">
-      <stop offset="0" stop-color="#ffcc00" stop-opacity="0" />
-      <stop offset="0.5" stop-color="#ffcc00" stop-opacity="1" />
-      <stop offset="1" stop-color="#ffcc00" stop-opacity="1" />
+      <stop offset="0" stopColor="#ffcc00" stopOpacity="0" />
+      <stop offset="0.5" stopColor="#ffcc00" stopOpacity="1" />
+      <stop offset="1" stopColor="#ffcc00" stopOpacity="1" />
     </linearGradient>
     <g transform="rotate(-3) scale(0.71 0.81) translate(140,50)">
       <rect
