@@ -1,17 +1,20 @@
 {
   "name": "react-rowing-blades",
-  "version": "1.4.2",
+  "version": "1.5.0",
   "description": "React Rowing Blades is a library of SVG rowing blade illustrations.",
-  "main": "dist/index.js",
-  "module": "src/index.js",
+  "main": "umd/react-rowing-blades.js",
+  "module": "esm/index.js",
   "scripts": {
     "styleguide": "styleguidist server",
     "styleguide:build": "styleguidist build",
-    "npm-build": "webpack -p --progress",
-    "prepublish": "npm run npm-build",
+    "prepare": "rollup --config",
     "test": "echo \"Error: no test specified\" && exit 1",
     "generate-svg-files": "node ./scripts/generate-svg-files"
   },
+  "files": [
+    "esm/*",
+    "umd/*"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/johnwalley/react-rowing-blades.git"
@@ -22,18 +25,13 @@
     "@babel/core": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
     "@babel/preset-react": "^7.0.0",
-    "autoprefixer": "^9.6.0",
-    "babel-loader": "^8.0.6",
     "react-styleguidist": "^9.1.4",
-    "styled-components": "^4.2.0",
-    "webpack": "^4.33.0",
-    "webpack-cli": "^3.3.2"
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-terser": "^5.0.0",
+    "rollup": "^1.14.4"
   },
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
-  },
-  "peerDependencies": {
-    "styled-components": "^4.2.0"
   }
 }
