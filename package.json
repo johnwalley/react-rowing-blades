@@ -1,6 +1,6 @@
 {
   "name": "react-rowing-blades",
-  "version": "1.5.1",
+  "version": "1.5.2",
   "description": "React Rowing Blades is a library of SVG rowing blade illustrations.",
   "main": "umd/react-rowing-blades.js",
   "module": "esm/index.js",
@@ -25,12 +25,16 @@
     "@babel/core": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
     "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
     "react-styleguidist": "^9.1.4",
+    "rollup": "^1.14.4",
     "rollup-plugin-babel": "^4.3.2",
     "rollup-plugin-terser": "^5.0.0",
-    "rollup": "^1.14.4"
+    "webpack": "^4.33.0"
   },
-  "dependencies": {
+  "peerDependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   }
