@@ -5,6 +5,10 @@ const Blade = React.forwardRef(({ className, size, club }, ref) => {
   let fill;
 
   switch (club) {
+    case 'aru':
+      decal = aru;
+      fill = '#000000';
+      break;
     case 'cam':
       decal = cam;
       fill = '#13294b';
@@ -354,6 +358,13 @@ const Blade = React.forwardRef(({ className, size, club }, ref) => {
     </svg>
   );
 });
+
+const aru = (
+  <g transform="rotate(-3)  translate(0,130)">
+    <rect fill="#000000" x="0" y="0" width="100%" height="50%" />
+    <path d="M 465,-100 L 350,0 L 455,100 Z" fill="orange" />
+  </g>
+);
 
 const emm = (
   <g transform="rotate(-4) translate(400,20)">

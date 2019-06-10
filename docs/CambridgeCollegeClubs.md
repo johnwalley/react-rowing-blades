@@ -7,7 +7,7 @@ Addenbrooke's Student
 Anglia Ruskin
 
 ```js
-<Blade size={100} club="" />
+<Blade size={100} club="aru" />
 ```
 
 Caius

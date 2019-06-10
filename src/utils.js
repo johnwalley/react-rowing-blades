@@ -12,7 +12,20 @@ const abbreviations = {};
   yrk: 'York City Rowing Club',
 */
 
-clubs.uk = ['cab', 'cam', 'cha', 'cnn', 'crc', 'iel', 'pet', 'rob', 'sne', 'srg', 'vet', 'xpr'];
+clubs.uk = [
+  'cab',
+  'cam',
+  'cha',
+  'cnn',
+  'crc',
+  'iel',
+  'pet',
+  'rob',
+  'sne',
+  'srg',
+  'vet',
+  'xpr',
+];
 
 abbreviations.uk = {
   A: "Addenbrooke's",
@@ -138,6 +151,7 @@ names.uk = {
 };
 
 clubs.cambridge = [
+  'aru',
   'cai',
   'cco',
   'chu',
@@ -214,6 +228,7 @@ abbreviations.cambridge = {
 };
 
 shortShortNames.cambridge = {
+  aru: 'Anglia Ruskin',
   cai: 'Caius',
   cco: "Christ's",
   chu: 'Churchill',
@@ -248,6 +263,7 @@ shortShortNames.cambridge = {
 };
 
 shortNames.cambridge = {
+  aru: 'Anglia Ruskin',
   cai: 'Caius',
   cco: "Christ's College",
   chu: 'Churchill College',
@@ -282,6 +298,7 @@ shortNames.cambridge = {
 };
 
 names.cambridge = {
+  aru: 'Anglia Ruskin Boat Club',
   cai: 'Caius Boat Club',
   cco: "Christ's College Boat Club",
   chu: 'Churchill College Boat Club',
