@@ -29,9 +29,25 @@ const Blade = React.forwardRef(({ className, size, club }, ref) => {
       decal = bbl;
       fill = '#1667F6';
       break;
+    case 'bed':
+      decal = bed;
+      fill = '#8e0000';
+      break;
+    case 'ber':
+      decal = ber;
+      fill = '#000077';
+      break;
+    case 'bra':
+      decal = bra;
+      fill = '#F5F5F5';
+      break;
     case 'brc':
       decal = null;
       fill = '#202020';
+      break;
+    case 'brd':
+      decal = brd;
+      fill = '#00214E';
       break;
     case 'cab':
       decal = cab;
@@ -44,6 +60,10 @@ const Blade = React.forwardRef(({ className, size, club }, ref) => {
     case 'cam':
       decal = cam;
       fill = '#13294b';
+      break;
+    case 'cbs':
+      decal = cbs;
+      fill = '#008001';
       break;
     case 'cco':
       decal = cco;
@@ -69,6 +89,10 @@ const Blade = React.forwardRef(({ className, size, club }, ref) => {
       decal = clh;
       fill = '#FFCC00';
       break;
+    case 'cls':
+      decal = cls;
+      fill = '#1909AF';
+      break;
     case 'cnn':
       decal = cnn;
       fill = '#599bfc';
@@ -80,6 +104,10 @@ const Blade = React.forwardRef(({ className, size, club }, ref) => {
     case 'cor':
       decal = cor;
       fill = '#8d0603';
+      break;
+    case 'cox':
+      decal = cox;
+      fill = '#003366';
       break;
     case 'crc':
       decal = crc;
@@ -411,6 +439,61 @@ const bbl = (
   </g>
 );
 
+const bed = (
+  <g transform="matrix(0.99756405,-0.06975647,0.06975647,0.99756405,400.42075,-7.9513085)">
+    <path
+      d="M 5,0 5,300"
+      style={{ fill: 'none', stroke: '#000063', strokeWidth: 20 }}
+    />
+    <path
+      d="m -15,0 0,300"
+      style={{ fill: 'none', stroke: '#ffffff', strokeWidth: 20 }}
+    />
+    <path
+      d="m -55,0 0,300"
+      style={{ fill: 'none', stroke: '#ffffff', strokeWidth: 20 }}
+    />
+    <path
+      d="m -75,0 0,300"
+      style={{ fill: 'none', stroke: '#000063', strokeWidth: 20 }}
+    />
+  </g>
+);
+
+const ber = (
+  <g transform="rotate(-4) translate(290, 143)">
+    <path
+      d="M 100,-100 L 0,0 L 100,100"
+      stroke="white"
+      stroke-width="20"
+      fill="none"
+    />
+    <path
+      d="M 150,-100 L 50,0 L 150,100"
+      stroke="white"
+      stroke-width="20"
+      fill="none"
+    />
+  </g>
+);
+
+const bra = (
+  <g transform="rotate(-2) translate(260, 15) scale(0.085)">
+    <path
+      fill="#1B1D56"
+      d="M 1224,2062 C 1222,2062 1221,2062 1220,2062 C 1220,2062 1220,2062 1219,2062 C 1218,2062 1217,2062 1216,2062 C 1216,2062 1215,2062 1215,2062 C 1214,2062 1213,2062 1212,2062 C 1125,2062 1039,2062 952,2062 C 1106,1915 1135,1641 1140,1402 L 1139.1403,1354.8831 L 1084,1356 C 834,1357 591,1379 444,1496 C 444,1429 444,1356 444,1288 C 444,1287 444,1286 444,1285 C 444,1218 444,1144 444,1077 C 591,1194 834,1217 1084,1218 L 1140.4181,1218.5702 L 1140,1170 C 1135,930 1107,654 952,505 C 1039,505 1125,505 1212,505 C 1213,505 1214,505 1215,505 C 1215,505 1216,505 1216,505 C 1217,505 1218,505 1219,505 C 1220,505 1220,505 1220,505 C 1221,505 1222,505 1224,505 C 1310,505 1396,505 1483,505 C 1328,654 1300,930 1295,1170 L 1293.773,1217.0018 L 1354,1218 C 1605,1217 1852,1195 2000,1077 C 2000,1144 2000,1218 2000,1285 C 2000,1286 2000,1287 2000,1288 C 2000,1356 2000,1429 2000,1496 C 1852,1378 1605,1357 1354,1356 L 1293.8154,1355.2033 L 1295,1402 C 1300,1641 1329,1915 1483,2062 C 1396,2062 1310,2062 1224,2062 z "
+    />
+  </g>
+);
+
+const brd = (
+  <g transform="rotate(-4) translate(370, 90)">
+    <path d="M 0,0 l 0,-33 l 55,33 l 0,33 z" fill="white" />
+    <path d="M 0,53 l 0,-33 l 55,33 l 0,33 z" fill="white" />
+    <path d="M 0,104 l 0,-33 l 55,33 l 0,33 z" fill="white" />
+  </g>
+);
+
 const cab = (
   <g transform="rotate(-4) translate(400,20)">
     <path
@@ -442,6 +525,25 @@ const cam = (
     <path
       d="M -35,00 l 0,300 "
       style={{ stroke: '#daaa00', strokeWidth: 17, fill: 'none' }}
+    />
+  </g>
+);
+
+const cbs = (
+  <g transform="rotate(-3) translate(-20, 130)">
+    <path d="M 480,-120 L 350,0 L 480,120 Z" fill="#ffffff" />
+  </g>
+);
+
+const cls = (
+  <g transform="rotate(-4) translate(280, 20)">
+    <path
+      d="M 85,00 l 200,300 "
+      style={{ stroke: '#E60707', strokeWidth: 120, fill: 'none' }}
+    />
+    <path
+      d="M 0,00 l 200,300 "
+      style={{ stroke: 'white', strokeWidth: 35, fill: 'none' }}
     />
   </g>
 );
@@ -495,6 +597,20 @@ const coo = (
       d="M -30,00 l 0,300 "
       style={{ stroke: '#800020', strokeWidth: 20, fill: 'none' }}
     />
+  </g>
+);
+
+const cox = (
+  <g>
+    <g transform="rotate(-4) translate(170)">
+      <path
+        d="M 95,-5 l 390,300 "
+        style={{ stroke: '#CC0000', strokeWidth: 160, fill: 'none' }}
+      />
+    </g>
+    <g transform="rotate(-60) scale(1) translate(50, 100)">
+      <rect x="0" y="0" width="35" height="400" style={{ fill: '#f9f9f9' }} />
+    </g>
   </g>
 );
 
