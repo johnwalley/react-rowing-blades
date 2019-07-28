@@ -22,6 +22,10 @@ module.exports = {
       content: 'docs/OxfordCollegeClubs.md',
     },
     {
+      name: 'United Kingdom Clubs',
+      content: 'docs/UnitedKingdomClubs.md',
+    },
+    {
       name: 'Components',
       components: './src/**/[A-Z]*.jsx',
       exampleMode: 'expand',

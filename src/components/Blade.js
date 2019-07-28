@@ -5,9 +5,21 @@ const Blade = React.forwardRef(({ className, size, club }, ref) => {
   let fill;
 
   switch (club) {
+    case 'age':
+      decal = age;
+      fill = '#AB0A19';
+      break;
+    case 'akn':
+      decal = akn;
+      fill = '#008620';
+      break;
     case 'aru':
       decal = aru;
       fill = '#000000';
+      break;
+    case 'avn':
+      decal = avn;
+      fill = '#202020';
       break;
     case 'bal':
       decal = bal;
@@ -359,11 +371,28 @@ const Blade = React.forwardRef(({ className, size, club }, ref) => {
   );
 });
 
+const age = (
+  <g>
+    <path d="M 0,55 L 145,199 L 500,205 L 500,137 Z" fill="#023A6B" />
+    <path d="M 0,27 L 0,5 L 500,5 L 500,109 Z" fill="#FFFFFF" />
+  </g>
+);
+
+const akn = (
+  <g>
+    <path d="M 345,0 L 260,230 L 500,230 L 500,0 Z" fill="#c679b6" />
+  </g>
+);
+
 const aru = (
   <g transform="rotate(-3)  translate(0,130)">
     <rect fill="#000000" x="0" y="0" width="100%" height="50%" />
     <path d="M 465,-100 L 350,0 L 455,100 Z" fill="orange" />
   </g>
+);
+
+const avn = (
+  <path d="M 412,0 l 16,250" style={{ strokeWidth: 75, stroke: '#FEE41B' }} />
 );
 
 const bal = (
