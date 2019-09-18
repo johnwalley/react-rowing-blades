@@ -22,17 +22,17 @@
   "author": "John Walley",
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "^7.4.5",
-    "@babel/preset-env": "^7.4.5",
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.6",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-styleguidist": "^9.1.4",
-    "rollup": "^1.14.4",
+    "rollup": "^1.21.4",
     "rollup-plugin-babel": "^4.3.2",
-    "rollup-plugin-terser": "^5.0.0",
-    "webpack": "^4.33.0"
+    "rollup-plugin-terser": "^5.1.2",
+    "webpack": "^4.40.2"
   },
   "peerDependencies": {
     "react": "^16.8.6",
