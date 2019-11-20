@@ -5,6 +5,14 @@ const Blade = React.forwardRef(({ className, size, club }, ref) => {
   let fill;
 
   switch (club) {
+    case 'abn':
+      decal = abn;
+      fill = '#003c10';
+      break;
+    case 'abs':
+      decal = abs;
+      fill = '#cc0066';
+      break;
     case 'age':
       decal = age;
       fill = '#AB0A19';
@@ -422,6 +430,16 @@ const Blade = React.forwardRef(({ className, size, club }, ref) => {
     </svg>
   );
 });
+
+const abn = (
+  <g transform="rotate(-3) translate(0,130)">
+    <path d="M 465,-100 350,0 455,100 z" style={{ fill: '#ffdd00' }} />
+  </g>
+);
+
+const abs = (
+  <path d="M 432,0 l 16,250" style={{ strokeWidth: 35, stroke: 'white' }} />
+);
 
 const age = (
   <g>

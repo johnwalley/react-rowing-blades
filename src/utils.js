@@ -5,7 +5,6 @@ const names = {};
 const abbreviations = {};
 
 /*
-  cox: 'City of Oxford Rowing Club',
   ley: 'Leys School Boat Club',
   oxb: 'Oxford Brookes University Boat Club',
   trc: 'Thames Rowing Club',
@@ -13,11 +12,24 @@ const abbreviations = {};
 */
 
 clubs.uk = [
+  'abn',
+  'abs',
+  'age',
+  'akn',
+  'avn',
+  'bbl',
+  'bed',
+  'ber',
+  'brd',
+  'bra',
   'cab',
   'cam',
+  'cbs',
   'cha',
+  'cls',
   'cnn',
   'crc',
+  'cox',
   'iel',
   'pet',
   'rob',
@@ -91,9 +103,21 @@ abbreviations.uk = {
 };
 
 shortShortNames.uk = {
+  abn: 'Abingdon',
+  abs: 'Abingdon School',
+  age: 'Agecroft',
+  akn: 'Auriol Kensington',
+  avn: 'Avon County',
+  bbl: 'Barnes Bridge Ladies',
+  bed: 'Bedford',
+  ber: 'Berwick',
+  brd: 'Bradford',
+  bra: 'Bristol Ariel',
   cab: 'Cantabs',
   cam: 'City',
+  cbs: 'Cambois',
   cha: 'Champs',
+  cls: 'Chester-Le-Street',
   cnn: '99',
   cox: 'City of Oxford',
   crc: 'Chesterton',
@@ -111,9 +135,21 @@ shortShortNames.uk = {
 };
 
 shortNames.uk = {
+  abn: 'Abingdon',
+  abs: 'Abingdon School',
+  age: 'Agecroft',
+  akn: 'Auriol Kensington',
+  avn: 'Avon County',
+  bbl: 'Barnes Bridge Ladies',
+  bed: 'Bedford',
+  ber: 'Berwick',
+  brd: 'Bradford',
+  bra: 'Bristol Ariel',
   cab: 'Cantabrigian',
   cam: 'City of Cambridge',
+  cbs: 'Cambois',
   cha: 'Champion Of The Thames',
+  cls: 'Chester-Le-Street',
   cnn: 'Cambridge 99',
   cox: 'City of Oxford',
   crc: 'Chesterton',
@@ -131,9 +167,21 @@ shortNames.uk = {
 };
 
 names.uk = {
+  abn: 'Abingdon Rowing Club',
+  abs: 'Abingdon School Rowing Club',
+  age: 'Agecroft Rowing Club',
+  akn: 'Auriol Kensington Rowing Club',
+  avn: 'Avon County Rowing Club',
+  bbl: 'Barnes Bridge Ladies Rowing Club',
+  bed: 'Bedford Amateur Rowing Club',
+  ber: 'Berwick Rowing Club',
+  brd: 'Bradford Amateur Rowing Club',
+  bra: 'Bristol Ariel Rowing Club',
   cab: 'Cantabrigian Rowing Club',
   cam: 'City of Cambridge Rowing Club',
+  cbs: 'Cambois Rowing Club',
   cha: 'Champion Of The Thames Rowing Club',
+  cls: 'Chester-Le-Street Amateur Rowing Club',
   cnn: 'Cambridge 99 Rowing Club',
   cox: 'City of Oxford Rowing Club',
   crc: 'Chesterton Rowing Club',
