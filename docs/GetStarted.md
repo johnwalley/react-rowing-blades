@@ -100,6 +100,33 @@ const { clubs, shortNames, names } = require('../src/');
       ))}
     </tbody>
   </table>
+
+  <h1>International</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Blade</th>
+        <th>id</th>
+        <th>Short name</th>
+        <th>Full name</th>
+      </tr>
+    </thead>
+    <tbody>
+      {clubs.international.map(club => (
+        <tr key={club}>
+          <td>
+            <Blade size={30} club={club} />
+          </td>
+          <td>
+            <code>{club}</code>
+          </td>
+          <td>{shortNames.international[club]}</td>
+          <td>{names.international[club]}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
 </div>;
 ```
 

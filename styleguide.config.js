@@ -26,6 +26,10 @@ module.exports = {
       content: 'docs/UnitedKingdomClubs.md',
     },
     {
+      name: 'International Clubs',
+      content: 'docs/InternationalClubs.md',
+    },
+    {
       name: 'Components',
       components: './src/**/[A-Z]*.jsx',
       exampleMode: 'expand',

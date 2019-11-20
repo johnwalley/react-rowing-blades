@@ -527,4 +527,18 @@ names.oxford = {
   wro: 'Worcester College Boat Club',
 };
 
+clubs.international = ['can', 'gbr', 'ger'];
+
+names.international = {
+  can: 'Canada',
+  gbr: 'Great Britain',
+  ger: 'Germany',
+};
+
+shortNames.international = {
+  can: 'Canada',
+  gbr: 'Great Britain',
+  ger: 'Germany',
+};
+
 export { clubs, names, shortNames, shortShortNames, abbreviations };

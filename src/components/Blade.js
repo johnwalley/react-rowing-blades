@@ -61,6 +61,10 @@ const Blade = React.forwardRef(({ className, size, club }, ref) => {
       decal = cam;
       fill = '#13294b';
       break;
+    case 'can':
+      decal = can;
+      fill = '#ff0000';
+      break;
     case 'cbs':
       decal = cbs;
       fill = '#008001';
@@ -136,6 +140,14 @@ const Blade = React.forwardRef(({ className, size, club }, ref) => {
     case 'ftt':
       decal = null;
       fill = '#000044';
+      break;
+    case 'gbr':
+      decal = gbr;
+      fill = '#f0f0f0';
+      break;
+    case 'ger':
+      decal = ger;
+      fill = '#202020';
       break;
     case 'gir':
       decal = gir;
@@ -371,7 +383,7 @@ const Blade = React.forwardRef(({ className, size, club }, ref) => {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
-      {...size !== undefined && { width: size, height: (size * 230) / 500 }}
+      {...(size !== undefined && { width: size, height: (size * 230) / 500 })}
       viewBox="0 0 500 230"
       ref={ref}
       className={className}
@@ -465,13 +477,13 @@ const ber = (
     <path
       d="M 100,-100 L 0,0 L 100,100"
       stroke="white"
-      stroke-width="20"
+      strokeWidth="20"
       fill="none"
     />
     <path
       d="M 150,-100 L 50,0 L 150,100"
       stroke="white"
-      stroke-width="20"
+      strokeWidth="20"
       fill="none"
     />
   </g>
@@ -527,6 +539,36 @@ const cam = (
       style={{ stroke: '#daaa00', strokeWidth: 17, fill: 'none' }}
     />
   </g>
+);
+
+const can = (
+  <>
+    <defs>
+      <clipPath id="vert50stripe">
+        <rect
+          transform="rotate(-4) scale(0.63, 0.81) translate(210, 60)"
+          x="25%"
+          y="0%"
+          width="50%"
+          height="100%"
+        />
+      </clipPath>
+    </defs>
+    <g clip-path="url(#vert50stripe)">
+      <rect
+        x="0"
+        y="0"
+        width="100%"
+        height="100%"
+        style={{ fill: '#f2f2f2' }}
+      />
+    </g>
+    <path
+      transform="rotate(-4) translate(130, 50) scale(0.05)"
+      d="M 3199.9526,290 L 2990.3615,698.71 C 2966.579,743.13 2923.9678,739.01 2881.3566,714.2 L 2729.6183,632.05 L 2842.7112,1259.82 C 2866.4938,1374.51 2790.1887,1374.51 2752.5317,1324.92 L 2487.7189,1014.97 L 2444.727,1172.37 C 2439.7693,1193.04 2417.971,1214.75 2385.2685,1209.58 L 2050.4097,1135.97 L 2138.3625,1470.29 C 2157.1909,1544.68 2171.8774,1575.48 2119.3545,1595.1 L 2000,1653.75 L 2576.4379,2143.29 C 2599.2536,2161.8 2610.7811,2195.11 2602.6585,2225.27 L 2552.2079,2398.37 C 2750.684,2374.45 2928.6267,2353.04 3127.0983,2329.15 C 3144.7336,2328.92 3173.9762,2344.59 3173.8558,2365.83 L 3147.5581,3000 L 3244.0581,3000 L 3228.8679,2367.19 C 3228.7474,2345.95 3255.2663,2328.92 3272.9016,2329.15 C 3471.3732,2353.04 3649.3161,2374.45 3847.7922,2398.37 L 3797.3417,2225.27 C 3789.2191,2195.11 3800.7465,2161.8 3823.5622,2143.29 L 4400,1653.75 L 4280.6456,1595.1 C 4228.1226,1575.48 4242.8092,1544.68 4261.6375,1470.29 L 4349.5905,1135.97 L 4014.7315,1209.58 C 3982.029,1214.75 3960.2307,1193.04 3955.2729,1172.37 L 3912.281,1014.97 L 3647.4683,1324.92 C 3609.8112,1374.51 3533.5061,1374.51 3557.2887,1259.82 L 3670.3814,632.05 L 3518.6434,714.2 C 3476.0311,739.01 3433.421,743.13 3409.6384,698.71"
+      style={{ fill: '#ff0000' }}
+    />
+  </>
 );
 
 const cbs = (
@@ -689,6 +731,61 @@ const ed = (
   </g>
 );
 
+const gbr = (
+  <g transform="rotate(-4) translate(435,20)">
+    <path
+      d="M -100,100 l 0,50"
+      style={{ strokeWidth: 100, stroke: '#000050' }}
+    />
+    <path d="M 0,0 l 0,250" style={{ strokeWidth: 30, stroke: '#B00000' }} />
+    <path
+      d="M -150,100 l 100,50"
+      style={{ strokeWidth: 8, stroke: '#f0f0f0' }}
+    />
+    <path
+      d="M -150,150 l 100,-50"
+      style={{ strokeWidth: 8, stroke: '#f0f0f0' }}
+    />
+    <path
+      d="M -150,100 l 100,50"
+      style={{ strokeWidth: 3, stroke: '#B00000' }}
+    />
+    <path
+      d="M -150,150 l 100,-50"
+      style={{ strokeWidth: 3, stroke: '#B00000' }}
+    />
+    <path
+      d="M -100,100 l 00,50"
+      style={{ strokeWidth: 14, stroke: '#f0f0f0' }}
+    />
+    <path
+      d="M -150,125 l 100,00"
+      style={{ strokeWidth: 14, stroke: '#f0f0f0' }}
+    />
+    <path
+      d="M -100,100 l 00,50"
+      style={{ strokeWidth: 8, stroke: '#B00000' }}
+    />
+    <path
+      d="M -150,125 l 100,00"
+      style={{ strokeWidth: 8, stroke: '#B00000' }}
+    />
+    <path
+      d="M -100,150 l 0,10"
+      style={{ strokeWidth: 120, stroke: '#f0f0f0' }}
+    />
+    <path
+      d="M -100,90 l 00,10"
+      style={{ strokeWidth: 120, stroke: '#f0f0f0' }}
+    />
+    <path
+      d="M -155,90 l 00,70"
+      style={{ strokeWidth: 10, stroke: '#f0f0f0' }}
+    />
+    <path d="M -45,90 l 00,70" style={{ strokeWidth: 10, stroke: '#f0f0f0' }} />
+  </g>
+);
+
 const gir = (
   <g>
     <path
@@ -717,6 +814,13 @@ const gir = (
         strokeWidth: 0.8975876,
       }}
     />
+  </g>
+);
+
+const ger = (
+  <g transform="rotate(-3) scale(0.71 0.81) translate(140,50)">
+    <rect style={{ fill: '#dd0000' }} width="100%" height="33.33%" y="33.33%" />
+    <rect style={{ fill: '#ffce00' }} width="100%" height="33.33%" y="66.66%" />
   </g>
 );
 
