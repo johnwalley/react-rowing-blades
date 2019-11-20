@@ -1,3 +1,9 @@
+Argentina
+
+```js
+<Blade size={100} club="arg" />
+```
+
 Canada
 
 ```js
@@ -14,4 +20,16 @@ Germany
 
 ```js
 <Blade size={100} club="ger" />
+```
+
+South Africa
+
+```js
+<Blade size={100} club="rsa" />
+```
+
+United States of America
+
+```js
+<Blade size={100} club="usa" />
 ```
