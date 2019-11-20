@@ -9,7 +9,7 @@
     "styleguide": "styleguidist server",
     "styleguide:build": "styleguidist build",
     "prepare": "rollup --config",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "files": [
     "esm/*",
