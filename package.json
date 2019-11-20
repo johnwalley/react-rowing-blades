@@ -10,7 +10,6 @@
     "styleguide:build": "styleguidist build",
     "prepare": "rollup --config",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "generate-svg-files": "node ./scripts/generate-svg-files"
   },
   "files": [
     "esm/*",
