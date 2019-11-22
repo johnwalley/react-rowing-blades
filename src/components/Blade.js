@@ -193,6 +193,10 @@ const Blade = React.forwardRef(({ className, size, club }, ref) => {
       decal = iel;
       fill = '#ffffff';
       break;
+    case 'imp':
+      decal = imp;
+      fill = '#101010';
+      break;
     case 'jec':
       decal = jec;
       fill = '#202020';
@@ -987,6 +991,13 @@ const iel = (
   <g>
     <path d="M 397,0 l 16,250" style={{ strokeWidth: 35, stroke: '#a1d3b9' }} />
     <path d="M 432,0 l 16,250" style={{ strokeWidth: 35, stroke: '#020c7e' }} />
+  </g>
+);
+
+const imp = (
+  <g transform="rotate(-3) scale(0.71 0.81) translate(140,50)">
+    <rect fill="#EBECEC" width="100%" height="33.33%" y="33.33%" />
+    <rect fill="#549DC5" width="100%" height="33.33%" y="66.66%" />
   </g>
 );
 

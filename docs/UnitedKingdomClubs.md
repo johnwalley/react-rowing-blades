@@ -88,6 +88,12 @@ Durham School
 <Blade size={100} club="dus" />
 ```
 
+Imperial College
+
+```js
+<Blade size={100} club="imp" />
+```
+
 Oxford Brookes University
 
 ```js
