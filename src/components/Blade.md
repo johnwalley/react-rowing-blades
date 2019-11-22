@@ -1,4 +1,4 @@
-Examples
+Fixed width
 
 ```js
 <Blade club="cam" size={200} />

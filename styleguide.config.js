@@ -31,7 +31,7 @@ module.exports = {
     },
     {
       name: 'Components',
-      components: './src/**/[A-Z]*.jsx',
+      components: './src/**/[A-Z]*.js',
       exampleMode: 'expand',
       usageMode: 'expand',
     },
