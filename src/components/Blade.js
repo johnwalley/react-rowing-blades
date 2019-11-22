@@ -137,6 +137,14 @@ const Blade = React.forwardRef(({ className, size, club }, ref) => {
       decal = null;
       fill = "#AB0F62";
       break;
+    case "dur":
+      decal = dur;
+      fill = '#000044';
+      break;
+    case "dus":
+      decal = dus;
+      fill = "#F5F5F5";
+      break;
     case "emm":
       decal = emm;
       fill = "#000077";
@@ -252,6 +260,10 @@ const Blade = React.forwardRef(({ className, size, club }, ref) => {
     case "oro":
       decal = oro;
       fill = "#002163";
+      break;
+    case "oxb":
+      decal = oxb;
+      fill = '#003380';
       break;
     case "pbc":
       decal = pbc;
@@ -771,6 +783,36 @@ const daw = (
   </g>
 );
 
+const dur = (
+  <g transform="rotate(11) translate(440,-80)">
+    <path
+      d="M -60,00 l 80,300 "
+      style={{ stroke: '#C8AC59', strokeWidth: 45, fill: 'none' }}
+    />
+  </g>
+);
+
+const dus = (
+  <g transform="translate(264,20) scale(0.070)">
+    <path
+      style={{ fill: '#15392D' }}
+      d="M1224 2062c-2,0 -3,0 -4,0 0,0 0,0 -1,0 -1,0 -2,0 -3,0 0,0 -1,0 -1,0 -1,0 -2,0 -3,0 -87,0 -173,0 -260,0 154,-147 183,-421 188,-660l-41 0c-8,0 -15,-5 -15,-12l0 -34c-250,1 -493,23 -640,140 0,-67 0,-140 0,-208 0,-1 0,-2 0,-3 0,-67 0,-141 0,-208 147,117 390,140 640,141l0 -36c0,-7 7,-12 15,-12l41 0c-5,-240 -33,-516 -188,-665 87,0 173,0 260,0 1,0 2,0 3,0 0,0 1,0 1,0 1,0 2,0 3,0 1,0 1,0 1,0 1,0 2,0 4,0 86,0 172,0 259,0 -155,149 -183,425 -188,665l43 0c9,0 16,5 16,12l0 36c251,-1 498,-23 646,-141 0,67 0,141 0,208 0,1 0,2 0,3 0,68 0,141 0,208 -148,-118 -395,-139 -646,-140l0 34c0,7 -7,12 -16,12l-43 0c5,239 34,513 188,660 -87,0 -173,0 -259,0z"
+    />
+    <path
+      style={{ fill: '#15392D' }}
+      d="M2259 461l351 -193 30 388 -351 193 -30 -388z"
+    />
+    <path
+      style={{ fill: '#15392D' }}
+      d="M2319 1237l351 -193 30 388 -351 193 -30 -388z"
+    />
+    <path
+      style={{ fill: '#15392D' }}
+      d="M2379 2013l351 -193 30 388 -351 193 -30 -388z"
+    />
+  </g>
+);
+
 const emm = (
   <g transform="rotate(-4) translate(400,20)">
     <path
@@ -1229,6 +1271,33 @@ const oro = (
     <path d="M 5,00 l 0,300" style={{ stroke: "#FFFFFF", strokeWidth: 20 }} />
     <path d="M -35,00 l 0,300" style={{ stroke: "#FFFFFF", strokeWidth: 20 }} />
   </g>
+);
+
+const oxb = (
+  <>
+    <clipPath id="vert30stripe">
+      <rect
+        transform="rotate(-4) scale(0.63 0.81) translate(210,60)"
+        x="33.333%"
+        y="0%"
+        width="33.333%"
+        height="100%"
+      />
+    </clipPath>
+    <g>
+      <g clip-path="url(#vert30stripe)">
+        <rect fill="#F2F2F2" x="0" y="0" width="100%" height="100%" />
+      </g>
+      <rect
+        transform="rotate(-4) scale(0.63 0.81) translate(210,60)"
+        x="66.666%"
+        y="0%"
+        width="33.333%"
+        height="100%"
+        fill="#A02C2C"
+      />
+    </g>
+  </>
 );
 
 const pbc = (

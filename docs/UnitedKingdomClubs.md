@@ -75,3 +75,21 @@ City of Oxford
 ```js
 <Blade size={100} club="cox" />
 ```
+
+Durham
+
+```js
+<Blade size={100} club="dur" />
+```
+
+Durham School
+
+```js
+<Blade size={100} club="dus" />
+```
+
+Oxford Brookes University
+
+```js
+<Blade size={100} club="oxb" />
+```
