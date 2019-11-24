@@ -29,6 +29,10 @@ const Blade = React.forwardRef(({ className, size, club }, ref) => {
       decal = aru;
       fill = '#000000';
       break;
+    case 'aut':
+      decal = aut;
+      fill = '#ff0000';
+      break;
     case 'avn':
       decal = avn;
       fill = '#202020';
@@ -60,6 +64,10 @@ const Blade = React.forwardRef(({ className, size, club }, ref) => {
     case 'brd':
       decal = brd;
       fill = '#00214E';
+      break;
+    case 'bul':
+      decal = bul;
+      fill = '#d62612';
       break;
     case 'cab':
       decal = cab;
@@ -129,9 +137,17 @@ const Blade = React.forwardRef(({ className, size, club }, ref) => {
       decal = crc;
       fill = '#ffffff';
       break;
+    case 'cro':
+      decal = cro;
+      fill = '#f2f2f2';
+      break;
     case 'daw':
       decal = daw;
       fill = '#000080';
+      break;
+    case 'den':
+      decal = den;
+      fill = '#f2f2f2';
       break;
     case 'dow':
       decal = null;
@@ -149,6 +165,10 @@ const Blade = React.forwardRef(({ className, size, club }, ref) => {
       decal = emm;
       fill = '#000077';
       break;
+    case 'est':
+      decal = est;
+      fill = '#3a75c4';
+      break;
     case 'exc':
       decal = null;
       fill = '#DF0000';
@@ -161,6 +181,10 @@ const Blade = React.forwardRef(({ className, size, club }, ref) => {
       decal = null;
       fill = '#000044';
       break;
+    case 'fra':
+      decal = fra;
+      fill = '#0c1c8c';
+      break;
     case 'gbr':
       decal = gbr;
       fill = '#f0f0f0';
@@ -172,6 +196,10 @@ const Blade = React.forwardRef(({ className, size, club }, ref) => {
     case 'gir':
       decal = gir;
       fill = '#004600';
+      break;
+    case 'gre':
+      decal = gre;
+      fill = '#101f8a';
       break;
     case 'gtm':
       decal = gtm;
@@ -256,6 +284,10 @@ const Blade = React.forwardRef(({ className, size, club }, ref) => {
     case 'nec':
       decal = nec;
       fill = '#800080';
+      break;
+    case 'nzl':
+      decal = nzl;
+      fill = '#202020';
       break;
     case 'nnm':
       decal = nnm;
@@ -507,9 +539,15 @@ const arg = (
 );
 
 const aru = (
-  <g transform="rotate(-3)  translate(0,130)">
+  <g transform="rotate(-3) translate(0,130)">
     <rect fill="#000000" x="0" y="0" width="100%" height="50%" />
     <path d="M 465,-100 L 350,0 L 455,100 Z" fill="orange" />
+  </g>
+);
+
+const aut = (
+  <g transform="rotate(-3) scale(0.71 0.81) translate(140,50)">
+    <rect width="100%" height="33.33%" y="33.33%" style={{ fill: '#f9f9f9' }} />
   </g>
 );
 
@@ -586,6 +624,38 @@ const brd = (
     <path d="M 0,53 l 0,-33 l 55,33 l 0,33 z" fill="white" />
     <path d="M 0,104 l 0,-33 l 55,33 l 0,33 z" fill="white" />
   </g>
+);
+
+const bul = (
+  <>
+    <clipPath id="vert30stripe">
+      <rect
+        transform="rotate(-4) scale(0.63, 0.81) translate(210, 60)"
+        x="33%"
+        y="0%"
+        width="34%"
+        height="100%"
+      />
+    </clipPath>
+    <g clipPath="url(#vert30stripe)">
+      <rect
+        x="0"
+        y="0"
+        width="100%"
+        height="100%"
+        style={{ fill: '#00966e' }}
+      />
+    </g>
+    <g transform="rotate(-4) scale(0.63, 0.81) translate(210, 60)">
+      <rect
+        x="67%"
+        y="0%"
+        width="34%"
+        height="100%"
+        style={{ fill: 'white' }}
+      />
+    </g>
+  </>
 );
 
 const cab = (
@@ -755,6 +825,15 @@ const crc = (
   </g>
 );
 
+const cro = (
+  <g transform="rotate(-4) translate(390,52)">
+    <rect style={{ fill: 'red' }} x="0" y="0" width="60" height="60" />
+    <rect style={{ fill: 'red' }} x="0" y="120" width="60" height="60" />
+    <rect style={{ fill: 'red' }} x="-60" y="60" width="60" height="60" />
+    <rect style={{ fill: 'red' }} x="-120" y="0" width="60" height="60" />
+  </g>
+);
+
 const daw = (
   <g>
     <path
@@ -784,6 +863,12 @@ const daw = (
       }}
       transform="matrix(0.99831419,-0.05804124,0.06411709,0.99794238,0,0)"
     />
+  </g>
+);
+
+const den = (
+  <g transform="rotate(-3) scale(0.71 0.81) translate(140,50)">
+    <rect width="100%" height="25%" y="37.5%" style={{ fill: '#dd0000' }} />
   </g>
 );
 
@@ -841,6 +926,44 @@ const ed = (
       style={{ stroke: '#0097ff', strokeWidth: 18, fill: 'none' }}
     />
   </g>
+);
+
+const est = (
+  <g transform="rotate(-3) scale(0.71 0.81) translate(140,50)">
+    <rect style={{ fill: 'black' }} width="100%" height="33.33%" y="33.33%" />
+    <rect style={{ fill: 'white' }} width="100%" height="33.33%" y="66.66%" />
+  </g>
+);
+
+const fra = (
+  <>
+    <clipPath id="vert30stripe">
+      <rect
+        transform="rotate(-4) scale(0.63 0.81) translate(210,60)"
+        x="33.333%"
+        y="0%"
+        width="33.333%"
+        height="100%"
+      />
+    </clipPath>
+    <g clipPath="url(#vert30stripe)">
+      <rect
+        style={{ fill: '#f2f2f2' }}
+        x="0"
+        y="0"
+        width="100%"
+        height="100%"
+      />
+    </g>
+    <rect
+      transform="rotate(-4) scale(0.63 0.81) translate(210,60) "
+      x="66.666%"
+      y="0%"
+      width="33.333%"
+      height="100%"
+      style={{ fill: '#ef2b2d' }}
+    />
+  </>
 );
 
 const gbr = (
@@ -934,6 +1057,14 @@ const ger = (
     <rect style={{ fill: '#dd0000' }} width="100%" height="33.33%" y="33.33%" />
     <rect style={{ fill: '#ffce00' }} width="100%" height="33.33%" y="66.66%" />
   </g>
+);
+
+const gre = (
+  <path
+    transform="rotate(-3) translate(100,30)"
+    d="M 200,0 L 200,200 M 0,100 L 400,100"
+    style={{ stroke: 'white', strokeWidth: 25 }}
+  />
 );
 
 const gtm = (
@@ -1277,6 +1408,23 @@ const nnm = (
   </g>
 );
 
+const nzl = (
+  <g fill="#fff">
+    <path d="M368.6 118.2l3-4.8 2.8-4.9-1-2.2a41.4 41.4 0 01-3.5-11.4c-.7-4.6-.6-5.8.4-8.2l.8-2 .7 1.6c3.9 10 5.3 15 4.9 17.7-.2 1 .3.6 1.6-1.2l1.2-1.6-.9-1.7A40.4 40.4 0 01376 88c-.1-2.8.3-4.4 1.3-6l.7-1 .6 2.4 2.1 6.8c1.4 4 1.4 4.4 1.2 6.2v2a7 7 0 001-1l1-1-1-4.3c-1.6-6.1-1.5-11 0-13.3.4-.6.8-1 .9-1a98.8 98.8 0 012.6 14.5c-.5 1.5-.1 1.6 1.3.2l1.2-1.1-.8-2.4c-1.6-4.4-1.7-10.4-.2-12.8l.8-1.2 1.4 6c1 4.8 1.3 6 1 7-.4 1.5-.3 1.5 1.2.2l1.1-1-.7-3.6c-.9-4.4-.8-8 .3-9.9.4-.7.8-1.3 1-1.2 0 0 .6 2.4 1 5.2.7 3.8.9 5.4.7 6.5-.4 1.6-.2 1.7 1.2.5l1-.8-.7-3.7c-.9-4.3-.8-7 .4-9l.9-1.5v1c0 .6.5 3 .9 5.1.5 2.8.6 4.4.4 5.4-.3 1.4 0 1.5 1.4.5.6-.6.6-.8 0-3.9-.7-4.2-.6-6.7.5-8.7l.9-1.5v1.1l.8 4.8a23.6 23.6 0 01.5 6.3l1-.5c1-.7 1-.7.4-3.8-.3-1.7-.5-4-.4-5 .2-1.9.9-3.9 1.4-4 .5-.1 1.8 7.8 1.5 9.4-.3 1.5-.1 1.6 1 .7.7-.6.7-1 .3-3.2-.6-3.5-.4-6.6.3-8 .6-.9.7-1 1-.6.4 1 1.3 7.9 1 8.5-.5 1 .2 1.2 1 .3.7-.7.9-1.1.6-1.6-.4-.8-.8-5.3-.5-6.8 0-.7.4-1.6.7-2l.6-.9.5 3.3c.4 1.8.6 3.7.5 4.2-.1 1.3.2 1.5 1 .8.4-.4.4-1 0-3.3-.6-3-.4-5 .4-6.2.4-.7.5-.6 1 2 .3 1.6.5 3.4.4 4-.2 1.4-.1 1.4.7.7.5-.4.5-.9.2-2.2-.6-2.2-.5-5.3.2-6.3.5-.8.5-.7.9 1.4.4 2.8.5 3.8.4 4.7 0 .6 0 .6.7-.2.6-.7.6-1 .3-2.4-.6-2.2-.5-4.6 0-5.5.5-.7.5-.6 1 1.8.2 1.4.3 2.8.2 3.2 0 .3 0 .6.2.6.5-.2.8-1.1.6-2-.4-1.7-.4-4.5.1-5.5l.5-.9.2 1.7.4 3c0 1 .1 1 .4.6.3-.2.3-1.4.1-2.5-.3-2.1 0-4 .4-4 .4-.2.6 1 .7 2.9 0 1 .2 1.4.4 1.3.2-.1.3-1.4.1-2.8 0-1.4 0-2.8.2-3.2.4-.6.4-.5.6.7l.2 2c0 .4.1.6.4.4.2 0 .2-1 0-2.2V50c.3-.4.5-.2.6 1 0 .9.4 1.8.6 1.4l-.1-1.5v-2.2c.3-.3.4-.2.4.7 0 1.5.7 1 .6-.4 0-1 .6-2.2 1-2.3l.1.2c.1.3 0 1.2-.4 2-.6 1.7-.6 2.1 0 1.2 1-1.2 1.4-1.4.8-.3-.3.6-.8 1-1 1.2l-.7.8c-.2.4-.4 1-.2.9l1.3-1c.7-.5 1.3-.8 1.5-.8.3.2-1.3 1.8-2.6 2.6-.8.4-1.3 1-1.3 1.3 0 .5.2.5.6.2.8-.8 3.4-1.7 3.2-1.3-.2.6-2 2-3.4 2.4a3 3 0 00-1.5 1.1c-.4.8-.4.8.1.4a8 8 0 012.6-.6l1.9-.2-1 .7c-.4.4-1.7.9-2.8 1.1-1.4.3-2 .6-2.4 1.1-.3.7-.3.7.6.5.6-.1 2-.3 3.2-.3h2l-1.1.7c-1 .5-2 .7-3.7.9-1.8.2-2.5.3-2.8.7-.4.7 0 1.1.9.9 1.3-.3 5.7.1 5.3.5-.6.7-2.8 1-5.2.8l-2.4-.1-.6.9c-.5.8-.5.9.1.7.4 0 2.1 0 3.8.4 2.7.5 3 .6 2.4 1-1 .7-3.8.7-6 .1-1.7-.4-1.8-.4-2.5.4-.9.8-.6 1.3.5 1l4 .7c3 .7 3.1.8 2.3 1.2-1.2.7-4 .6-6.5-.2-2-.6-2.1-.5-2.8.1-1 .8-.7 1.3.5 1 .4 0 2.3.4 4.2 1.1l3.6 1.3-1.7.4c-1.8.5-4.8 0-7.1-1-1.5-.6-1.7-.5-2.7.3-1 .8-.9 1.2.2 1 .6-.2 2.3.3 4.7 1.3 3.4 1.4 3.7 1.6 3 2-1.5.7-5.6 0-9.9-1.9-.5-.2-2.4 1-2.3 1.4 0 .2.6.3 1.3.3.6 0 2.8.9 4.9 1.8l3.7 1.7-1.2.4c-1.5.6-5.8-.3-8.5-1.6-2-1.1-2.2-1.1-3.4-.3l-.9.6 1.4.3c.8.1 3 1.2 5.2 2.4 3.7 2.2 3.7 2.2 2.6 2.5-1.7.4-5.6-.6-8.5-2.4-2.7-1.5-2.7-1.5-3.8-.9-1.3.8-1.3 1.2 0 1.1.7 0 2.7 1 5.5 2.7l4.4 2.7-1.6.2c-2 .3-5.5-.8-8.7-3l-2.5-1.5-1.2.8-1.1 1.1 1.4.3c.8 0 2.4.6 3.7 1.3l4.8 2.4 2.6 1.3-1.6.5c-2 .6-6-.4-10-2.6l-3-1.7-1 1c-.6.4-1 .9-1 1 0 .1.7.2 1.5.2 1 0 2.7.6 4.5 1.5l5.5 2.4 2.7 1.1-1.1.6c-2.3 1.2-8.4 0-13-2.5l-2.3-1.3-1.4 1.3a6 6 0 00-1.3 1.5c0 .1.8.2 1.6 0a8 8 0 014 .8l6.8 2.5 4.2 1.7-1.5.6c-1.7.8-4 .8-7.8 0-2.6-.6-6.6-2-7.9-3l-1.3-.4c-.5.2-2.6 2.5-2.5 3l1.4-.2c1.9-.4 3-.2 9.9 2.3l6.6 2.3c1 0 .2.6-1.8 1.3a10 10 0 01-4.8.5c-3.5-.3-8.1-1.6-11.1-3l-2.2-1.1-1.4 1.8c-.7 1-1.3 1.9-1.2 2l1.8-.2c2-.5 1.8-.5 12.3 2.2 6.6 1.6 6.8 1.7 6 2.3-3.2 2.6-11.9 2.4-19.3-.3l-2.9-1c-.2.2-7.1 14.6-7 14.9z" />
+    <text fontSize="150" transform="rotate(-4 1113.6 -5056.3) scale(.2)">
+      N
+    </text>
+    <text
+      x="300"
+      y="300"
+      fontSize="150"
+      transform="rotate(-4 1113.6 -5056.3) scale(.2)"
+    >
+      Z
+    </text>
+  </g>
+);
+
 const oro = (
   <g transform="rotate(-4) translate(400,20)">
     <path d="M 5,00 l 0,300" style={{ stroke: '#FFFFFF', strokeWidth: 20 }} />
@@ -1296,7 +1444,7 @@ const oxb = (
       />
     </clipPath>
     <g>
-      <g clip-path="url(#vert30stripe)">
+      <g clipPath="url(#vert30stripe)">
         <rect fill="#F2F2F2" x="0" y="0" width="100%" height="100%" />
       </g>
       <rect

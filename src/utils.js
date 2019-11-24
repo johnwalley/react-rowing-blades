@@ -588,22 +588,53 @@ names.oxford = {
   wro: 'Worcester College Boat Club',
 };
 
-clubs.international = ['arg', 'can', 'gbr', 'ger', 'rsa', 'usa'];
+clubs.international = [
+  'arg',
+  'aut',
+  'bul',
+  'can',
+  'cro',
+  'den',
+  'est',
+  'fra',
+  'gbr',
+  'ger',
+  'gre',
+  'nzl',
+  'rsa',
+  'usa',
+];
 
 names.international = {
   arg: 'Argentina',
+  aut: 'Austria',
+  bul: 'Bulgaria',
   can: 'Canada',
+  cro: 'Croatia',
+  den: 'Denmark',
+  est: 'Estonia',
+  fra: 'France',
   gbr: 'Great Britain',
   ger: 'Germany',
+  gre: 'Greece',
+  nzl: 'New Zealand',
   rsa: 'South Africa',
   usa: 'United States of America',
 };
 
 shortNames.international = {
   arg: 'Argentina',
+  aut: 'Austria',
+  bul: 'Bulgaria',
   can: 'Canada',
+  cro: 'Coratia',
+  den: 'Denmark',
+  est: 'Estonia',
+  fra: 'France',
   gbr: 'Great Britain',
   ger: 'Germany',
+  gre: 'Greece',
+  nzl: 'New Zealand',
   rsa: 'South Africa',
   usa: 'United States of America',
 };
