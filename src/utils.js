@@ -627,7 +627,7 @@ shortNames.international = {
   aut: 'Austria',
   bul: 'Bulgaria',
   can: 'Canada',
-  cro: 'Coratia',
+  cro: 'Croatia',
   den: 'Denmark',
   est: 'Estonia',
   fra: 'France',
