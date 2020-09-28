@@ -6,7 +6,17 @@ export default {
   title: 'Components/Blade',
   component: Blade,
   argTypes: {
-    club: { control: { type: 'select', options: clubs.cambridge } },
+    club: {
+      control: {
+        type: 'select',
+        options: [
+          ...clubs.cambridge,
+          ...clubs.oxford,
+          ...clubs.uk,
+          ...clubs.international,
+        ],
+      },
+    },
     size: {
       control: {
         type: 'range',
