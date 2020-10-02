@@ -25,11 +25,11 @@ If you want to develop a component
 
 - `npm i`
 
-- `npm run styleguide`
+- `npm run storybook`
 
 If you want to build
 
-- `npm run styleguide:build`
+- `npm run build-storybook`
 
 ## Documentation
 
