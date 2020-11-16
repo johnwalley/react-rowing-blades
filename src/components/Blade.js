@@ -249,6 +249,10 @@ const Blade = React.forwardRef(({ className, size, club }, ref) => {
       decal = lcc;
       fill = "#136bfb";
       break;
+    case "ldr":
+      decal = null;
+      fill = "#ffc6cf";
+      break;
     case "lic":
       decal = lic;
       fill = "#000032";
