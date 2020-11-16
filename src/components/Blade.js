@@ -197,6 +197,10 @@ const Blade = React.forwardRef(({ className, size, club }, ref) => {
       decal = gir;
       fill = "#004600";
       break;
+    case "glw":
+      decal = glw;
+      fill = "#ff0022";
+      break;
     case "gre":
       decal = gre;
       fill = "#101f8a";
@@ -1056,6 +1060,13 @@ const ger = (
   <g transform="rotate(-3) scale(0.71 0.81) translate(140,50)">
     <rect style={{ fill: "#dd0000" }} width="100%" height="33.33%" y="33.33%" />
     <rect style={{ fill: "#ffce00" }} width="100%" height="33.33%" y="66.66%" />
+  </g>
+);
+
+const glw = (
+  <g transform="rotate(-3) translate(0,130) ">
+    <rect fill="#ffff33" x="0" y="0" width="100%" height="50%" />
+    <path d="M 465,-100 L 350,0 L 455,100 Z" fill="#101010" />
   </g>
 );
 
