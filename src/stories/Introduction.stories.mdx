@@ -131,15 +131,28 @@ React Rowing Blades is a library of SVG illustrations (react components) of rowi
 </div>
 
 <div>
-  {clubs.cambridge.map((club) => (
-    <div key={club}>
-      <div>
-        <strong>{shortNames.cambridge[club]}</strong>
-      </div>
-      <div>{club}</div>
-      <Blade club={club} size={100} />
-    </div>
-  ))}
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Code</th>
+        <th>Blade</th>
+      </tr>
+    </thead>
+    <tbody>
+      {clubs.cambridge.map((club) => (
+        <tr key={club}>
+          <td>
+            <strong>{shortNames.cambridge[club]}</strong>
+          </td>
+          <td>{club}</td>
+          <td>
+            <Blade club={club} size={100} />
+          </td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
 </div>
 
 <div class="subheading" id="oxford-college">
@@ -147,15 +160,28 @@ React Rowing Blades is a library of SVG illustrations (react components) of rowi
 </div>
 
 <div>
-  {clubs.oxford.map((club) => (
-    <div key={club}>
-      <div>
-        <strong>{shortNames.oxford[club]}</strong>
-      </div>
-      <div>{club}</div>
-      <Blade club={club} size={100} />
-    </div>
-  ))}
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Code</th>
+        <th>Blade</th>
+      </tr>
+    </thead>
+    <tbody>
+      {clubs.oxford.map((club) => (
+        <tr key={club}>
+          <td>
+            <strong>{shortNames.oxford[club]}</strong>
+          </td>
+          <td>{club}</td>
+          <td>
+            <Blade club={club} size={100} />
+          </td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
 </div>
 
 <div class="subheading" id="united-kingdom">
@@ -163,15 +189,28 @@ React Rowing Blades is a library of SVG illustrations (react components) of rowi
 </div>
 
 <div>
-  {clubs.uk.map((club) => (
-    <div key={club}>
-      <div>
-        <strong>{shortNames.uk[club]}</strong>
-      </div>
-      <div>{club}</div>
-      <Blade club={club} size={100} />
-    </div>
-  ))}
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Code</th>
+        <th>Blade</th>
+      </tr>
+    </thead>
+    <tbody>
+      {clubs.uk.map((club) => (
+        <tr key={club}>
+          <td>
+            <strong>{shortNames.uk[club]}</strong>
+          </td>
+          <td>{club}</td>
+          <td>
+            <Blade club={club} size={100} />
+          </td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
 </div>
 
 <div class="subheading" id="international">
@@ -179,13 +218,26 @@ React Rowing Blades is a library of SVG illustrations (react components) of rowi
 </div>
 
 <div>
-  {clubs.international.map((club) => (
-    <div key={club}>
-      <div>
-        <strong>{shortNames.international[club]}</strong>
-      </div>
-      <div>{club}</div>
-      <Blade club={club} size={100} />
-    </div>
-  ))}
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Code</th>
+        <th>Blade</th>
+      </tr>
+    </thead>
+    <tbody>
+      {clubs.international.map((club) => (
+        <tr key={club}>
+          <td>
+            <strong>{shortNames.international[club]}</strong>
+          </td>
+          <td>{club}</td>
+          <td>
+            <Blade club={club} size={100} />
+          </td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
 </div>
