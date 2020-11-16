@@ -1,14 +1,14 @@
-import Blade from './Blade';
-import React from 'react';
-import { clubs } from '../utils';
+import Blade from "./Blade";
+import React from "react";
+import { clubs } from "../utils";
 
 export default {
-  title: 'Components/Blade',
+  title: "Components/Blade",
   component: Blade,
   argTypes: {
     club: {
       control: {
-        type: 'select',
+        type: "select",
         options: [
           ...clubs.cambridge,
           ...clubs.oxford,
@@ -19,7 +19,7 @@ export default {
     },
     size: {
       control: {
-        type: 'range',
+        type: "range",
         min: 10,
         max: 400,
         step: 10,
@@ -31,7 +31,7 @@ export default {
 const Template = (args) => <Blade {...args} />;
 
 export const FixedWidth = Template.bind({});
-FixedWidth.args = { club: 'emm', size: 200 };
+FixedWidth.args = { club: "emm", size: 200 };
 
 export const Responsive = Template.bind({});
-Responsive.args = { club: 'emm' };
+Responsive.args = { club: "emm" };
