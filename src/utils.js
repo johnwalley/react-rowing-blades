@@ -610,6 +610,7 @@ names.oxford = {
 
 clubs.international = [
   "arg",
+  "aus",
   "aut",
   "bul",
   "can",
@@ -627,6 +628,7 @@ clubs.international = [
 
 names.international = {
   arg: "Argentina",
+  aus: "Australia",
   aut: "Austria",
   bul: "Bulgaria",
   can: "Canada",
@@ -644,6 +646,7 @@ names.international = {
 
 shortNames.international = {
   arg: "Argentina",
+  aus: "Australia",
   aut: "Austria",
   bul: "Bulgaria",
   can: "Canada",

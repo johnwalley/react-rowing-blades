@@ -29,6 +29,10 @@ const Blade = React.forwardRef(({ className, size, club }, ref) => {
       decal = aru;
       fill = "#000000";
       break;
+    case "aus":
+      decal = aus;
+      fill = "#f0f0f0";
+      break;
     case "aut":
       decal = aut;
       fill = "#ff0000";
@@ -562,6 +566,14 @@ const aru = (
   <g transform="rotate(-3) translate(0,130)">
     <rect fill="#000000" x="0" y="0" width="100%" height="50%" />
     <path d="M 465,-100 L 350,0 L 455,100 Z" fill="orange" />
+  </g>
+);
+
+const aus = (
+  <g transform="rotate(-4) translate(370, 20)">
+    <path d="M 0,0 l 0,250" style={{ strokeWidth: 20, stroke: "#004000" }} />
+    <path d="M 20,0 l 0,250" style={{ strokeWidth: 20, stroke: "#ffff00" }} />
+    <path d="M 40,0 l 0,250" style={{ strokeWidth: 20, stroke: "#004000" }} />
   </g>
 );
 
