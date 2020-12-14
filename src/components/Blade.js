@@ -1186,7 +1186,7 @@ const ita = (
         height="100%"
       />
     </clipPath>
-    <g clip-path="url(#vert30stripe)">
+    <g clipPath="url(#vert30stripe)">
       <rect fill="#F2F2F2" x="0" y="0" width="100%" height="100%" />
     </g>
     <rect
