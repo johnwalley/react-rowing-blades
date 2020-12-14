@@ -237,6 +237,10 @@ const Blade = React.forwardRef(({ className, size, club }, ref) => {
       decal = imp;
       fill = "#101010";
       break;
+    case "ita":
+      decal = ita;
+      fill = "#008d46";
+      break;
     case "jec":
       decal = jec;
       fill = "#202020";
@@ -1169,6 +1173,31 @@ const imp = (
     <rect fill="#EBECEC" width="100%" height="33.33%" y="33.33%" />
     <rect fill="#549DC5" width="100%" height="33.33%" y="66.66%" />
   </g>
+);
+
+const ita = (
+  <>
+    <clipPath id="vert30stripe">
+      <rect
+        transform="rotate(-4) scale(0.63 0.81) translate(210,60)"
+        x="33.333%"
+        y="0%"
+        width="33.333%"
+        height="100%"
+      />
+    </clipPath>
+    <g clip-path="url(#vert30stripe)">
+      <rect fill="#F2F2F2" x="0" y="0" width="100%" height="100%" />
+    </g>
+    <rect
+      transform="rotate(-4) scale(0.63 0.81) translate(210,60)"
+      x="66.666%"
+      y="0%"
+      width="33.333%"
+      height="100%"
+      fill="#ef2b2d"
+    />
+  </>
 );
 
 const jec = (
