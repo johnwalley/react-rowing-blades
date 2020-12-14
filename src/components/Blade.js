@@ -337,6 +337,10 @@ const Blade = React.forwardRef(({ className, size, club }, ref) => {
       decal = qco;
       fill = "#000066";
       break;
+    case "rdu":
+      decal = rdu;
+      fill = "#f0f0f0";
+      break;
     case "rob":
       decal = rob;
       fill = "#7e0308";
@@ -1543,6 +1547,10 @@ const rob = (
       style={{ fill: "#ffffff", stroke: "none" }}
     />
   </g>
+);
+
+const rdu = (
+  <path d="M 432,0 l 16,250" style={{ strokeWidth: 35, stroke: "#993399" }} />
 );
 
 const roc = (
