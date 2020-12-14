@@ -169,6 +169,10 @@ const Blade = React.forwardRef(({ className, size, club }, ref) => {
       decal = est;
       fill = "#3a75c4";
       break;
+    case "etn":
+      decal = null;
+      fill = "#B7E1E4";
+      break;
     case "exc":
       decal = null;
       fill = "#DF0000";
