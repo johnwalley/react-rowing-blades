@@ -409,6 +409,10 @@ const Blade = React.forwardRef(({ className, size, club }, ref) => {
       decal = spc;
       fill = "#FFFFFF";
       break;
+    case "son":
+      decal = son;
+      fill = "#f0f0f0";
+      break;
     case "srg":
       decal = srg;
       fill = "#FF0000";
@@ -1885,6 +1889,15 @@ const spc = (
     <path
       d="M -170,10 l 320,300 "
       style={{ stroke: "#FFCC00", strokeWidth: 20, fill: "none" }}
+    />
+  </g>
+);
+
+const son = (
+  <g transform="rotate(-4) translate(380,20)">
+    <path
+      d="M 0,0 l 0,100 l 40,40 l 0,100 M 40,0 l 0,100 l -40,40 l 0,100"
+      style={{ stroke: "blue", strokeWidth: 15, fill: "none" }}
     />
   </g>
 );
