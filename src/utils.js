@@ -44,6 +44,7 @@ clubs.uk = [
   "sne",
   "son",
   "srg",
+  "tss",
   "vet",
   "xpr",
 ];
@@ -146,6 +147,7 @@ shortShortNames.uk = {
   son: "Sons of the Thames",
   srg: "St Radegund",
   trc: "Thames",
+  tss: "Tideway Scullers",
   vet: "Camb Veterans",
   xpr: "X-Press",
   yrk: "York City",
@@ -186,6 +188,7 @@ shortNames.uk = {
   son: "Sons of the Thames",
   srg: "St Radegund",
   trc: "Thames",
+  tss: "Tideway Scullers School",
   vet: "Cambridge Veterans",
   xpr: "X-Press",
   yrk: "York City",

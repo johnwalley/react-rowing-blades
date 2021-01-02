@@ -441,6 +441,10 @@ const Blade = React.forwardRef(({ className, size, club }, ref) => {
       decal = tro;
       fill = "#010178";
       break;
+    case "tss":
+      decal = tss;
+      fill = "#C80410";
+      break;
     case "usa":
       decal = usa;
       fill = "#bf0a30";
@@ -1981,6 +1985,8 @@ const tro = (
     />
   </g>
 );
+
+const tss = <path d="M 345,230 L 280,0 L 500,0 L 500,230 Z" fill="#F5D60C" />;
 
 const usa = (
   <g transform="rotate(-3) translate(0,130) ">
