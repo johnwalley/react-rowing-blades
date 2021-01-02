@@ -289,6 +289,10 @@ const Blade = React.forwardRef(({ className, size, club }, ref) => {
       decal = man;
       fill = "#d40000";
       break;
+    case "mau":
+      decal = mau;
+      fill = "#844C82";
+      break;
     case "mec":
       decal = null;
       fill = "#F5F5F5";
@@ -1424,6 +1428,8 @@ const man = (
     />
   </g>
 );
+
+const mau = <path d="M 345,230 L 280,0 L 500,0 L 500,230 Z" fill="#FACA30" />;
 
 const mer = (
   <g
