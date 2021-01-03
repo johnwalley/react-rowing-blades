@@ -45,6 +45,10 @@ const Blade = React.forwardRef(({ className, size, club }, ref) => {
       decal = bal;
       fill = "#000000";
       break;
+    case "bau":
+      decal = bau;
+      fill = "#00214E";
+      break;
     case "bbl":
       decal = bbl;
       fill = "#1667F6";
@@ -604,6 +608,14 @@ const bal = (
     style={{ fill: "#d40000", stroke: "none", strokeWidth: 1 }}
     d="M 109.76752,42.435275 76.110919,192.11109 428.81461,203.01844 z"
   />
+);
+
+const bau = (
+  <g transform="rotate(-4) translate(375, 70)">
+    <path d="M 0,0 l 0,30 l 60,0 l 0,-30 z" fill="#FFFF00" />
+    <path d="M 0,55 l 0,30 l 60,0 l 0,-30 z" fill="#FFFF00" />
+    <path d="M 0,110 l 0,30 l 60,0 l 0,-30 z" fill="#FFFF00" />
+  </g>
 );
 
 const bbl = (
