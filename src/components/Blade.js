@@ -61,6 +61,10 @@ const Blade = React.forwardRef(({ className, size, club }, ref) => {
       decal = ber;
       fill = "#000077";
       break;
+    case "bms":
+      decal = bms;
+      fill = "#202020";
+      break;
     case "bra":
       decal = bra;
       fill = "#F5F5F5";
@@ -661,6 +665,19 @@ const ber = (
       stroke="white"
       strokeWidth="20"
       fill="none"
+    />
+  </g>
+);
+
+const bms = (
+  <g transform="rotate(-4) translate(410, 20)">
+    <path
+      d="M 5,00 l 0,300"
+      style={{ stroke: "#EC0112", strokeWidth: 20, fill: "none" }}
+    />
+    <path
+      d="M -30,00 l 0,300"
+      style={{ stroke: "#EC0112", strokeWidth: 20, fill: "none" }}
     />
   </g>
 );
