@@ -34,3 +34,11 @@ If you want to build
 ## Documentation
 
 See https://react-rowing-blades.netlify.com/
+
+## Attribution
+
+Original blade designs from [Wikimedia Commons](https://commons.wikimedia.org/wiki/Category:SVG_rowing_blades).
+
+## License
+
+The blade designs are licensed under the [Creative Commons Attribution Share Alike 4.0 International license](https://creativecommons.org/licenses/by-sa/4.0/), and the underlying source code used to display the blade designs is licensed under the [Apache License 2.0](LICENSE.md).
