@@ -113,6 +113,10 @@ const Blade = React.forwardRef(({ className, size, club }, ref) => {
       decal = null;
       fill = "#fc6621";
       break;
+    case "cfu":
+      decal = cfu;
+      fill = "#202020";
+      break;
     case "chb":
       decal = null;
       fill = "#000065";
@@ -817,6 +821,13 @@ const can = (
 const cbs = (
   <g transform="rotate(-3) translate(-20, 130)">
     <path d="M 480,-120 L 350,0 L 480,120 Z" fill="#ffffff" />
+  </g>
+);
+
+const cfu = (
+  <g>
+    <path d="M 421,0 l 15,250" style={{ strokeWidth: 20, stroke: "#dd0000" }} />
+    <path d="M 440,0 l 15,250" style={{ strokeWidth: 20, stroke: "#ffffff" }} />
   </g>
 );
 
