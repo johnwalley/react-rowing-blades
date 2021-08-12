@@ -372,6 +372,10 @@ const Blade = React.forwardRef<SVGSVGElement, BladeProps>(
         decal = pmb;
         fill = "#F0F0F0";
         break;
+      case "pol":
+        decal = pol;
+        fill = "#F2F2F2";
+        break;
       case "ptr":
         decal = ptr;
         fill = "#000033";
@@ -1692,6 +1696,19 @@ const pmb = (
   <g>
     <path d="M 432,0 l 16,250" style={{ strokeWidth: 35, stroke: "#ff7777" }} />
   </g>
+);
+
+const pol = (
+  <rect
+    style={{ fill: "#dd0c39", fillOpacity: 1 }}
+    x="0"
+    id="rect41"
+    transform="matrix(0.70902697,-0.03715853,0.04239212,0.80888992,101.25621,32.815632)"
+    y="50%"
+    height="50%"
+    width="500"
+    fill="#ff0000"
+  />
 );
 
 const ptr = (
