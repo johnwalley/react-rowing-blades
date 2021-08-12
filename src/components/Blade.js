@@ -185,6 +185,10 @@ const Blade = React.forwardRef(({ className, size, club }, ref) => {
       decal = emm;
       fill = "#000077";
       break;
+    case "esp":
+      decal = esp;
+      fill = "#db000d";
+      break;
     case "est":
       decal = est;
       fill = "#3a75c4";
@@ -1032,6 +1036,23 @@ const ed = (
       style={{ stroke: "#0097ff", strokeWidth: 18, fill: "none" }}
     />
   </g>
+);
+
+const esp = (
+  <>
+    <clipPath id="vert30stripe">
+      <rect
+        transform="rotate(-4) scale(0.63 0.81) translate(210,60)"
+        x="33.333%"
+        y="0%"
+        width="33.333%"
+        height="100%"
+      />
+    </clipPath>
+    <g clip-rule="nonzero" clip-path="url(#vert30stripe)">
+      <rect fill="#fbea0e" x="0" y="0" width="100%" height="100%" />
+    </g>
+  </>
 );
 
 const est = (
