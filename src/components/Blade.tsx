@@ -64,6 +64,10 @@ const Blade = React.forwardRef<SVGSVGElement, BladeProps>(
         decal = bed;
         fill = "#8e0000";
         break;
+      case "bel":
+        decal = bel;
+        fill = "#202020";
+        break;
       case "ber":
         decal = ber;
         fill = "#000077";
@@ -686,6 +690,27 @@ const bed = (
       style={{ fill: "none", stroke: "#000063", strokeWidth: 20 }}
     />
   </g>
+);
+
+const bel = (
+  <>
+    <clipPath id="vert30stripe">
+      <rect
+        transform="rotate(-4) scale(0.63, 0.81) translate(210, 60)"
+        x="33%"
+        y="0%"
+        width="34%"
+        height="100%"
+        style={{ fill: "#003399" }}
+      />
+    </clipPath>
+    <g clip-rule="nonzero" clip-path="url(#vert30stripe)">
+      <rect fill="#ffda0c" x="0" y="0" width="100%" height="100%" />
+    </g>
+    <g transform="rotate(-4) scale(0.63, 0.81) translate(210, 60)">
+      <rect x="67%" y="0%" width="34%" height="100%" style={{ fill: "red" }} />
+    </g>
+  </>
 );
 
 const ber = (
