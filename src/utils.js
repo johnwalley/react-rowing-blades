@@ -646,6 +646,7 @@ clubs.international = [
   "ita",
   "nzl",
   "rsa",
+  "sui",
   "usa",
 ];
 
@@ -665,6 +666,7 @@ names.international = {
   ita: "Italy",
   nzl: "New Zealand",
   rsa: "South Africa",
+  sui: "Switzerland",
   usa: "United States of America",
 };
 
@@ -684,6 +686,7 @@ shortNames.international = {
   ita: "Italy",
   nzl: "New Zealand",
   rsa: "South Africa",
+  sui: "Switzerland",
   usa: "United States of America",
 };
 

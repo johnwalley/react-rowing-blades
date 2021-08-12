@@ -453,6 +453,10 @@ const Blade = React.forwardRef(({ className, size, club }, ref) => {
       decal = srg;
       fill = "#FF0000";
       break;
+    case "sui":
+      decal = sui;
+      fill = "#d81e05";
+      break;
     case "trh":
       decal = null;
       fill = "#202020";
@@ -1980,7 +1984,6 @@ const sid = (
 
 const sne = (
   <g transform="matrix(0.99756405,-0.06975647,0.06975647,0.99756405,397.77684,-2.7542188)">
-    >
     <path
       d="m -30.534,26.522 -0.521,174.724 58.477,4.757 0.136,-178.76 -58.092,-0.721 z"
       style={{ fill: "#2e3192" }}
@@ -2038,6 +2041,13 @@ const srg = (
         x="50%"
       />
     </g>
+  </g>
+);
+
+const sui = (
+  <g transform="scale(0.6) rotate(-4) translate(440,80)">
+    <rect fill="#fff" height="60" width="200" x="50" y="120" />
+    <rect fill="#fff" height="200" width="60" x="120" y="50" />
   </g>
 );
 
