@@ -337,6 +337,10 @@ const Blade = React.forwardRef(({ className, size, club }, ref) => {
       decal = nnm;
       fill = "#000066";
       break;
+    case "nor":
+      decal = nor;
+      fill = "#ef2b2d";
+      break;
     case "oro":
       decal = oro;
       fill = "#002163";
@@ -1571,6 +1575,31 @@ const nnm = (
       style={{ stroke: "silver", strokeWidth: 20, fill: "none" }}
     />
   </g>
+);
+
+const nor = (
+  <>
+    <clipPath id="centerStripe">
+      <rect
+        x="-50"
+        y="-15"
+        height="30"
+        width="500"
+        transform="rotate(6) translate(117, 50)"
+      />
+    </clipPath>
+    <rect
+      transform="rotate(6) translate(117, 50)"
+      fill="white"
+      x="-50"
+      y="-30"
+      width="500"
+      height="60"
+    />
+    <g clip-path="url(#centerStripe)">
+      <rect fill="#002868" x="0" y="0" width="100%" height="100%" />
+    </g>
+  </>
 );
 
 const nzl = (
