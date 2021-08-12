@@ -1,551 +1,559 @@
-import React from "react";
+import * as React from "react";
 
-const Blade = React.forwardRef(({ className, size, club }, ref) => {
-  let decal;
-  let fill;
+export type BladeProps = {
+  className?: string;
+  size?: number;
+  club: string;
+};
 
-  switch (club) {
-    case "abn":
-      decal = abn;
-      fill = "#003c10";
-      break;
-    case "abs":
-      decal = abs;
-      fill = "#cc0066";
-      break;
-    case "age":
-      decal = age;
-      fill = "#AB0A19";
-      break;
-    case "akn":
-      decal = akn;
-      fill = "#008620";
-      break;
-    case "arg":
-      decal = arg;
-      fill = "none";
-      break;
-    case "aru":
-      decal = aru;
-      fill = "#000000";
-      break;
-    case "aus":
-      decal = aus;
-      fill = "#f0f0f0";
-      break;
-    case "aut":
-      decal = aut;
-      fill = "#ff0000";
-      break;
-    case "avn":
-      decal = avn;
-      fill = "#202020";
-      break;
-    case "bal":
-      decal = bal;
-      fill = "#000000";
-      break;
-    case "bau":
-      decal = bau;
-      fill = "#00214E";
-      break;
-    case "bbl":
-      decal = bbl;
-      fill = "#1667F6";
-      break;
-    case "bed":
-      decal = bed;
-      fill = "#8e0000";
-      break;
-    case "ber":
-      decal = ber;
-      fill = "#000077";
-      break;
-    case "bms":
-      decal = bms;
-      fill = "#202020";
-      break;
-    case "bou":
-      decal = bou;
-      fill = "#f0f0f0";
-      break;
-    case "bra":
-      decal = bra;
-      fill = "#F5F5F5";
-      break;
-    case "brc":
-      decal = null;
-      fill = "#202020";
-      break;
-    case "brd":
-      decal = brd;
-      fill = "#00214E";
-      break;
-    case "bul":
-      decal = bul;
-      fill = "#d62612";
-      break;
-    case "cab":
-      decal = cab;
-      fill = "#000033";
-      break;
-    case "cai":
-      decal = cai;
-      fill = "#202020";
-      break;
-    case "cam":
-      decal = cam;
-      fill = "#13294b";
-      break;
-    case "can":
-      decal = can;
-      fill = "#ff0000";
-      break;
-    case "cbs":
-      decal = cbs;
-      fill = "#008001";
-      break;
-    case "cco":
-      decal = cco;
-      fill = "#00214E";
-      break;
-    case "cha":
-      decal = null;
-      fill = "#fc6621";
-      break;
-    case "cfu":
-      decal = cfu;
-      fill = "#202020";
-      break;
-    case "chb":
-      decal = null;
-      fill = "#000065";
-      break;
-    case "chu":
-      decal = null;
-      fill = "#FF70A0";
-      break;
-    case "cla":
-      decal = null;
-      fill = "#FFCC00";
-      break;
-    case "clh":
-      decal = clh;
-      fill = "#FFCC00";
-      break;
-    case "cls":
-      decal = cls;
-      fill = "#1909AF";
-      break;
-    case "cnn":
-      decal = cnn;
-      fill = "#599bfc";
-      break;
-    case "coo":
-      decal = coo;
-      fill = "#000040";
-      break;
-    case "cor":
-      decal = cor;
-      fill = "#8d0603";
-      break;
-    case "cox":
-      decal = cox;
-      fill = "#003366";
-      break;
-    case "crc":
-      decal = crc;
-      fill = "#ffffff";
-      break;
-    case "cro":
-      decal = cro;
-      fill = "#f2f2f2";
-      break;
-    case "daw":
-      decal = daw;
-      fill = "#000080";
-      break;
-    case "den":
-      decal = den;
-      fill = "#f2f2f2";
-      break;
-    case "dow":
-      decal = null;
-      fill = "#AB0F62";
-      break;
-    case "dur":
-      decal = dur;
-      fill = "#000044";
-      break;
-    case "dus":
-      decal = dus;
-      fill = "#F5F5F5";
-      break;
-    case "emm":
-      decal = emm;
-      fill = "#000077";
-      break;
-    case "esp":
-      decal = esp;
-      fill = "#db000d";
-      break;
-    case "est":
-      decal = est;
-      fill = "#3a75c4";
-      break;
-    case "etn":
-      decal = null;
-      fill = "#B7E1E4";
-      break;
-    case "exc":
-      decal = null;
-      fill = "#DF0000";
-      break;
-    case "fit":
-      decal = null;
-      fill = "lightgray";
-      break;
-    case "ftt":
-      decal = null;
-      fill = "#000044";
-      break;
-    case "fra":
-      decal = fra;
-      fill = "#0c1c8c";
-      break;
-    case "gbr":
-      decal = gbr;
-      fill = "#f0f0f0";
-      break;
-    case "ger":
-      decal = ger;
-      fill = "#202020";
-      break;
-    case "gir":
-      decal = gir;
-      fill = "#004600";
-      break;
-    case "glw":
-      decal = glw;
-      fill = "#ff0022";
-      break;
-    case "gre":
-      decal = gre;
-      fill = "#101f8a";
-      break;
-    case "gtm":
-      decal = gtm;
-      fill = "#000032";
-      break;
-    case "hec":
-      decal = hec;
-      fill = "#8E0000";
-      break;
-    case "hom":
-      decal = hom;
-      fill = "#f9f9f9";
-      break;
-    case "huh":
-      decal = huh;
-      fill = "#ffffff";
-      break;
-    case "iel":
-      decal = iel;
-      fill = "#ffffff";
-      break;
-    case "imp":
-      decal = imp;
-      fill = "#101010";
-      break;
-    case "ita":
-      decal = ita;
-      fill = "#008d46";
-      break;
-    case "jec":
-      decal = jec;
-      fill = "#202020";
-      break;
-    case "jeo":
-      decal = null;
-      fill = "#009C3A";
-      break;
-    case "kcb":
-      decal = null;
-      fill = "purple";
-      break;
-    case "keb":
-      decal = keb;
-      fill = "#F9F9F9";
-      break;
-    case "lcc":
-      decal = lcc;
-      fill = "#136bfb";
-      break;
-    case "ldr":
-      decal = null;
-      fill = "#ffc6cf";
-      break;
-    case "lic":
-      decal = lic;
-      fill = "#000032";
-      break;
-    case "lin":
-      decal = lin;
-      fill = "#ffcc00";
-      break;
-    case "lmb":
-      decal = null;
-      fill = "#DC0000";
-      break;
-    case "lmh":
-      decal = lmh;
-      fill = "#000032";
-      break;
-    case "mag":
-      decal = mag;
-      fill = "#151515";
-      break;
-    case "man":
-      decal = man;
-      fill = "#d40000";
-      break;
-    case "mau":
-      decal = mau;
-      fill = "#844C82";
-      break;
-    case "mec":
-      decal = null;
-      fill = "#F5F5F5";
-      break;
-    case "mer":
-      decal = mer;
-      fill = "#ffffff";
-      break;
-    case "mgd":
-      decal = mgd;
-      fill = "#8c00cd";
-      break;
-    case "nec":
-      decal = nec;
-      fill = "#800080";
-      break;
-    case "nzl":
-      decal = nzl;
-      fill = "#202020";
-      break;
-    case "nnm":
-      decal = nnm;
-      fill = "#000066";
-      break;
-    case "nor":
-      decal = nor;
-      fill = "#ef2b2d";
-      break;
-    case "oro":
-      decal = oro;
-      fill = "#002163";
-      break;
-    case "oxb":
-      decal = oxb;
-      fill = "#003380";
-      break;
-    case "pbc":
-      decal = pbc;
-      fill = "#0000CC";
-      break;
-    case "pem":
-      decal = pem;
-      fill = "#AAF0FF";
-      break;
-    case "pet":
-      decal = pet;
-      fill = "#071cd0";
-      break;
-    case "pmb":
-      decal = pmb;
-      fill = "#F0F0F0";
-      break;
-    case "ptr":
-      decal = ptr;
-      fill = "#000033";
-      break;
-    case "qcc":
-      decal = qcc;
-      fill = "darkgreen";
-      break;
-    case "qco":
-      decal = qco;
-      fill = "#000066";
-      break;
-    case "rdu":
-      decal = rdu;
-      fill = "#f0f0f0";
-      break;
-    case "rob":
-      decal = rob;
-      fill = "#7e0308";
-      break;
-    case "roc":
-      decal = roc;
-      fill = "#0099FF";
-      break;
-    case "rou":
-      decal = rou;
-      fill = "#0045e6";
-      break;
-    case "rpc":
-      decal = rpc;
-      fill = "#EE0000";
-      break;
-    case "rsa":
-      decal = rsa;
-      fill = "#ff0000";
-      break;
-    case "sac":
-      decal = sac;
-      fill = "#B20000";
-      break;
-    case "say":
-      decal = say;
-      fill = "#d40000";
-      break;
-    case "sbh":
-      decal = sbh;
-      fill = "#f9f9f9";
-      break;
-    case "scc":
-      decal = scc;
-      fill = "#780025";
-      break;
-    case "sco":
-      decal = sco;
-      fill = "#8cf";
-      break;
-    case "sec":
-      decal = ed;
-      fill = "#0063cb";
-      break;
-    case "seh":
-      decal = seh;
-      fill = "#ffcc00";
-      break;
-    case "sel":
-      decal = sel;
-      fill = "#F5F5F5";
-      break;
-    case "shg":
-      decal = shg;
-      fill = "#010066";
-      break;
-    case "shi":
-      decal = shi;
-      fill = "#f9f9f9";
-      break;
-    case "sid":
-      decal = sid;
-      fill = "#000066";
-      break;
-    case "sne":
-      decal = sne;
-      fill = "#00AEEF";
-      break;
-    case "som":
-      decal = som;
-      fill = "#EE0000";
-      break;
-    case "spc":
-      decal = spc;
-      fill = "#FFFFFF";
-      break;
-    case "son":
-      decal = son;
-      fill = "#f0f0f0";
-      break;
-    case "srg":
-      decal = srg;
-      fill = "#FF0000";
-      break;
-    case "sui":
-      decal = sui;
-      fill = "#d81e05";
-      break;
-    case "trh":
-      decal = null;
-      fill = "#202020";
-      break;
-    case "tro":
-      decal = tro;
-      fill = "#010178";
-      break;
-    case "tss":
-      decal = tss;
-      fill = "#C80410";
-      break;
-    case "usa":
-      decal = usa;
-      fill = "#bf0a30";
-      break;
-    case "uxo":
-      decal = uxo;
-      fill = "#000032";
-      break;
-    case "vet":
-      decal = null;
-      fill = "#A3C1AD";
-      break;
-    case "wad":
-      decal = wad;
-      fill = "#add8e6";
-      break;
-    case "woc":
-      decal = woc;
-      fill = "#0000FF";
-      break;
-    case "woo":
-      decal = woo;
-      fill = "#FFD050";
-      break;
-    case "xpr":
-      decal = null;
-      fill = "#000000";
-      break;
-    default:
-      decal = null;
-      fill = "white";
-      break;
-  }
+const Blade = React.forwardRef<SVGSVGElement, BladeProps>(
+  ({ className, size, club }, ref) => {
+    let decal: JSX.Element | null;
+    let fill: string;
 
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      xmlnsXlink="http://www.w3.org/1999/xlink"
-      {...(size !== undefined && { width: size, height: (size * 230) / 500 })}
-      viewBox="0 0 500 230"
-      ref={ref}
-      className={className}
-    >
-      <defs>
-        <path
-          id="spoonPath"
-          d="M 105,75 C 105,76 106,77 107,77 C 139,89 170,149 177,181 C 231,199 389,201 455,201 C 458,201 461,198 461,195 L 450,27 C 450,24 447,21 444,21 L 113,43 C 112,43 111,44 111,45  Z"
-        />
+    switch (club) {
+      case "abn":
+        decal = abn;
+        fill = "#003c10";
+        break;
+      case "abs":
+        decal = abs;
+        fill = "#cc0066";
+        break;
+      case "age":
+        decal = age;
+        fill = "#AB0A19";
+        break;
+      case "akn":
+        decal = akn;
+        fill = "#008620";
+        break;
+      case "arg":
+        decal = arg;
+        fill = "none";
+        break;
+      case "aru":
+        decal = aru;
+        fill = "#000000";
+        break;
+      case "aus":
+        decal = aus;
+        fill = "#f0f0f0";
+        break;
+      case "aut":
+        decal = aut;
+        fill = "#ff0000";
+        break;
+      case "avn":
+        decal = avn;
+        fill = "#202020";
+        break;
+      case "bal":
+        decal = bal;
+        fill = "#000000";
+        break;
+      case "bau":
+        decal = bau;
+        fill = "#00214E";
+        break;
+      case "bbl":
+        decal = bbl;
+        fill = "#1667F6";
+        break;
+      case "bed":
+        decal = bed;
+        fill = "#8e0000";
+        break;
+      case "ber":
+        decal = ber;
+        fill = "#000077";
+        break;
+      case "bms":
+        decal = bms;
+        fill = "#202020";
+        break;
+      case "bou":
+        decal = bou;
+        fill = "#f0f0f0";
+        break;
+      case "bra":
+        decal = bra;
+        fill = "#F5F5F5";
+        break;
+      case "brc":
+        decal = null;
+        fill = "#202020";
+        break;
+      case "brd":
+        decal = brd;
+        fill = "#00214E";
+        break;
+      case "bul":
+        decal = bul;
+        fill = "#d62612";
+        break;
+      case "cab":
+        decal = cab;
+        fill = "#000033";
+        break;
+      case "cai":
+        decal = cai;
+        fill = "#202020";
+        break;
+      case "cam":
+        decal = cam;
+        fill = "#13294b";
+        break;
+      case "can":
+        decal = can;
+        fill = "#ff0000";
+        break;
+      case "cbs":
+        decal = cbs;
+        fill = "#008001";
+        break;
+      case "cco":
+        decal = cco;
+        fill = "#00214E";
+        break;
+      case "cha":
+        decal = null;
+        fill = "#fc6621";
+        break;
+      case "cfu":
+        decal = cfu;
+        fill = "#202020";
+        break;
+      case "chb":
+        decal = null;
+        fill = "#000065";
+        break;
+      case "chu":
+        decal = null;
+        fill = "#FF70A0";
+        break;
+      case "cla":
+        decal = null;
+        fill = "#FFCC00";
+        break;
+      case "clh":
+        decal = clh;
+        fill = "#FFCC00";
+        break;
+      case "cls":
+        decal = cls;
+        fill = "#1909AF";
+        break;
+      case "cnn":
+        decal = cnn;
+        fill = "#599bfc";
+        break;
+      case "coo":
+        decal = coo;
+        fill = "#000040";
+        break;
+      case "cor":
+        decal = cor;
+        fill = "#8d0603";
+        break;
+      case "cox":
+        decal = cox;
+        fill = "#003366";
+        break;
+      case "crc":
+        decal = crc;
+        fill = "#ffffff";
+        break;
+      case "cro":
+        decal = cro;
+        fill = "#f2f2f2";
+        break;
+      case "daw":
+        decal = daw;
+        fill = "#000080";
+        break;
+      case "den":
+        decal = den;
+        fill = "#f2f2f2";
+        break;
+      case "dow":
+        decal = null;
+        fill = "#AB0F62";
+        break;
+      case "dur":
+        decal = dur;
+        fill = "#000044";
+        break;
+      case "dus":
+        decal = dus;
+        fill = "#F5F5F5";
+        break;
+      case "emm":
+        decal = emm;
+        fill = "#000077";
+        break;
+      case "esp":
+        decal = esp;
+        fill = "#db000d";
+        break;
+      case "est":
+        decal = est;
+        fill = "#3a75c4";
+        break;
+      case "etn":
+        decal = null;
+        fill = "#B7E1E4";
+        break;
+      case "exc":
+        decal = null;
+        fill = "#DF0000";
+        break;
+      case "fit":
+        decal = null;
+        fill = "lightgray";
+        break;
+      case "ftt":
+        decal = null;
+        fill = "#000044";
+        break;
+      case "fra":
+        decal = fra;
+        fill = "#0c1c8c";
+        break;
+      case "gbr":
+        decal = gbr;
+        fill = "#f0f0f0";
+        break;
+      case "ger":
+        decal = ger;
+        fill = "#202020";
+        break;
+      case "gir":
+        decal = gir;
+        fill = "#004600";
+        break;
+      case "glw":
+        decal = glw;
+        fill = "#ff0022";
+        break;
+      case "gre":
+        decal = gre;
+        fill = "#101f8a";
+        break;
+      case "gtm":
+        decal = gtm;
+        fill = "#000032";
+        break;
+      case "hec":
+        decal = hec;
+        fill = "#8E0000";
+        break;
+      case "hom":
+        decal = hom;
+        fill = "#f9f9f9";
+        break;
+      case "huh":
+        decal = huh;
+        fill = "#ffffff";
+        break;
+      case "iel":
+        decal = iel;
+        fill = "#ffffff";
+        break;
+      case "imp":
+        decal = imp;
+        fill = "#101010";
+        break;
+      case "ita":
+        decal = ita;
+        fill = "#008d46";
+        break;
+      case "jec":
+        decal = jec;
+        fill = "#202020";
+        break;
+      case "jeo":
+        decal = null;
+        fill = "#009C3A";
+        break;
+      case "kcb":
+        decal = null;
+        fill = "purple";
+        break;
+      case "keb":
+        decal = keb;
+        fill = "#F9F9F9";
+        break;
+      case "lcc":
+        decal = lcc;
+        fill = "#136bfb";
+        break;
+      case "ldr":
+        decal = null;
+        fill = "#ffc6cf";
+        break;
+      case "lic":
+        decal = lic;
+        fill = "#000032";
+        break;
+      case "lin":
+        decal = lin;
+        fill = "#ffcc00";
+        break;
+      case "lmb":
+        decal = null;
+        fill = "#DC0000";
+        break;
+      case "lmh":
+        decal = lmh;
+        fill = "#000032";
+        break;
+      case "mag":
+        decal = mag;
+        fill = "#151515";
+        break;
+      case "man":
+        decal = man;
+        fill = "#d40000";
+        break;
+      case "mau":
+        decal = mau;
+        fill = "#844C82";
+        break;
+      case "mec":
+        decal = null;
+        fill = "#F5F5F5";
+        break;
+      case "mer":
+        decal = mer;
+        fill = "#ffffff";
+        break;
+      case "mgd":
+        decal = mgd;
+        fill = "#8c00cd";
+        break;
+      case "nec":
+        decal = nec;
+        fill = "#800080";
+        break;
+      case "nzl":
+        decal = nzl;
+        fill = "#202020";
+        break;
+      case "nnm":
+        decal = nnm;
+        fill = "#000066";
+        break;
+      case "nor":
+        decal = nor;
+        fill = "#ef2b2d";
+        break;
+      case "oro":
+        decal = oro;
+        fill = "#002163";
+        break;
+      case "oxb":
+        decal = oxb;
+        fill = "#003380";
+        break;
+      case "pbc":
+        decal = pbc;
+        fill = "#0000CC";
+        break;
+      case "pem":
+        decal = pem;
+        fill = "#AAF0FF";
+        break;
+      case "pet":
+        decal = pet;
+        fill = "#071cd0";
+        break;
+      case "pmb":
+        decal = pmb;
+        fill = "#F0F0F0";
+        break;
+      case "ptr":
+        decal = ptr;
+        fill = "#000033";
+        break;
+      case "qcc":
+        decal = qcc;
+        fill = "darkgreen";
+        break;
+      case "qco":
+        decal = qco;
+        fill = "#000066";
+        break;
+      case "rdu":
+        decal = rdu;
+        fill = "#f0f0f0";
+        break;
+      case "rob":
+        decal = rob;
+        fill = "#7e0308";
+        break;
+      case "roc":
+        decal = roc;
+        fill = "#0099FF";
+        break;
+      case "rou":
+        decal = rou;
+        fill = "#0045e6";
+        break;
+      case "rpc":
+        decal = rpc;
+        fill = "#EE0000";
+        break;
+      case "rsa":
+        decal = rsa;
+        fill = "#ff0000";
+        break;
+      case "sac":
+        decal = sac;
+        fill = "#B20000";
+        break;
+      case "say":
+        decal = say;
+        fill = "#d40000";
+        break;
+      case "sbh":
+        decal = sbh;
+        fill = "#f9f9f9";
+        break;
+      case "scc":
+        decal = scc;
+        fill = "#780025";
+        break;
+      case "sco":
+        decal = sco;
+        fill = "#8cf";
+        break;
+      case "sec":
+        decal = ed;
+        fill = "#0063cb";
+        break;
+      case "seh":
+        decal = seh;
+        fill = "#ffcc00";
+        break;
+      case "sel":
+        decal = sel;
+        fill = "#F5F5F5";
+        break;
+      case "shg":
+        decal = shg;
+        fill = "#010066";
+        break;
+      case "shi":
+        decal = shi;
+        fill = "#f9f9f9";
+        break;
+      case "sid":
+        decal = sid;
+        fill = "#000066";
+        break;
+      case "sne":
+        decal = sne;
+        fill = "#00AEEF";
+        break;
+      case "som":
+        decal = som;
+        fill = "#EE0000";
+        break;
+      case "spc":
+        decal = spc;
+        fill = "#FFFFFF";
+        break;
+      case "son":
+        decal = son;
+        fill = "#f0f0f0";
+        break;
+      case "srg":
+        decal = srg;
+        fill = "#FF0000";
+        break;
+      case "sui":
+        decal = sui;
+        fill = "#d81e05";
+        break;
+      case "trh":
+        decal = null;
+        fill = "#202020";
+        break;
+      case "tro":
+        decal = tro;
+        fill = "#010178";
+        break;
+      case "tss":
+        decal = tss;
+        fill = "#C80410";
+        break;
+      case "usa":
+        decal = usa;
+        fill = "#bf0a30";
+        break;
+      case "uxo":
+        decal = uxo;
+        fill = "#000032";
+        break;
+      case "vet":
+        decal = null;
+        fill = "#A3C1AD";
+        break;
+      case "wad":
+        decal = wad;
+        fill = "#add8e6";
+        break;
+      case "woc":
+        decal = woc;
+        fill = "#0000FF";
+        break;
+      case "woo":
+        decal = woo;
+        fill = "#FFD050";
+        break;
+      case "xpr":
+        decal = null;
+        fill = "#000000";
+        break;
+      default:
+        decal = null;
+        fill = "white";
+        break;
+    }
 
-        <clipPath id="spoonClip">
-          <use xlinkHref="#spoonPath" />
-        </clipPath>
-      </defs>
-      <g>
-        <use
-          xlinkHref="#spoonPath"
-          style={{ stroke: "black", strokeWidth: 1, fill: fill }}
-        />
-        <g clipRule="nonzero" clipPath="url(#spoonClip)">
-          {decal}
+    return (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        xmlnsXlink="http://www.w3.org/1999/xlink"
+        {...(size !== undefined && { width: size, height: (size * 230) / 500 })}
+        viewBox="0 0 500 230"
+        ref={ref}
+        className={className}
+      >
+        <defs>
+          <path
+            id="spoonPath"
+            d="M 105,75 C 105,76 106,77 107,77 C 139,89 170,149 177,181 C 231,199 389,201 455,201 C 458,201 461,198 461,195 L 450,27 C 450,24 447,21 444,21 L 113,43 C 112,43 111,44 111,45  Z"
+          />
+
+          <clipPath id="spoonClip">
+            <use xlinkHref="#spoonPath" />
+          </clipPath>
+        </defs>
+        <g>
+          <use
+            xlinkHref="#spoonPath"
+            style={{ stroke: "black", strokeWidth: 1, fill: fill }}
+          />
+          <g clipRule="nonzero" clipPath="url(#spoonClip)">
+            {decal}
+          </g>
         </g>
-      </g>
-    </svg>
-  );
-});
+      </svg>
+    );
+  }
+);
 
 const abn = (
   <g transform="rotate(-3) translate(0,130)">
@@ -1364,7 +1372,7 @@ const mag = (
         style={{
           opacity: 1,
           fill: "none",
-          fillRule: "evenod",
+          fillRule: "evenodd",
           stroke: "#fede20",
           strokeWidth: 2,
           strokeLinecap: "butt",

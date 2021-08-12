@@ -1,5 +1,5 @@
-import Blade from "./Blade";
-import React from "react";
+import { Meta, Story } from "@storybook/react";
+import Blade, { BladeProps } from "./Blade";
 import { clubs } from "../utils";
 
 export default {
@@ -26,9 +26,9 @@ export default {
       },
     },
   },
-};
+} as Meta;
 
-const Template = (args) => <Blade {...args} />;
+const Template: Story<BladeProps> = (args) => <Blade {...args} />;
 
 export const FixedWidth = Template.bind({});
 FixedWidth.args = { club: "emm", size: 200 };

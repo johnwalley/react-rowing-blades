@@ -1,8 +1,39 @@
-const clubs = {};
-const shortNames = {};
-const shortShortNames = {};
-const names = {};
-const abbreviations = {};
+type Category = "cambridge" | "international" | "oxford" | "uk";
+
+const clubs: { [category in Category]: any[] } = {
+  cambridge: [],
+  international: [],
+  oxford: [],
+  uk: [],
+};
+
+const shortNames: { [category in Category]: object } = {
+  cambridge: {},
+  international: {},
+  oxford: {},
+  uk: {},
+};
+
+const shortShortNames: { [category in Category]: object } = {
+  cambridge: {},
+  international: {},
+  oxford: {},
+  uk: {},
+};
+
+const names: { [category in Category]: object } = {
+  cambridge: {},
+  international: {},
+  oxford: {},
+  uk: {},
+};
+
+const abbreviations: { [category in Category]: object } = {
+  cambridge: {},
+  international: {},
+  oxford: {},
+  uk: {},
+};
 
 /*
   ley: 'Leys School Boat Club',
