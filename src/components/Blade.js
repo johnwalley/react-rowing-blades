@@ -385,6 +385,10 @@ const Blade = React.forwardRef(({ className, size, club }, ref) => {
       decal = roc;
       fill = "#0099FF";
       break;
+    case "rou":
+      decal = rou;
+      fill = "#0045e6";
+      break;
     case "rpc":
       decal = rpc;
       fill = "#EE0000";
@@ -1702,6 +1706,32 @@ const roc = (
       style={{ stroke: "gold", strokeWidth: 20, fill: "none" }}
     />
   </g>
+);
+
+const rou = (
+  <>
+    <clipPath id="vert30stripe">
+      <rect
+        transform="rotate(-4) scale(0.63, 0.81) translate(210, 60)"
+        x="33%"
+        y="0%"
+        width="34%"
+        height="100%"
+        style={{ fill: "#003399" }}
+      />
+    </clipPath>
+    <g clip-rule="nonzero" clip-path="url(#vert30stripe)">
+      <rect fill="#ffe60d" x="0" y="0" width="100%" height="100%" />
+    </g>
+    <rect
+      transform="rotate(-4) scale(0.63 0.81) translate(210,60) "
+      x="66.666%"
+      y="0%"
+      width="33.333%"
+      height="100%"
+      fill="#f21830"
+    />
+  </>
 );
 
 const rpc = (
