@@ -1,5 +1,5 @@
 import { Meta, Story } from "@storybook/react";
-import Blade, { BladeProps } from "./Blade";
+import { Blade, BladeProps } from "./Blade";
 import { clubs } from "../utils";
 
 export default {

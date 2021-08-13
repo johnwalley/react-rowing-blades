@@ -6,7 +6,7 @@ export type BladeProps = {
   club: string;
 };
 
-const Blade = React.forwardRef<SVGSVGElement, BladeProps>(
+export const Blade = React.forwardRef<SVGSVGElement, BladeProps>(
   ({ className, size, club }, ref) => {
     let decal: JSX.Element | null;
     let fill: string;
@@ -704,7 +704,7 @@ const bel = (
         style={{ fill: "#003399" }}
       />
     </clipPath>
-    <g clip-rule="nonzero" clip-path="url(#vert30stripe)">
+    <g clipRule="nonzero" clipPath="url(#vert30stripe)">
       <rect fill="#ffda0c" x="0" y="0" width="100%" height="100%" />
     </g>
     <g transform="rotate(-4) scale(0.63, 0.81) translate(210, 60)">
@@ -1094,7 +1094,7 @@ const esp = (
         height="100%"
       />
     </clipPath>
-    <g clip-rule="nonzero" clip-path="url(#vert30stripe)">
+    <g clipRule="nonzero" clipPath="url(#vert30stripe)">
       <rect fill="#fbea0e" x="0" y="0" width="100%" height="100%" />
     </g>
   </>
@@ -1633,7 +1633,7 @@ const nor = (
       width="500"
       height="60"
     />
-    <g clip-path="url(#centerStripe)">
+    <g clipPath="url(#centerStripe)">
       <rect fill="#002868" x="0" y="0" width="100%" height="100%" />
     </g>
   </>
@@ -1799,7 +1799,7 @@ const rou = (
         style={{ fill: "#003399" }}
       />
     </clipPath>
-    <g clip-rule="nonzero" clip-path="url(#vert30stripe)">
+    <g clipRule="nonzero" clipPath="url(#vert30stripe)">
       <rect fill="#ffe60d" x="0" y="0" width="100%" height="100%" />
     </g>
     <rect
@@ -2241,5 +2241,3 @@ const woo = (
     />
   </g>
 );
-
-export default Blade;

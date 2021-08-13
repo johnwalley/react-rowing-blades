@@ -1,4 +1,4 @@
-import Blade from "./components/Blade";
+import { Blade } from "./components/Blade";
 import {
   clubs,
   names,
@@ -7,5 +7,4 @@ import {
   abbreviations,
 } from "./utils";
 
-export default Blade;
-export { clubs, names, shortNames, shortShortNames, abbreviations };
+export { Blade, clubs, names, shortNames, shortShortNames, abbreviations };
