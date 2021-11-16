@@ -37,9 +37,7 @@ const abbreviations: { [category in Category]: object } = {
 
 /*
   ley: 'Leys School Boat Club',
-  oxb: 'Oxford Brookes University Boat Club',
   trc: 'Thames Rowing Club',
-  yrk: 'York City Rowing Club',
 */
 
 clubs.uk = [
@@ -83,6 +81,7 @@ clubs.uk = [
   "tss",
   "vet",
   "xpr",
+  "yrk",
 ];
 
 abbreviations.uk = {

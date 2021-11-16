@@ -524,6 +524,10 @@ export const Blade = React.forwardRef<SVGSVGElement, BladeProps>(
         decal = null;
         fill = "#000000";
         break;
+      case "yrk":
+        decal = yrk;
+        fill = "#F5F5F5";
+        break;
       default:
         decal = null;
         fill = "white";
@@ -2238,6 +2242,23 @@ const woo = (
     <path
       d="M 0,0 l 0,300 "
       style={{ stroke: "#8B0000", strokeWidth: 30, fill: "none" }}
+    />
+  </g>
+);
+
+const yrk = (
+  <g transform="rotate(60) translate(350,-390)">
+    <path
+      d="M -63,00 l 0,350 "
+      style={{ stroke: "#FFCC33", strokeWidth: 25, fill: "none" }}
+    />
+    <path
+      d="M -95,00 l 0,350 "
+      style={{ stroke: "#000000", strokeWidth: 25, fill: "none" }}
+    />
+    <path
+      d="M -127,00 l 0,350 "
+      style={{ stroke: "#840073", strokeWidth: 25, fill: "none" }}
     />
   </g>
 );
