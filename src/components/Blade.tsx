@@ -1,5 +1,8 @@
 import * as React from "react";
 
+const WIDTH = 500;
+const HEIGHT = 230;
+
 export type BladeProps = {
   className?: string;
   size?: number;
@@ -542,8 +545,11 @@ export const Blade = React.forwardRef<SVGSVGElement, BladeProps>(
       <svg
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"
-        {...(size !== undefined && { width: size, height: (size * 230) / 500 })}
-        viewBox="0 0 500 230"
+        {...(size !== undefined && {
+          width: size,
+          height: (size * HEIGHT) / WIDTH,
+        })}
+        viewBox={`0 0 ${WIDTH} ${HEIGHT}`}
         ref={ref}
         className={className}
       >
