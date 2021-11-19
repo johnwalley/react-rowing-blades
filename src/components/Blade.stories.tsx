@@ -31,7 +31,7 @@ export default {
 const Template: Story<BladeProps> = (args) => <Blade {...args} />;
 
 export const FixedWidth = Template.bind({});
-FixedWidth.args = { club: "emm", size: 200 };
+FixedWidth.args = { club: "emm", size: 200, flip: false };
 
 export const Responsive = Template.bind({});
-Responsive.args = { club: "emm" };
+Responsive.args = { club: "emm", flip: false };
