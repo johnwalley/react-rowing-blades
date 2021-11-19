@@ -5,12 +5,13 @@ const HEIGHT = 230;
 
 export type BladeProps = {
   className?: string;
-  size?: number;
   club: string;
+  flip?: boolean;
+  size?: number;
 };
 
 export const Blade = React.forwardRef<SVGSVGElement, BladeProps>(
-  ({ className, size, club }, ref) => {
+  ({ className, club, flip = false, size }, ref) => {
     let decal: JSX.Element | null;
     let fill: string;
 
@@ -556,6 +557,7 @@ export const Blade = React.forwardRef<SVGSVGElement, BladeProps>(
         viewBox={`0 0 ${WIDTH} ${HEIGHT}`}
         ref={ref}
         className={className}
+        {...(flip && { transform: "scale(-1,1)" })}
       >
         <defs>
           <path
