@@ -7,15 +7,13 @@ export default {
   component: Blade,
   argTypes: {
     club: {
-      control: {
-        type: "select",
-        options: [
-          ...clubs.cambridge,
-          ...clubs.oxford,
-          ...clubs.uk,
-          ...clubs.international,
-        ],
-      },
+      type: "select",
+      options: [
+        ...clubs.cambridge,
+        ...clubs.oxford,
+        ...clubs.uk,
+        ...clubs.international,
+      ],
     },
     size: {
       control: {
