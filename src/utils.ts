@@ -226,7 +226,7 @@ shortNames.uk = {
   imp: "Imperial College",
   ldr: "Leander",
   ley: "Leys School",
-  mau: "Manchester University Boat Club",
+  mau: "Manchester University",
   oxb: "Oxford Brookes University",
   pet: "Peterborough City",
   rdu: "Reading University",
