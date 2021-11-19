@@ -499,6 +499,10 @@ export const Blade = React.forwardRef<SVGSVGElement, BladeProps>(
         decal = tss;
         fill = "#C80410";
         break;
+      case "twk":
+        decal = twk;
+        fill = "#140857";
+        break;
       case "usa":
         decal = usa;
         fill = "#bf0a30";
@@ -2205,6 +2209,24 @@ const tro = (
 );
 
 const tss = <path d="M 345,230 L 280,0 L 500,0 L 500,230 Z" fill="#F5D60C" />;
+
+const twk = (
+  <>
+    <clipPath id="vert30stripe">
+      <rect
+        transform="rotate(-4) scale(0.63, 0.81) translate(210, 60)"
+        x="33%"
+        y="0%"
+        width="34%"
+        height="100%"
+        style={{ fill: "#003399" }}
+      />
+    </clipPath>
+    <g clipRule="nonzero" clipPath="url(#vert30stripe)">
+      <rect fill="#E50087" x="0" y="0" width="100%" height="100%" />
+    </g>
+  </>
+);
 
 const usa = (
   <g transform="rotate(-3) translate(0,130) ">
