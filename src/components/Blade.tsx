@@ -300,6 +300,10 @@ export const Blade = React.forwardRef<SVGSVGElement, BladeProps>(
         decal = null;
         fill = "#ffc6cf";
         break;
+      case "ldu":
+        decal = ldu;
+        fill = "#F0F0F0";
+        break;
       case "lic":
         decal = lic;
         fill = "#000032";
@@ -1370,7 +1374,7 @@ const jec = (
 );
 
 const keb = (
-  <g transform="rotate(-4)  translate(355,143) ">
+  <g transform="rotate(-4) translate(355,143) ">
     <path
       d="M 60,-100 L -15,0 L 60,100"
       style={{ stroke: "#FF191C", strokeWidth: 25, fill: "none" }}
@@ -1381,6 +1385,23 @@ const keb = (
 const lcc = (
   <g transform="rotate(-3)  translate(0,130)">
     <path d="M 465,-100 350,0 455,100 z" style={{ fill: "#000000" }} />
+  </g>
+);
+
+const ldu = (
+  <g transform="rotate(-4) translate(355,143) ">
+    <path
+      d="M 60,-100 L 0,0 L 60,100"
+      stroke="#881825"
+      strokeWidth="15"
+      fill="none"
+    />
+    <path
+      d="M 90,-100 L 30,0 L 90,100"
+      stroke="#004C3E"
+      strokeWidth="15"
+      fill="none"
+    />
   </g>
 );
 
