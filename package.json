@@ -27,7 +27,7 @@
     "@babel/preset-react": "7.16.0",
     "@rollup/plugin-typescript": "8.2.5",
     "@storybook/addon-essentials": "6.3.12",
-    "@storybook/addon-links": "6.3.12",
+    "@storybook/addon-links": "6.4.3",
     "@storybook/react": "6.3.12",
     "babel-loader": "8.2.3",
     "react": "17.0.2",
