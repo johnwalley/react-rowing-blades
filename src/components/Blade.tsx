@@ -508,6 +508,10 @@ export const Blade = React.forwardRef<SVGSVGElement, BladeProps>(
         decal = twk;
         fill = "#140857";
         break;
+      case "ucl":
+        decal = ucl;
+        fill = "#695ab5";
+        break;
       case "usa":
         decal = usa;
         fill = "#bf0a30";
@@ -2249,6 +2253,13 @@ const twk = (
       <rect fill="#E50087" x="0" y="0" width="100%" height="100%" />
     </g>
   </>
+);
+
+const ucl = (
+  <path
+    d="m 292.04225,16.864336 175.5706,-4.091606 0,199.14883 -153.96948,0 z"
+    style={{ fill: "#aaeeff", fillOpacity: 1, stroke: "none" }}
+  />
 );
 
 const usa = (
