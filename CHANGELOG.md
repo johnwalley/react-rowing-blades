@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.2.0](https://github.com/johnwalley/react-rowing-blades/compare/v2.1.0...v2.2.0) (2022-01-02)
+
+
+### Features
+
+* add Leeds University ([f33bde6](https://github.com/johnwalley/react-rowing-blades/commit/f33bde66dceff2bee3ab91eb37c017a3df697062))
+* add Twickenham ([e0382c4](https://github.com/johnwalley/react-rowing-blades/commit/e0382c48be0dc371bd147259a4df1ab2f316f6e7))
+* add UCL ([fab5158](https://github.com/johnwalley/react-rowing-blades/commit/fab515864530f7fd45581e60553832576931e86b))
+* flip horizontally ([90da166](https://github.com/johnwalley/react-rowing-blades/commit/90da1664c0fc21dab4a6aeb167ef87ac99f65287))
+
 ## [2.1.0](https://github.com/johnwalley/react-rowing-blades/compare/v2.0.0...v2.1.0) (2021-11-17)
 
 
