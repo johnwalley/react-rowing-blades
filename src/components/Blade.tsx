@@ -404,6 +404,10 @@ export const Blade = React.forwardRef<SVGSVGElement, BladeProps>(
         decal = rdu;
         fill = "#f0f0f0";
         break;
+      case "rho":
+        decal = rho;
+        fill = "#005500";
+        break;
       case "rob":
         decal = rob;
         fill = "#7e0308";
@@ -1817,6 +1821,23 @@ const rob = (
 
 const rdu = (
   <path d="M 432,0 l 16,250" style={{ strokeWidth: 35, stroke: "#993399" }} />
+);
+
+const rho = (
+  <>
+    <rect
+      style={{ fill: "#f2f2f2" }}
+      width="104.99896"
+      height="186.3"
+      x="237.29897"
+      y="48.599998"
+      transform="matrix(0.99756405,-0.06975647,0.06975647,0.99756405,0,0)"
+    />
+    <path
+      d="M 491.0625,8.5 344.4375,18.75 362.625,278.90625 509.25,268.65625 491.0625,8.5 z"
+      style={{ fill: "#660080", fillOpacity: 1 }}
+    />
+  </>
 );
 
 const roc = (
