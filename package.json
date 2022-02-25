@@ -23,7 +23,7 @@
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "7.16.0",
-    "@babel/preset-env": "7.16.4",
+    "@babel/preset-env": "7.16.11",
     "@babel/preset-react": "7.16.7",
     "@rollup/plugin-typescript": "8.3.0",
     "@storybook/addon-essentials": "6.4.19",
