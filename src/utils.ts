@@ -305,6 +305,7 @@ names.uk = {
 };
 
 clubs.cambridge = [
+  "ad",
   "aru",
   "cai",
   "cco",
@@ -382,6 +383,7 @@ abbreviations.cambridge = {
 };
 
 shortShortNames.cambridge = {
+  ad: "Addenbrooke's",
   aru: "Anglia Ruskin",
   cai: "Caius",
   cco: "Christ's",
@@ -417,6 +419,7 @@ shortShortNames.cambridge = {
 };
 
 shortNames.cambridge = {
+  ad: "Addenbrooke's",
   aru: "Anglia Ruskin",
   cai: "Caius",
   cco: "Christ's College",
@@ -452,6 +455,7 @@ shortNames.cambridge = {
 };
 
 names.cambridge = {
+  ad: "Addenbrooke's Student Boat Club",
   aru: "Anglia Ruskin Boat Club",
   cai: "Caius Boat Club",
   cco: "Christ's College Boat Club",
