@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.3.0](https://github.com/johnwalley/react-rowing-blades/compare/v2.2.0...v2.3.0) (2022-03-02)
+
+
+### Features
+
+* add Royal Holloway ([59d2111](https://github.com/johnwalley/react-rowing-blades/commit/59d21115469c04f8dead54c441109c9f2243e33e))
+
+
+### Bug Fixes
+
+* add Addenbrooke's Student Boat Club to utils ([cfe45b1](https://github.com/johnwalley/react-rowing-blades/commit/cfe45b18dfa4aeeee982cae4ef95d38e4f86de90))
+
 ## [2.2.0](https://github.com/johnwalley/react-rowing-blades/compare/v2.1.0...v2.2.0) (2022-01-02)
 
 
