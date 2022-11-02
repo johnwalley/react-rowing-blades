@@ -544,6 +544,10 @@ export const Blade = React.forwardRef<SVGSVGElement, BladeProps>(
         decal = woo;
         fill = "#FFD050";
         break;
+      case "wrc":
+        decal = wrc;
+        fill = "#FF0000";
+        break;
       case "xpr":
         decal = null;
         fill = "#000000";
@@ -2574,6 +2578,13 @@ const woo = (
       style={{ stroke: "#8B0000", strokeWidth: 30, fill: "none" }}
     />
   </g>
+);
+
+const wrc = (
+  <path
+    d="M 109.76752,42.435275 76.110919,192.11109 470.50332,203.51473 z"
+    style={{ fill: "#00ffff", stroke: "none" }}
+  />
 );
 
 const yrk = (

@@ -85,6 +85,7 @@ clubs.uk = [
   "ucl",
   "uyo",
   "vet",
+  "wrc",
   "xpr",
   "yrk",
 ];
@@ -199,6 +200,7 @@ shortShortNames.uk = {
   ucl: "University College London",
   uyo: "York University",
   vet: "Camb Veterans",
+  wrc: "Wallingford",
   xpr: "X-Press",
   yrk: "York City",
 };
@@ -250,6 +252,7 @@ shortNames.uk = {
   ucl: "University College London",
   uyo: "York University",
   vet: "Cambridge Veterans",
+  wrc: "Wallingford",
   xpr: "X-Press",
   yrk: "York City",
 };
@@ -300,6 +303,7 @@ names.uk = {
   ucl: "University College London Boat Club",
   uyo: "University of York Boat Club",
   vet: "Camb Veterans Rowing Club",
+  wrc: "Wallingford Rowing Club",
   xpr: "X-Press Boat Club",
   yrk: "York City Rowing Club",
 };
