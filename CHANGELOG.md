@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.4.0](https://github.com/johnwalley/react-rowing-blades/compare/v2.3.1...v2.4.0) (2022-11-02)
+
+
+### Features
+
+* add Wallingford RC ([9e85c18](https://github.com/johnwalley/react-rowing-blades/commit/9e85c188186c13a9fef5bacc3e153343ff3d2b41))
+
 ### [2.3.1](https://github.com/johnwalley/react-rowing-blades/compare/v2.3.0...v2.3.1) (2022-03-02)
 
 
