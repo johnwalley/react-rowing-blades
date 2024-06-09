@@ -1,12 +1,12 @@
 import babel from "rollup-plugin-babel";
 import { terser } from "rollup-plugin-terser";
 import pkg from "./package.json";
-import typescript from '@rollup/plugin-typescript';
+import typescript from "@rollup/plugin-typescript";
 
 export default [
   {
     input: "src/index.ts",
-    external: ["react"],
+    external: ["react", "react-dom"],
     plugins: [
       typescript(),
       babel({
@@ -17,7 +17,7 @@ export default [
     output: {
       file: pkg.main,
       format: "umd",
-      globals: { react: "React" },
+      globals: { react: "React", "react-dom": "ReactDOM" },
       exports: "named",
       name: "reactRowingBlades",
       esModule: false,
