@@ -535,6 +535,7 @@ clubs.oxford = [
   "uxo",
   "wad",
   "woo",
+  "wro",
 ];
 
 abbreviations.oxford = {
