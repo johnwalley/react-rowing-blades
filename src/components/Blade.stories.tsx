@@ -1,13 +1,13 @@
-import { Meta, Story } from "@storybook/react";
-import { Blade, BladeProps } from "./Blade";
+import type { Meta, StoryObj } from "@storybook/react";
+import { Blade } from "./Blade";
 import { clubs } from "../utils";
 
-export default {
+const meta: Meta<typeof Blade> = {
   title: "Components/Blade",
   component: Blade,
   argTypes: {
     club: {
-      type: "select",
+      control: "select",
       options: [
         ...clubs.cambridge,
         ...clubs.oxford,
@@ -24,15 +24,19 @@ export default {
       },
     },
   },
-} as Meta;
+};
 
-const Template: Story<BladeProps> = (args) => <Blade {...args} />;
+export default meta;
+type Story = StoryObj<typeof Blade>;
 
-export const FixedWidth = Template.bind({});
-FixedWidth.args = { club: "emm", flip: false, size: 200 };
+export const FixedWidth: Story = {
+  args: { club: "emm", flip: false, size: 200 },
+};
 
-export const Responsive = Template.bind({});
-Responsive.args = { club: "emm", flip: false };
+export const Responsive: Story = {
+  args: { club: "emm", flip: false },
+};
 
-export const Flipped = Template.bind({});
-Flipped.args = { club: "emm", flip: true, size: 200 };
+export const Flipped: Story = {
+  args: { club: "emm", flip: true, size: 200 },
+};
