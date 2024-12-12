@@ -12,7 +12,7 @@ export type BladeProps = {
 
 export const Blade = React.forwardRef<SVGSVGElement, BladeProps>(
   ({ className, club, flip = false, size }, ref) => {
-    let decal: JSX.Element | null;
+    let decal: React.JSX.Element | null;
     let fill: string;
 
     switch (club) {
