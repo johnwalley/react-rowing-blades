@@ -1,11 +1,12 @@
 import * as React from "react";
+import type { ClubCode } from "../utils";
 
 const WIDTH = 500;
 const HEIGHT = 230;
 
 export type BladeProps = {
   className?: string;
-  club: string;
+  club: ClubCode;
   flip?: boolean;
   size?: number;
 };
@@ -388,10 +389,6 @@ export const Blade = React.forwardRef<SVGSVGElement, BladeProps>(
         decal = pol;
         fill = "#F2F2F2";
         break;
-      case "ptr":
-        decal = ptr;
-        fill = "#000033";
-        break;
       case "qcc":
         decal = qcc;
         fill = "darkgreen";
@@ -495,6 +492,10 @@ export const Blade = React.forwardRef<SVGSVGElement, BladeProps>(
       case "sui":
         decal = sui;
         fill = "#d81e05";
+        break;
+      case "trc":
+        decal = trc;
+        fill = "#202020";
         break;
       case "trh":
         decal = null;
@@ -2252,6 +2253,17 @@ const sui = (
   <g transform="scale(0.6) rotate(-4) translate(440,80)">
     <rect fill="#fff" height="60" width="200" x="50" y="120" />
     <rect fill="#fff" height="200" width="60" x="120" y="50" />
+  </g>
+);
+
+const trc = (
+  <g transform="rotate(-4) translate(360,50)">
+    <path d="M 0,0 l 0,24 l 40,0 l 0,-24 z" fill="#E70401" />
+    <path d="M 0,24 l 0,12 l 40,0 l 0,-12 z" fill="white" />
+    <path d="M 0,56 l 0,24 l 40,0 l 0,-24 z" fill="#E70401" />
+    <path d="M 0,80 l 0,12 l 40,0 l 0,-12 z" fill="white" />
+    <path d="M 0,116 l 0,24 l 40,0 l 0,-24 z" fill="#E70401" />
+    <path d="M 0,140 l 0,12 l 40,0 l 0,-12 z" fill="white" />
   </g>
 );
 

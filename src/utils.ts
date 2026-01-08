@@ -1,34 +1,66 @@
 type Category = "cambridge" | "international" | "oxford" | "uk";
 
-const clubs: { [category in Category]: any[] } = {
+type UKClub = "abn" | "abs" | "age" | "akn" | "avn" | "bau" | "bbl" | "bed" | "ber" | "bms" | "bou" | "brd" | "bra" | "cab" | "cam" | "cbs" | "cfu" | "cha" | "cls" | "cnn" | "crc" | "cox" | "dur" | "dus" | "etn" | "glw" | "iel" | "imp" | "ldr" | "ldu" | "ley" | "mau" | "oxb" | "pet" | "rdu" | "rho" | "rob" | "sne" | "son" | "srg" | "trc" | "tss" | "twk" | "ucl" | "uyo" | "vet" | "wrc" | "xpr" | "yrk";
+type CambridgeClub = "ad" | "aru" | "cai" | "cco" | "chu" | "cla" | "clh" | "cor" | "daw" | "dow" | "emm" | "fit" | "ftt" | "gir" | "hom" | "huh" | "jec" | "kcb" | "lcc" | "lmb" | "mgd" | "mec" | "nnm" | "pem" | "pbc" | "qcc" | "roc" | "sel" | "sid" | "scc" | "sec" | "trh" | "woc";
+type OxfordClub = "bal" | "brc" | "chb" | "coo" | "exc" | "gtm" | "hec" | "jeo" | "keb" | "lic" | "lin" | "lmh" | "mag" | "man" | "mer" | "nec" | "oro" | "osg" | "pmb" | "qco" | "rpc" | "som" | "sac" | "say" | "sbh" | "sco" | "seh" | "shi" | "shg" | "sjo" | "spc" | "tro" | "uxo" | "wad" | "woo" | "wro";
+type InternationalClub = "arg" | "aus" | "aut" | "bel" | "bul" | "can" | "cro" | "den" | "esp" | "est" | "fra" | "gbr" | "ger" | "gre" | "ita" | "nor" | "nzl" | "pol" | "rou" | "rsa" | "sui" | "usa";
+
+type ClubCode = UKClub | CambridgeClub | OxfordClub | InternationalClub;
+
+const clubs: { 
+  uk: readonly UKClub[];
+  cambridge: readonly CambridgeClub[];
+  oxford: readonly OxfordClub[];
+  international: readonly InternationalClub[];
+} = {
   cambridge: [],
   international: [],
   oxford: [],
   uk: [],
 };
 
-const shortNames: { [category in Category]: object } = {
-  cambridge: {},
-  international: {},
-  oxford: {},
-  uk: {},
+const shortNames: {
+  uk: Record<UKClub, string>;
+  cambridge: Record<CambridgeClub, string>;
+  oxford: Record<OxfordClub, string>;
+  international: Record<InternationalClub, string>;
+} = {
+  cambridge: {} as Record<CambridgeClub, string>,
+  international: {} as Record<InternationalClub, string>,
+  oxford: {} as Record<OxfordClub, string>,
+  uk: {} as Record<UKClub, string>,
 };
 
-const shortShortNames: { [category in Category]: object } = {
-  cambridge: {},
-  international: {},
-  oxford: {},
-  uk: {},
+const shortShortNames: {
+  uk: Record<UKClub, string>;
+  cambridge: Record<CambridgeClub, string>;
+  oxford: Record<OxfordClub, string>;
+  international: Record<InternationalClub, string>;
+} = {
+  cambridge: {} as Record<CambridgeClub, string>,
+  international: {} as Record<InternationalClub, string>,
+  oxford: {} as Record<OxfordClub, string>,
+  uk: {} as Record<UKClub, string>,
 };
 
-const names: { [category in Category]: object } = {
-  cambridge: {},
-  international: {},
-  oxford: {},
-  uk: {},
+const names: {
+  uk: Record<UKClub, string>;
+  cambridge: Record<CambridgeClub, string>;
+  oxford: Record<OxfordClub, string>;
+  international: Record<InternationalClub, string>;
+} = {
+  cambridge: {} as Record<CambridgeClub, string>,
+  international: {} as Record<InternationalClub, string>,
+  oxford: {} as Record<OxfordClub, string>,
+  uk: {} as Record<UKClub, string>,
 };
 
-const abbreviations: { [category in Category]: object } = {
+const abbreviations: {
+  uk: Record<string, string>;
+  cambridge: Record<string, string>;
+  oxford: Record<string, string>;
+  international: Record<string, string>;
+} = {
   cambridge: {},
   international: {},
   oxford: {},
@@ -37,7 +69,6 @@ const abbreviations: { [category in Category]: object } = {
 
 /*
   ley: 'Leys School Boat Club',
-  trc: 'Thames Rowing Club',
 */
 
 clubs.uk = [
@@ -80,6 +111,7 @@ clubs.uk = [
   "sne",
   "son",
   "srg",
+  "trc",
   "tss",
   "twk",
   "ucl",
@@ -289,6 +321,7 @@ names.uk = {
   ldr: "Leander Club",
   ldu: "University of Leeds Boat Club",
   ley: "Leys School Boat Club",
+  mau: "Manchester University Boat Club",
   oxb: "Oxford Brookes University Boat Club",
   pet: "Peterborough City Rowing Club",
   rdu: "Reading University Boat Club",
@@ -769,4 +802,55 @@ shortNames.international = {
   usa: "United States of America",
 };
 
+shortShortNames.international = {
+  arg: "Argentina",
+  aus: "Australia",
+  aut: "Austria",
+  bel: "Belgium",
+  bul: "Bulgaria",
+  can: "Canada",
+  cro: "Croatia",
+  den: "Denmark",
+  esp: "Spain",
+  est: "Estonia",
+  fra: "France",
+  gbr: "Great Britain",
+  ger: "Germany",
+  gre: "Greece",
+  ita: "Italy",
+  nor: "Norway",
+  nzl: "New Zealand",
+  pol: "Poland",
+  rou: "Romania",
+  rsa: "South Africa",
+  sui: "Switzerland",
+  usa: "United States of America",
+};
+
+abbreviations.international = {
+  ARG: "Argentina",
+  AUS: "Australia",
+  AUT: "Austria",
+  BEL: "Belgium",
+  BUL: "Bulgaria",
+  CAN: "Canada",
+  CRO: "Croatia",
+  DEN: "Denmark",
+  ESP: "Spain",
+  EST: "Estonia",
+  FRA: "France",
+  GBR: "Great Britain",
+  GER: "Germany",
+  GRE: "Greece",
+  ITA: "Italy",
+  NOR: "Norway",
+  NZL: "New Zealand",
+  POL: "Poland",
+  ROU: "Romania",
+  RSA: "South Africa",
+  SUI: "Switzerland",
+  USA: "United States of America",
+};
+
 export { clubs, names, shortNames, shortShortNames, abbreviations };
+export type { Category, ClubCode, UKClub, CambridgeClub, OxfordClub, InternationalClub };
