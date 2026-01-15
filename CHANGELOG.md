@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.5.0](https://github.com/johnwalley/react-rowing-blades/compare/v2.4.2...v2.5.0) (2026-01-15)
+
+
+### Features
+
+* add Thames RC ([492a0ca](https://github.com/johnwalley/react-rowing-blades/commit/492a0caffe41c9325644ef55e63279d6f6641dd2))
+
+
+### Bug Fixes
+
+* correct package exports configuration ([4a93538](https://github.com/johnwalley/react-rowing-blades/commit/4a935385ad62e9b074eade79d9528ab0e7595312))
+
 ### [2.4.2](https://github.com/johnwalley/react-rowing-blades/compare/v2.4.1...v2.4.2) (2024-06-09)
 
 ### [2.4.1](https://github.com/johnwalley/react-rowing-blades/compare/v2.4.0...v2.4.1) (2024-06-09)
