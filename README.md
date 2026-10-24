@@ -1,5 +1,8 @@
 # React Rowing Blades
 
+> [!IMPORTANT]
+> `react-rowing-blades` is now developed in [johnwalley/rowing](https://github.com/johnwalley/rowing/tree/main/packages/react-rowing-blades), alongside the other rowing packages. This repository is archived: open issues and pull requests there. The npm package is the same; 2.5.1 and later are published from the new repository.
+
 React Rowing Blades is a library of SVG illustrations (react components) of rowing clubs' blades.
 
 [![Version](https://img.shields.io/npm/v/react-rowing-blades.svg?style=flat-square)](https://www.npmjs.com/package/react-rowing-blades)
